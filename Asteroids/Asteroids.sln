@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asteroids", "Asteroids\Asteroids.csproj", "{E0664B0C-F595-4C50-95E1-9A8CF50FEAA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kermal", "Game\Kermal.csproj", "{B57E0341-3990-4E57-AB6C-16836103191A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsteroidsTest", "AsteroidsTest\AsteroidsTest.csproj", "{5742F381-0E6A-4942-92AA-5422FFF3EC3A}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "AsteroidsModelingProject", "AsteroidsModelingProject\AsteroidsModelingProject.modelproj", "{34C062D6-FAD3-4FC7-9315-9883D88895D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0664B0C-F595-4C50-95E1-9A8CF50FEAA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0664B0C-F595-4C50-95E1-9A8CF50FEAA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0664B0C-F595-4C50-95E1-9A8CF50FEAA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0664B0C-F595-4C50-95E1-9A8CF50FEAA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B57E0341-3990-4E57-AB6C-16836103191A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B57E0341-3990-4E57-AB6C-16836103191A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B57E0341-3990-4E57-AB6C-16836103191A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B57E0341-3990-4E57-AB6C-16836103191A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5742F381-0E6A-4942-92AA-5422FFF3EC3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5742F381-0E6A-4942-92AA-5422FFF3EC3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5742F381-0E6A-4942-92AA-5422FFF3EC3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5742F381-0E6A-4942-92AA-5422FFF3EC3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34C062D6-FAD3-4FC7-9315-9883D88895D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34C062D6-FAD3-4FC7-9315-9883D88895D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34C062D6-FAD3-4FC7-9315-9883D88895D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34C062D6-FAD3-4FC7-9315-9883D88895D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
