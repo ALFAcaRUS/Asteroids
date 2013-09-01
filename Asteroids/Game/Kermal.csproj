@@ -42,7 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Maine\Game.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Support\Point.cs" />
+    <Compile Include="Support\ViewObject.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
