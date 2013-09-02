@@ -1,0 +1,8 @@
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\Game\bin\Debug\Game.dll
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\Game\bin\Debug\Game.pdb
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\Game\bin\Debug\Ninject.dll
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\Game\bin\Debug\Ninject.pdb
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\Game\bin\Debug\Ninject.xml
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\Game\obj\Debug\Kermal.csprojResolveAssemblyReference.cache
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\Game\obj\Debug\Game.dll
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\Game\obj\Debug\Game.pdb
