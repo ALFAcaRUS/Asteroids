@@ -39,8 +39,8 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="2ba2a899-3fd6-46c3-894f-eb6cb9fd654a"
-                LastKnownName="List&lt;AEnemy&gt;"
+                Id="ea099e20-cfb3-4237-ac6a-6145c74dcff0"
+                LastKnownName="List&lt;Enemy&gt;"
                 LastKnownLocation="AsteroidsModelingProject.uml" />
             </type_NamedElement>
           </property>
@@ -135,20 +135,10 @@
             Id="4ee4e55f-7896-4ef5-97c6-7b5c4f5a37ad">
             <interfaceMoniker
               Id="a614e513-2145-4a8f-b563-7b8b60853750"
-              LastKnownName="IGameEntity"
+              LastKnownName="Interface1"
               LastKnownLocation="AsteroidsModelingProject.uml" />
           </interfaceRealization>
         </suppliersInternal>
-        <generalsInternal>
-          <generalization
-            Id="7b4ff618-6ab9-421a-b7d6-4e0cdb3e972b"
-            isSubstitutable="false">
-            <classMoniker
-              Id="8421d759-b886-46b6-9663-e09c591e539c"
-              LastKnownName="AEntity"
-              LastKnownLocation="AsteroidsModelingProject.uml" />
-          </generalization>
-        </generalsInternal>
         <ownedAttributesInternal>
           <property
             Id="7ddca86e-d6c4-4fdb-b9bf-5fbfb25659ec"
@@ -175,8 +165,8 @@
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
-            Id="ab6f0b44-8bf5-4a77-a589-ee5dbb974ba4"
-            name="StateUpdate"
+            Id="33871ece-2364-47e6-a72f-3f449e0184bb"
+            name="ToHit"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -185,26 +175,26 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="77e22c75-b297-473b-868a-6d91c477da64"
-                  name="List&lt;E&gt;"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="86ef7635-92fe-4d7b-8cfa-725e538aee94"
-                  direction="Return"
-                  isUnique="false">
+                  Id="7eab2dd6-d112-4a91-a579-32d19c288d30"
+                  direction="Return">
                   <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="1eda90e2-aa53-44a0-91db-ea1797ee81fe"
-                      LastKnownName="List&lt;IGameEntitys&gt;"
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
                       LastKnownLocation="AsteroidsModelingProject.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="ab6f0b44-8bf5-4a77-a589-ee5dbb974ba4"
+            name="StateUpdate"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -218,7 +208,7 @@
     <packageHasNamedElement>
       <Interface
         Id="a614e513-2145-4a8f-b563-7b8b60853750"
-        name="IGameEntity"
+        name="Interface1"
         isAbstract="false"
         isLeaf="false">
         <targetEnds>
@@ -264,8 +254,8 @@
         </targetEnds>
         <ownedAttributes>
           <property
-            Id="9c63f7fc-ea13-48d2-b149-e525feaf317a"
-            name="Pos"
+            Id="c4343114-f536-44a5-a749-f810c0c57ef5"
+            name="PosX"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -273,14 +263,18 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <classMoniker
-                Id="835fc51c-dad9-44bb-abe9-d33af1a0f5ab"
-                LastKnownName="Point"
-                LastKnownLocation="AsteroidsModelingProject.uml" />
-            </type_NamedElement>
-          </property>
+            isComposite="false" />
+          <property
+            Id="9c63f7fc-ea13-48d2-b149-e525feaf317a"
+            name="PosY"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
           <property
             Id="63ff01b6-39c7-4138-9f47-396766970264"
             name="WasDie"
@@ -299,11 +293,29 @@
                 LastKnownLocation="AsteroidsModelingProject.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="7b40bb48-3648-442e-827b-51b011389b59"
+            name="KillEnemy"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributes>
         <ownedOperations>
           <operation
-            Id="4c39c8b9-6d54-4d4f-85a1-bc170681e7a8"
-            name="StateUpdate"
+            Id="b175874f-c3ec-4976-b456-2a85bdb6b2a8"
+            name="ToHit"
             isLeaf="false"
             isStatic="false"
             isAbstract="true"
@@ -312,26 +324,26 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="e9c06485-6c3c-472a-a658-4d4b40b797fc"
-                  name="List&lt;IGameEntity&gt; SamePosityonEntitys"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="435eea4a-9d25-4ee2-9e6d-341e90434a30"
-                  direction="Return"
-                  isUnique="false">
+                  Id="ab7ce6d7-7068-4bc3-a688-330088f15bb9"
+                  direction="Return">
                   <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="1eda90e2-aa53-44a0-91db-ea1797ee81fe"
-                      LastKnownName="List&lt;IGameEntitys&gt;"
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
                       LastKnownLocation="AsteroidsModelingProject.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="4c39c8b9-6d54-4d4f-85a1-bc170681e7a8"
+            name="StateUpdate"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperations>
       </Interface>
     </packageHasNamedElement>
@@ -385,20 +397,10 @@
             Id="9b1636d3-e0e1-493f-9f9a-941aae155a93">
             <interfaceMoniker
               Id="a614e513-2145-4a8f-b563-7b8b60853750"
-              LastKnownName="IGameEntity"
+              LastKnownName="Interface1"
               LastKnownLocation="AsteroidsModelingProject.uml" />
           </interfaceRealization>
         </suppliersInternal>
-        <generalsInternal>
-          <generalization
-            Id="d573d9f5-9248-4492-9fa7-27a268d643ef"
-            isSubstitutable="false">
-            <classMoniker
-              Id="8421d759-b886-46b6-9663-e09c591e539c"
-              LastKnownName="AEntity"
-              LastKnownLocation="AsteroidsModelingProject.uml" />
-          </generalization>
-        </generalsInternal>
         <ownedAttributesInternal>
           <property
             Id="ca3153f3-0870-4c91-a283-1ce7fb55b44e"
@@ -425,8 +427,8 @@
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
-            Id="7f5a8f12-cf03-45d0-8dc8-459ff35c3ec8"
-            name="StateUpdate"
+            Id="b3f22368-f761-470c-85d7-e0f646cd2d19"
+            name="ToHit"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -435,26 +437,26 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="ace6c905-2691-42e7-a301-d8d5f18635dc"
-                  name="List&lt;E&gt;"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="3495ed2e-7a46-416a-8f0c-70906324a788"
-                  direction="Return"
-                  isUnique="false">
+                  Id="c5ef38cc-f382-4a3d-82cb-47d99550499f"
+                  direction="Return">
                   <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="1eda90e2-aa53-44a0-91db-ea1797ee81fe"
-                      LastKnownName="List&lt;IGameEntitys&gt;"
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
                       LastKnownLocation="AsteroidsModelingProject.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="7f5a8f12-cf03-45d0-8dc8-459ff35c3ec8"
+            name="StateUpdate"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -697,24 +699,7 @@
               LastKnownName="IEnemyFactory"
               LastKnownLocation="AsteroidsModelingProject.uml" />
           </interfaceRealization>
-          <interfaceRealization
-            Id="00b40824-56d5-454e-9b94-853ca68c9843">
-            <interfaceMoniker
-              Id="a614e513-2145-4a8f-b563-7b8b60853750"
-              LastKnownName="IGameEntity"
-              LastKnownLocation="AsteroidsModelingProject.uml" />
-          </interfaceRealization>
         </suppliersInternal>
-        <generalsInternal>
-          <generalization
-            Id="d0c01d1d-0397-498f-af88-82053f8887c7"
-            isSubstitutable="false">
-            <classMoniker
-              Id="8421d759-b886-46b6-9663-e09c591e539c"
-              LastKnownName="AEntity"
-              LastKnownLocation="AsteroidsModelingProject.uml" />
-          </generalization>
-        </generalsInternal>
         <ownedOperationsInternal>
           <operation
             Id="8e431c00-3731-4279-aa53-31d7ea802764"
@@ -739,37 +724,6 @@
                   name="IEnemy newEnemy"
                   direction="In"
                   isUnique="false" />
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="f0171714-024b-4ec6-bcc8-ce27da8541da"
-            name="StateUpdate"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="ec5a6b5f-ff22-4ae9-9c53-0cf940e41113"
-                  name="List&lt;IGameEntity&gt; SamePosityonEntitys"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="1b1a135c-3915-456a-b5e8-33664ee063b7"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="1eda90e2-aa53-44a0-91db-ea1797ee81fe"
-                      LastKnownName="List&lt;IGameEntitys&gt;"
-                      LastKnownLocation="AsteroidsModelingProject.uml" />
-                  </type_NamedElement>
-                </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
@@ -877,35 +831,19 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
-        <appliedStereotypesInternal>
-          <stereotypeInstance
-            Id="21604bad-9228-4098-bc7c-804aa3206ae1"
-            name="implementationClass"
-            profile="StandardProfileL2" />
-        </appliedStereotypesInternal>
         <suppliersInternal>
           <interfaceRealization
             Id="b76bc646-47e8-4801-9ceb-4d6015141f62">
             <interfaceMoniker
               Id="a614e513-2145-4a8f-b563-7b8b60853750"
-              LastKnownName="IGameEntity"
+              LastKnownName="Interface1"
               LastKnownLocation="AsteroidsModelingProject.uml" />
           </interfaceRealization>
         </suppliersInternal>
-        <generalsInternal>
-          <generalization
-            Id="d6432266-5e4b-4502-bd9f-5a31ecef9d31"
-            isSubstitutable="false">
-            <classMoniker
-              Id="8421d759-b886-46b6-9663-e09c591e539c"
-              LastKnownName="AEntity"
-              LastKnownLocation="AsteroidsModelingProject.uml" />
-          </generalization>
-        </generalsInternal>
         <ownedOperationsInternal>
           <operation
-            Id="7c25bffa-8729-40e4-a96e-677753ba95b5"
-            name="StateUpdate"
+            Id="5d8896b6-10f8-4b32-a2ea-f33ceba7bb58"
+            name="ToHit"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -914,26 +852,26 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="fa8cbd52-19f2-40c7-a9c4-a236aad4c1f0"
-                  name="List&lt;E&gt;"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="2df915c0-749a-460d-8f10-e56ecbdca5a5"
-                  direction="Return"
-                  isUnique="false">
+                  Id="06d00d45-ed67-4d98-bfa6-1866a0b18b35"
+                  direction="Return">
                   <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="1eda90e2-aa53-44a0-91db-ea1797ee81fe"
-                      LastKnownName="List&lt;IGameEntitys&gt;"
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
                       LastKnownLocation="AsteroidsModelingProject.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="7c25bffa-8729-40e4-a96e-677753ba95b5"
+            name="StateUpdate"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -944,35 +882,19 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
-        <appliedStereotypesInternal>
-          <stereotypeInstance
-            Id="635dc0d0-9e19-47f2-b1d8-09a8c70313c9"
-            name="implementationClass"
-            profile="StandardProfileL2" />
-        </appliedStereotypesInternal>
         <suppliersInternal>
           <interfaceRealization
             Id="05990692-45df-484e-8fee-047cdc87c984">
             <interfaceMoniker
               Id="a614e513-2145-4a8f-b563-7b8b60853750"
-              LastKnownName="IGameEntity"
+              LastKnownName="Interface1"
               LastKnownLocation="AsteroidsModelingProject.uml" />
           </interfaceRealization>
         </suppliersInternal>
-        <generalsInternal>
-          <generalization
-            Id="21d2fe0d-724f-46b5-88e8-c495bb52e75f"
-            isSubstitutable="false">
-            <classMoniker
-              Id="8421d759-b886-46b6-9663-e09c591e539c"
-              LastKnownName="AEntity"
-              LastKnownLocation="AsteroidsModelingProject.uml" />
-          </generalization>
-        </generalsInternal>
         <ownedOperationsInternal>
           <operation
-            Id="202229e1-25eb-41f5-9745-4b12c85c476b"
-            name="StateUpdate"
+            Id="98ffa883-85b7-435c-ade2-839d642974e0"
+            name="ToHit"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -981,26 +903,26 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="0e295903-5ff0-4c1f-9429-fdfb96d4c0ae"
-                  name="List&lt;E&gt;"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="737ac4e6-e905-4c1e-bde8-57418586373d"
-                  direction="Return"
-                  isUnique="false">
+                  Id="74d05483-c1db-4714-8687-604c9169d5d5"
+                  direction="Return">
                   <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="1eda90e2-aa53-44a0-91db-ea1797ee81fe"
-                      LastKnownName="List&lt;IGameEntitys&gt;"
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
                       LastKnownLocation="AsteroidsModelingProject.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="202229e1-25eb-41f5-9745-4b12c85c476b"
+            name="StateUpdate"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -1170,194 +1092,6 @@
             isComposite="false" />
         </ownedAttributesInternal>
       </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <undefinedType
-        Id="1eda90e2-aa53-44a0-91db-ea1797ee81fe"
-        name="List&lt;IGameEntitys&gt;" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="8421d759-b886-46b6-9663-e09c591e539c"
-        name="AEntity"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <appliedStereotypesInternal>
-          <stereotypeInstance
-            Id="fb812423-5a34-4a36-b90f-acf4287702eb"
-            name="metaclass"
-            profile="StandardProfileL2" />
-        </appliedStereotypesInternal>
-        <targetEnds>
-          <association
-            Id="f1f15ebc-8482-427c-ab3a-2aea927906e4"
-            isDerived="false"
-            sourceEndRoleName="AEntity"
-            targetEndRoleName="Game"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="c7d4cec8-1d5f-445d-a861-03bc607bf6e7"
-              LastKnownName="Game"
-              LastKnownLocation="AsteroidsModelingProject.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="3a686b47-f1eb-4478-a933-fc4449cf9a14"
-                  name="AEntity"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="f488a06f-8e23-45eb-b6de-276431dfda27"
-                  name="Game"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
-        <ownedAttributesInternal>
-          <property
-            Id="9d1805dc-64d9-4bcc-b809-4e93e2eb9caa"
-            name="SyzeX"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="edb72d1d-1a1c-4d85-932b-150cf4cf3bbe"
-                LastKnownName="int"
-                LastKnownLocation="AsteroidsModelingProject.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="ddda3af8-01d9-495c-b956-e34d4f931eeb"
-            name="SyzeY"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="edb72d1d-1a1c-4d85-932b-150cf4cf3bbe"
-                LastKnownName="int"
-                LastKnownLocation="AsteroidsModelingProject.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="07c6d964-66a5-4635-8328-fce429eb303b"
-            name="Pos"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <classMoniker
-                Id="835fc51c-dad9-44bb-abe9-d33af1a0f5ab"
-                LastKnownName="Point"
-                LastKnownLocation="AsteroidsModelingProject.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="b450f76d-1620-4859-a6eb-bd312dd7b55c"
-            name="Speed"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="5c890f50-844d-451e-bcbf-4e41a6c3f08d"
-                LastKnownName="integer"
-                LastKnownLocation="AsteroidsModelingProject.uml" />
-            </type_NamedElement>
-          </property>
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation
-            Id="ed851eab-ef24-458d-8dad-7c0cb098a493"
-            name="Interaction"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="026c46e9-42b7-43e3-94f8-1dc3fc699cef"
-                  name="AEntity"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="f508ebce-331b-4491-827a-64193bf4b4f4"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="3beb9a1d-57bd-46d8-9818-aaa3af9c2ff5"
-                      LastKnownName="List&lt;AEntity&gt;"
-                      LastKnownLocation="AsteroidsModelingProject.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperationsInternal>
-      </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <undefinedType
-        Id="edb72d1d-1a1c-4d85-932b-150cf4cf3bbe"
-        name="int" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <undefinedType
-        Id="5c890f50-844d-451e-bcbf-4e41a6c3f08d"
-        name="integer" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <undefinedType
-        Id="3beb9a1d-57bd-46d8-9818-aaa3af9c2ff5"
-        name="List&lt;AEntity&gt;" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <undefinedType
-        Id="2ba2a899-3fd6-46c3-894f-eb6cb9fd654a"
-        name="List&lt;AEnemy&gt;" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
