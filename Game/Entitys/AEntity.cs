@@ -9,14 +9,16 @@ namespace Game.Entitys
 {
     abstract internal class AEntity
     {
-        internal Point Pos;
-        internal Size Size;
+        internal CoupleInt Pos;
+        internal CoupleInt Size;
+        internal CoupleInt Spead;
         internal Boolean WasKilled;
 
-        internal AEntity(Point pos, Size size)
+        internal AEntity(CoupleInt pos, CoupleInt size, CoupleInt speed)
         {
             this.Pos = pos;
             this.Size = size;
+            this.Spead = speed;
         }
 
         internal abstract void ChengeState();

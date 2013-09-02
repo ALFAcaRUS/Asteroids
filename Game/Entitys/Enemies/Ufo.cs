@@ -10,7 +10,8 @@ namespace Game.Entitys.Enemies
 {
     internal class Ufo:AEntity
     {
-        public Ufo(Point pos, Size size) : base(pos, size)
+        public Ufo(CoupleInt pos, CoupleInt size, CoupleInt speed)
+            : base(pos, size,speed)
         {
         }
 

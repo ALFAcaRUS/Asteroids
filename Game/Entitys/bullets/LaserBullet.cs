@@ -9,7 +9,8 @@ namespace Game.Entitys.bullets
 {
     internal class LaserBullet:AEntity
     {
-        public LaserBullet(Point pos, Size size) : base(pos, size)
+        public LaserBullet(CoupleInt pos, CoupleInt size, CoupleInt speed)
+            : base(pos, size, speed)
         {
         }
 

@@ -12,16 +12,18 @@ using System.Runtime.CompilerServices;
 namespace Game.Entitys.Enemies
 {
 
-    internal class Asteroid:AEntity
+    internal class Asteroid : AEntity
     {
         private int _parts = 2;
 
-        public Asteroid(Point pos, Size size) : base(pos, size)
+        public Asteroid(CoupleInt pos, CoupleInt size, CoupleInt speed)
+            : base(pos, size, speed)
         {
 
         }
 
-        public Asteroid(Point pos, Size size, int parts) : base(pos,size)
+        public Asteroid(CoupleInt pos, CoupleInt size, CoupleInt speed, int parts)
+            : base(pos, size, speed)
         {
             this._parts = parts;
         }

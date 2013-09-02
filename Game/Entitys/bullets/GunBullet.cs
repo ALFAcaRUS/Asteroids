@@ -9,7 +9,8 @@ namespace Game.Entitys.bullets
 {
     class GunBullet:AEntity
     {
-        public GunBullet(Point pos, Size size) : base(pos, size)
+        public GunBullet(CoupleInt pos, CoupleInt size, CoupleInt speed)
+            : base(pos, size, speed)
         {
 
         }

@@ -9,6 +9,6 @@ namespace Game.Support
     public class ViewObject
     {
         public static string Name { get; set; }
-        public static Point Pos { get; set; }
+        public static CoupleInt Pos { get; set; }
     }
 }

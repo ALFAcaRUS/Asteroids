@@ -12,6 +12,5 @@ namespace Game.Maine
         List<ViewObject> Tick(List<UserAction> actions);
         void NewGame();
 
-
     }
 }

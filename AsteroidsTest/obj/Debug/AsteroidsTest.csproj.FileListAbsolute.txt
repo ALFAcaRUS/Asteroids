@@ -6,3 +6,7 @@ C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\Astero
 C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\AsteroidsTest\obj\Debug\AsteroidsTest.csprojResolveAssemblyReference.cache
 C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\AsteroidsTest\obj\Debug\AsteroidsTest.dll
 C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\AsteroidsTest\obj\Debug\AsteroidsTest.pdb
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\AsteroidsTest\bin\Debug\Asteroids.exe
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\AsteroidsTest\bin\Debug\Game.dll
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\AsteroidsTest\bin\Debug\Asteroids.pdb
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\AsteroidsTest\bin\Debug\Game.pdb
