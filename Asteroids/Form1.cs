@@ -1,6 +1,4 @@
 ﻿using System.Windows.Forms;
-using Game.Maine;
-using Game.Support;
 
 namespace Asteroids
 {

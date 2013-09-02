@@ -46,21 +46,22 @@
     <Compile Include="Entitys\bullets\GunBullet.cs" />
     <Compile Include="Entitys\bullets\LaserBullet.cs" />
     <Compile Include="Entitys\Enemies\Asteroid.cs" />
+    <Compile Include="Entitys\Enemies\EnemiFarm.cs" />
     <Compile Include="Entitys\Enemies\Ufo.cs" />
     <Compile Include="Maine\Game.cs" />
     <Compile Include="Maine\IGame.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Support\CoupleInt.cs" />
-    <Compile Include="Support\UserAction.cs" />
-    <Compile Include="Support\UserActions.cs" />
-    <Compile Include="Support\ViewObject.cs" />
+    <Compile Include="Ships\IShip.cs" />
+    <Compile Include="CoupleInt.cs" />
+    <Compile Include="UserAction.cs" />
+    <Compile Include="UserActions.cs" />
+    <Compile Include="ViewObject.cs" />
+    <Compile Include="Weapons\IWeapon.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Interfaces\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

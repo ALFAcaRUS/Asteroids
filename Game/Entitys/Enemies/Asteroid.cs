@@ -1,10 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Game.Entitys;
-using Game.Support;
 using System.Runtime.CompilerServices;
 
 [assembly: InternalsVisibleTo("AsteroidsTest")]

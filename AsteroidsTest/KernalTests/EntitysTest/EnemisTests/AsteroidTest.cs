@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Game.Support;
+﻿using System.Collections.Generic;
 using Game.Entitys;
 using Game.Entitys.Enemies;
 using Game.Entitys.bullets;
@@ -20,8 +18,8 @@ namespace AsteroidsTest.KernalTests.EntitysTest.EnemisTests
             Asteroid asteroid = new Asteroid(new CoupleInt(1, 1), new CoupleInt(1, 1),new CoupleInt(1,1));
             CoupleInt expPos = new CoupleInt
             {
-                X = asteroid.Pos.X + asteroid.Spead.X,
-                Y = asteroid.Pos.Y + asteroid.Spead.Y
+                X = asteroid.Pos.X + asteroid.Speed.X,
+                Y = asteroid.Pos.Y + asteroid.Speed.Y
             };
 
             //activity

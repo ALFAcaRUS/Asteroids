@@ -1,9 +1,5 @@
-﻿using Game.Support;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Game.Entitys
 {
@@ -11,14 +7,14 @@ namespace Game.Entitys
     {
         internal CoupleInt Pos;
         internal CoupleInt Size;
-        internal CoupleInt Spead;
+        internal CoupleInt Speed;
         internal Boolean WasKilled;
 
         internal AEntity(CoupleInt pos, CoupleInt size, CoupleInt speed)
         {
             this.Pos = pos;
             this.Size = size;
-            this.Spead = speed;
+            this.Speed = speed;
         }
 
         internal abstract void ChengeState();

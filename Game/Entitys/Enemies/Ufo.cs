@@ -1,10 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Game.Support;
-using Game.Entitys.bullets;
 
 namespace Game.Entitys.Enemies
 {

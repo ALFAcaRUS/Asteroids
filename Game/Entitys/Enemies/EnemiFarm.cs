@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Game.Entitys.bullets
+namespace Game.Entitys.Enemies
 {
-    internal class LaserBullet:AEntity
+    class EnemiFarm:AEntity
     {
-        public LaserBullet(CoupleInt pos, CoupleInt size, CoupleInt speed)
-            : base(pos, size, speed)
+        public EnemiFarm(CoupleInt pos, CoupleInt size, CoupleInt speed) : base(pos, size, speed)
         {
+            this.Size = new CoupleInt(0, 0);
+            this.Speed = new CoupleInt(0, 0);
         }
 
         internal override void ChengeState()
