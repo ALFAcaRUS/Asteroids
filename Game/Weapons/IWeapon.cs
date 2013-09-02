@@ -3,7 +3,7 @@ using Game.Entitys;
 
 namespace Game.Weapons
 {
-    interface IWeapon
+    internal interface IWeapon
     {
         List<AEntity> Shot(CoupleInt pos);
     }
