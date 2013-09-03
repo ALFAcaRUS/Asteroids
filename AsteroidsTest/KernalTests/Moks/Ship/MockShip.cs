@@ -11,9 +11,9 @@ namespace AsteroidsTest.KernalTests.Moks.Ship
         public CoupleInt Pos { get; set; }
         public List<IWeapon> Weapons { get; private set; }
 
-        public List<AEntity> Shoot(int weaponNum)
+        public void AddWeapon(IWeapon newWeapon)
         {
-            return null;
+            throw new System.NotImplementedException();
         }
     }
 }

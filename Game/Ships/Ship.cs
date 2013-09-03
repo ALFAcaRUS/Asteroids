@@ -12,7 +12,8 @@ namespace Game.Ships
     {
         public CoupleInt Pos { get; set; }
         public List<IWeapon> Weapons { get; private set; }
-        public List<AEntity> Shoot(int weaponNum)
+
+        public void AddWeapon(IWeapon newWeapon)
         {
             throw new NotImplementedException();
         }
