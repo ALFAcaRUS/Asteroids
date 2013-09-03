@@ -5,6 +5,21 @@ namespace Game.Entitys.Enemies
 {
     class EnemiFarm:AEntity
     {
+
+        internal override CoupleInt Pos
+        {
+            get
+            {
+                return base.Pos;
+            }
+            set
+            {
+                base.Pos = this.Pos;
+            }
+        }
+
+
+
         public EnemiFarm(CoupleInt pos, CoupleInt size, CoupleInt speed) : base(pos, size, speed)
         {
             this.Size = new CoupleInt(0, 0);

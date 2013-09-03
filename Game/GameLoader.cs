@@ -6,9 +6,9 @@ namespace Game
     class GameLoaderInjector
     {
 
-        public IGame getGame()
+        public IGame GetGame()
         {
-            
+            return null;
         }
 
     }

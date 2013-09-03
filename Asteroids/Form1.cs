@@ -1,4 +1,6 @@
 ﻿using System.Windows.Forms;
+using Game;
+using Game.Weapons;
 
 namespace Asteroids
 {
@@ -8,7 +10,6 @@ namespace Asteroids
         {
             
             InitializeComponent();
-            
         }
     }
 }

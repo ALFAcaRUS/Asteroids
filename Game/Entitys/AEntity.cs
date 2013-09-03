@@ -5,10 +5,10 @@ namespace Game.Entitys
 {
     abstract internal class AEntity
     {
-        internal CoupleInt Pos;
-        internal CoupleInt Size;
-        internal CoupleInt Speed;
-        internal Boolean WasKilled;
+        internal virtual CoupleInt Pos { get; set; }
+        internal virtual CoupleInt Size { get; set; }
+        internal virtual CoupleInt Speed { get; set; }
+        internal virtual Boolean WasKilled { get; set; }
 
         internal AEntity(CoupleInt pos, CoupleInt size, CoupleInt speed)
         {

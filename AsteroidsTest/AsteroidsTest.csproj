@@ -58,6 +58,8 @@
     <Compile Include="KernalTests\EntitysTest\EnemisTests\AsteroidTest.cs" />
     <Compile Include="KernalTests\EntitysTest\EnemisTests\UfoTest.cs" />
     <Compile Include="KernalTests\Moks\Ship\MockShip.cs" />
+    <Compile Include="KernalTests\WeaponsTests\GunTest.cs" />
+    <Compile Include="KernalTests\WeaponsTests\LaserTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
