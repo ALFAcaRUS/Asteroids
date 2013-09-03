@@ -53,6 +53,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="KernalTests\EntitysTest\BulletTests\GunBulletTest.cs" />
+    <Compile Include="KernalTests\EntitysTest\BulletTests\LaserBulletTest.cs" />
     <Compile Include="KernalTests\EntitysTest\EnemisTests\AsteroidTest.cs" />
     <Compile Include="KernalTests\EntitysTest\EnemisTests\UfoTest.cs" />
     <Compile Include="KernalTests\Moks\Ship\MockShip.cs" />
