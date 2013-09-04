@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Game.Entitys;
 using Game.Ships;
 
@@ -13,7 +14,9 @@ namespace Game.Maine
 
         public MainClass(List<AEntity> startEntitys, IShip startPlayerShip)
         {
-            
+            Entitys = startEntitys;
+            playerShip = startPlayerShip;
+            Score = 0;
         }
 
         public List<ViewObject> Tick(List<UserAction> actions)
@@ -21,9 +24,29 @@ namespace Game.Maine
             throw new NotImplementedException();
         }
 
-        public void NewGame()
+        private List<AEntity> Interactions()
         {
-            throw new NotImplementedException();
+            List<AEntity> outPut = new List<AEntity>();
+
+            // for each entity in Entitys try interaction whith every entity in same position 
+            foreach (AEntity entyty in Entitys)
+            {
+                // Create list of entitys in same position
+                List<AEntity> interaction = Entitys.FindAll(x => x.Pos.Equals(entyty.Pos));
+
+                // If list not empty try react
+                if ( 0 != interaction.Count)
+                {
+                    foreach (AEntity intEntity in interaction)
+                    {
+                        List<AEntity> intResult = entyty.Interaction(intEntity);
+
+                        if(null != intResult) outPut.AddRange(intResult);
+                    }
+                }
+            }
+
+            return outPut;
         }
     }
 }

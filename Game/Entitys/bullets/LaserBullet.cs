@@ -12,12 +12,13 @@ namespace Game.Entitys.bullets
 
         internal override void ChengeState()
         {
-            throw new NotImplementedException();
+            WasKilled = true;
         }
 
         internal override List<AEntity> Interaction(AEntity interactionEntity)
         {
-            throw new NotImplementedException();
+            WasKilled = true;
+            return null;
         }
     }
 }

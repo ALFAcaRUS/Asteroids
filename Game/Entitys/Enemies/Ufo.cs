@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Game.Entitys.bullets;
 using Game.Ships;
 
 namespace Game.Entitys.Enemies
@@ -16,12 +17,24 @@ namespace Game.Entitys.Enemies
 
         internal override void ChengeState()
         {
-            throw new NotImplementedException();
+            if (null != PlayerShip)
+            {
+                Pos.X = PlayerShip.Pos.X > Pos.X ? Pos.X + Speed.X : PlayerShip.Pos.X < Pos.X ? Pos.X - Speed.X : Pos.X;
+                Pos.Y = Pos.Y - Speed.Y;
+            }
+            else
+            {
+                throw new NullReferenceException("Not ship");
+            }
         }
 
         internal override List<AEntity> Interaction(AEntity interactionEntity)
         {
-            throw new NotImplementedException();
+            if (typeof(LaserBullet) == interactionEntity.GetType() || typeof(GunBullet) == interactionEntity.GetType())
+            {
+                base.WasKilled = true;
+            }
+            return null;
         }
     }
 }

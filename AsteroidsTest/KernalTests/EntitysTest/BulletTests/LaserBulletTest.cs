@@ -40,6 +40,7 @@ namespace AsteroidsTest.KernalTests.EntitysTest.BulletTests
 
         }
 
+        [TestMethod]
         public void BulletInteractionTest()
         {
             LaserBullet testedBullet = new LaserBullet(new CoupleInt(1, 1), new CoupleInt(1, 1), new CoupleInt(-1, -1));

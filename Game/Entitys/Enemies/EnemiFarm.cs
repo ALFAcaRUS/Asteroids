@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Game.Entitys.PseudoEntitys;
 
 namespace Game.Entitys.Enemies
 {
@@ -28,12 +29,24 @@ namespace Game.Entitys.Enemies
 
         internal override void ChengeState()
         {
-            throw new NotImplementedException();
+            
         }
 
         internal override List<AEntity> Interaction(AEntity interactionEntity)
         {
-            throw new NotImplementedException();
+            if (typeof (EnemyFarmPseudoEntity) == interactionEntity.GetType())
+            {
+                Random ran = new Random();
+
+                List<AEntity> output = new List<AEntity>();
+
+                if (ran.NextDouble() < 0.2)
+                {
+                    output.Add(new Ufo());
+                }
+            }
         }
+
+
     }
 }

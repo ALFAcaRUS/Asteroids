@@ -1,10 +1,6 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Game.Entitys;
+using Game.Entitys.bullets;
 
 namespace Game.Weapons
 {
@@ -12,7 +8,12 @@ namespace Game.Weapons
     {
         public List<AEntity> Shot(CoupleInt pos)
         {
-            throw new NotImplementedException();
+            List<AEntity> output = new List<AEntity>
+            {
+                new GunBullet(pos, new CoupleInt(1, 1), new CoupleInt(0, 1))
+            };
+
+            return output;
         }
     }
 }

@@ -15,6 +15,7 @@ namespace Game.Entitys
             this.Pos = pos;
             this.Size = size;
             this.Speed = speed;
+            WasKilled = false;
         }
 
         internal abstract void ChengeState();

@@ -9,6 +9,7 @@ namespace AsteroidsTest.KernalTests.Main
         [TestMethod]
         public void TestMethod1()
         {
+
         }
     }
 }

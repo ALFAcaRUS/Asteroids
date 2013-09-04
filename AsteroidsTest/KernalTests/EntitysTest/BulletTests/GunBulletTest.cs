@@ -18,8 +18,9 @@ namespace AsteroidsTest.KernalTests.EntitysTest.BulletTests
             for (int i = 2; i <= 5; i++)
             {
                 testedGunBullet.ChengeState();
+                CoupleInt expected = new CoupleInt(i, i);
 
-                Assert.AreEqual(new CoupleInt(i, i), testedGunBullet.Pos);
+                Assert.AreEqual(expected, testedGunBullet.Pos);
             }
 
         }

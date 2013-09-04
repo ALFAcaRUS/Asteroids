@@ -16,13 +16,12 @@ namespace AsteroidsTest.KernalTests.EntitysTest.EnemisTests
         public void MoveTest()
         {
             IShip mockSip = new MockShip();
-            Ufo testedUfo = new Ufo(new CoupleInt(5, 5), new CoupleInt(1, 1), new CoupleInt(0, 0))
+            Ufo testedUfo = new Ufo(new CoupleInt(5, 5), new CoupleInt(1, 1), new CoupleInt(1, 1))
             {
                 PlayerShip = mockSip
             };
 
-            mockSip.Pos.X = 0;
-            mockSip.Pos.Y = 0;
+            mockSip.Pos = new CoupleInt(0, 0);
 
             for (int i = 4; i >= 0; --i)
             {

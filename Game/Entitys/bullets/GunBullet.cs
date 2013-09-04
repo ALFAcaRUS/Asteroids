@@ -13,12 +13,17 @@ namespace Game.Entitys.bullets
 
         internal override void ChengeState()
         {
-            throw new NotImplementedException();
+            base.Pos.X = base.Pos.X - base.Speed.X;
+            base.Pos.Y = base.Pos.Y - base.Speed.Y;
         }
 
         internal override List<AEntity> Interaction(AEntity interactionEntity)
         {
-            throw new NotImplementedException();
+            if (typeof (LaserBullet) != interactionEntity.GetType() && typeof(GunBullet) != interactionEntity.GetType())
+            {
+                base.WasKilled = true;
+            }
+            return null;
         }
     }
 }
