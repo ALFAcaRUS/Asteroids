@@ -17,8 +17,8 @@ namespace AsteroidsTest.KernalTests
         [TestMethod]
         public void LoadTest()
         {
-            CoupleInt defaultSyze = new CoupleInt(1, 1);
-            CoupleInt defaultSpeed = new CoupleInt(1, 1);
+            CoupleDouble defaultSyze = new CoupleDouble(1, 1);
+            CoupleDouble defaultSpeed = new CoupleDouble(1, 1);
 
             Ship playerShip = new Ship();
             List<IWeapon> weapons = new List<IWeapon>
@@ -29,11 +29,11 @@ namespace AsteroidsTest.KernalTests
 
             List<AEntity> startEntitys = new List<AEntity>
             {
-                new EnemiFarm(new CoupleInt(0, 1), defaultSyze, defaultSpeed),
-                new EnemyFarmPseudoEntity(new CoupleInt(0, 1), defaultSyze, defaultSpeed)
+                new EnemiFarm(new CoupleDouble(0, 1), defaultSyze, defaultSpeed),
+                new EnemyFarmPseudoEntity(new CoupleDouble(0, 1), defaultSyze, defaultSpeed)
             };
 
-            MainClass expectedGame = new MainClass(startEntitys, playerShip);
+            MainClass expectedGame = new MainClass(startEntitys, playerShip, new CoupleDouble(100,100));
 
             Assert.AreEqual(expectedGame, GameLoaderInjector.GetGame());
 

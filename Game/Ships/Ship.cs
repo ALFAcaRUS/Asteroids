@@ -10,12 +10,14 @@ namespace Game.Ships
 {
     class Ship:IShip
     {
-        public CoupleInt Pos { get; set; }
+        public CoupleDouble Pos { get; set; }
+        public CoupleDouble Size { get; set; }
+        public Degree Direction { get; set; }
         public List<IWeapon> Weapons { get; private set; }
 
         public Ship()
         {
-            Pos = new CoupleInt(0, 0);
+            Pos = new CoupleDouble(0, 0);
             Weapons = new List<IWeapon>();
         }
 

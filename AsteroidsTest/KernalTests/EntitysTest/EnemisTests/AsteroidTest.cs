@@ -16,15 +16,15 @@ namespace AsteroidsTest.KernalTests.EntitysTest.EnemisTests
         public void MovingTest()
         {
             //organization
-            Asteroid asteroid = new Asteroid(new CoupleInt(1, 1), new CoupleInt(1, 1),new CoupleInt(1,1));
-            CoupleInt expPos = new CoupleInt
+            Asteroid asteroid = new Asteroid(new CoupleDouble(1, 1), new CoupleDouble(1, 1),new CoupleDouble(1,1));
+            CoupleDouble expPos = new CoupleDouble
             {
                 X = asteroid.Pos.X + asteroid.Speed.X,
                 Y = asteroid.Pos.Y + asteroid.Speed.Y
             };
 
             //activity
-            asteroid.ChengeState();
+            asteroid.ChengeState(new CoupleDouble(100, 100));
 
             //assertion
             Assert.AreEqual(asteroid.Pos, expPos);
@@ -34,9 +34,9 @@ namespace AsteroidsTest.KernalTests.EntitysTest.EnemisTests
         public void EnamyInteractionTest()
         {
             //organization
-            Asteroid testedAsteroid = new Asteroid(new CoupleInt(1, 1), new CoupleInt(1, 1), new CoupleInt(1, 1));
-            Asteroid someAsteroid = new Asteroid(new CoupleInt(1, 1), new CoupleInt(1, 1), new CoupleInt(1, 1));
-            Ufo someUfo = new Ufo(new CoupleInt(1, 1), new CoupleInt(1, 1), new CoupleInt(1, 1));
+            Asteroid testedAsteroid = new Asteroid(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(1, 1));
+            Asteroid someAsteroid = new Asteroid(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(1, 1));
+            Ufo someUfo = new Ufo(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(1, 1));
 
             //activity
             List<AEntity> asteroidInteraction = testedAsteroid.Interaction(someAsteroid);
@@ -51,16 +51,16 @@ namespace AsteroidsTest.KernalTests.EntitysTest.EnemisTests
         public void BulletInteractionTest()
         {
             //organization
-            Asteroid firstSmalAsteroid = new Asteroid(new CoupleInt(1, 1), new CoupleInt(1, 1), new CoupleInt(1, 1), 1);
-            Asteroid secondSmalAsteroid = new Asteroid(new CoupleInt(1, 1), new CoupleInt(1, 1), new CoupleInt(1, 1), 1);
-            Asteroid firstBigAsteroid = new Asteroid(new CoupleInt(1, 1), new CoupleInt(1, 1), new CoupleInt(1, 1), 2);
-            Asteroid secondBigAsteroid = new Asteroid(new CoupleInt(1, 1), new CoupleInt(1, 1), new CoupleInt(1, 1), 2);
-            LaserBullet laserBullet = new LaserBullet(new CoupleInt(1, 1), new CoupleInt(1, 1), new CoupleInt(1, 1));
-            GunBullet gunBullet = new GunBullet(new CoupleInt(1, 1), new CoupleInt(1, 1), new CoupleInt(1, 1));
+            Asteroid firstSmalAsteroid = new Asteroid(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(1, 1), 1);
+            Asteroid secondSmalAsteroid = new Asteroid(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(1, 1), 1);
+            Asteroid firstBigAsteroid = new Asteroid(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(1, 1), 2);
+            Asteroid secondBigAsteroid = new Asteroid(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(1, 1), 2);
+            LaserBullet laserBullet = new LaserBullet(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(1, 1));
+            GunBullet gunBullet = new GunBullet(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(1, 1));
 
             List<AEntity> bigAsteroidIntResult = new List<AEntity>();
-            bigAsteroidIntResult.Add(new Asteroid(new CoupleInt(1, 1), new CoupleInt(1, 1), new CoupleInt(2, 1), 1));
-            bigAsteroidIntResult.Add(new Asteroid(new CoupleInt(1, 1), new CoupleInt(1, 1), new CoupleInt(0, 1), 1));
+            bigAsteroidIntResult.Add(new Asteroid(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(2, 1), 1));
+            bigAsteroidIntResult.Add(new Asteroid(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(0, 1), 1));
 
             //activity
             List<AEntity> laserSmalInteraction = firstSmalAsteroid.Interaction(laserBullet);

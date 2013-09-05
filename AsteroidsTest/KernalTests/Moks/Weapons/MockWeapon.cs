@@ -8,11 +8,11 @@ namespace AsteroidsTest.KernalTests.Moks.Weapons
 {
     class MockWeapon:IWeapon
     {
-        public List<AEntity> Shot(CoupleInt pos)
+        public List<AEntity> Shot(CoupleDouble pos, Degree direction)
         {
             return new List<AEntity>
             {
-                new MockEntity(pos, new CoupleInt(1, 1), new CoupleInt(0, 0))
+                new MockEntity(pos, new CoupleDouble(1, 1), new CoupleDouble(0, 0))
             };
         }
     }

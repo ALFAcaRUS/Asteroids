@@ -2,7 +2,13 @@
 {
     public class ViewObject
     {
-        public static string Name { get; set; }
-        public static CoupleInt Pos { get; set; }
+        public string Name { get; set; }
+        public CoupleDouble Pos { get; set; }
+
+        public ViewObject(string name, CoupleDouble pos)
+        {
+            Name = name;
+            Pos = pos;
+        }
     }
 }

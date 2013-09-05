@@ -6,11 +6,11 @@ namespace Game.Weapons
 {
     class Gun:IWeapon
     {
-        public List<AEntity> Shot(CoupleInt pos)
+        public List<AEntity> Shot(CoupleDouble pos, Degree direction)
         {
             List<AEntity> output = new List<AEntity>
             {
-                new GunBullet(pos, new CoupleInt(1, 1), new CoupleInt(0, 1))
+                new GunBullet(pos, new CoupleDouble(1, 1),direction.GetProjections())
             };
 
             return output;

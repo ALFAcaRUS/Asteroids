@@ -63,6 +63,7 @@
     <Compile Include="KernalTests\Moks\Weapons\MockWeapon.cs" />
     <Compile Include="KernalTests\ShipsTests\BasicShipTest.cs" />
     <Compile Include="KernalTests\GameLoaderTest.cs" />
+    <Compile Include="KernalTests\DegreeTest.cs" />
     <Compile Include="KernalTests\WeaponsTests\GunTest.cs" />
     <Compile Include="KernalTests\WeaponsTests\LaserTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

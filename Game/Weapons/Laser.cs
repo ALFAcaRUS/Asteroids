@@ -8,7 +8,7 @@ using Game.Entitys.bullets;
 
 namespace Game.Weapons
 {
-    class Laser:IWeapon
+    class Laser : IWeapon
     {
         public int Charge { get; set; }
         public int Distance { get; set; }
@@ -19,15 +19,18 @@ namespace Game.Weapons
             Distance = 1;
         }
 
-        public List<AEntity> Shot(CoupleInt pos)
+        public List<AEntity> Shot(CoupleDouble pos, Degree direction)
         {
             if (Charge > 0)
             {
                 --Charge;
                 List<AEntity> output = new List<AEntity>();
+                CoupleDouble positions = new CoupleDouble(pos.X, pos.Y);
+
                 for (int i = 0; i < Distance; i++)
                 {
-                    output.Add(new LaserBullet(new CoupleInt(pos.X + 1, pos.Y), new CoupleInt(1, 1), new CoupleInt(0, 0)));
+                    output.Add(new LaserBullet(positions, CoupleDouble.ones, CoupleDouble.zero));
+                    positions = positions + (positions*direction.GetProjections());
                 }
 
                 return output.Count != 0 ? output : null;

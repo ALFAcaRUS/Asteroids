@@ -1,20 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace Game.Entitys.bullets
 {
     class GunBullet:AEntity
     {
-        public GunBullet(CoupleInt pos, CoupleInt size, CoupleInt speed)
+        public GunBullet(CoupleDouble pos, CoupleDouble size, CoupleDouble speed)
             : base(pos, size, speed)
         {
 
         }
 
-        internal override void ChengeState()
+        internal override void ChengeState(CoupleDouble maxPos)
         {
-            base.Pos.X = base.Pos.X - base.Speed.X;
-            base.Pos.Y = base.Pos.Y - base.Speed.Y;
+            Pos.X = Pos.X - Speed.X;
+            Pos.Y = Pos.Y - Speed.Y;
+            if ((Pos.X > maxPos.X) || (Pos.Y > maxPos.Y)) WasKilled = true;
         }
 
         internal override List<AEntity> Interaction(AEntity interactionEntity)
@@ -24,6 +24,16 @@ namespace Game.Entitys.bullets
                 base.WasKilled = true;
             }
             return null;
+        }
+
+        internal override EntityType GetEntityType()
+        {
+            return EntityType.Bullet;
+        }
+
+        public override string ToString()
+        {
+            return "GunBullet";
         }
     }
 }

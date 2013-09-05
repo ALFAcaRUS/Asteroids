@@ -5,12 +5,12 @@ namespace Game.Entitys.bullets
 {
     internal class LaserBullet:AEntity
     {
-        public LaserBullet(CoupleInt pos, CoupleInt size, CoupleInt speed)
+        public LaserBullet(CoupleDouble pos, CoupleDouble size, CoupleDouble speed)
             : base(pos, size, speed)
         {
         }
 
-        internal override void ChengeState()
+        internal override void ChengeState(CoupleDouble maxPos)
         {
             WasKilled = true;
         }
@@ -19,6 +19,16 @@ namespace Game.Entitys.bullets
         {
             WasKilled = true;
             return null;
+        }
+
+        internal override EntityType GetEntityType()
+        {
+            return EntityType.Bullet;
+        }
+
+        public override string ToString()
+        {
+            return "LaserBulet";
         }
     }
 }

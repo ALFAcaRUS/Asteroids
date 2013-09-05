@@ -10,18 +10,23 @@ namespace Game.Entitys.PseudoEntitys
     // Don't interaction with any entitys
     class EnemyFarmPseudoEntity:AEntity
     {
-        public EnemyFarmPseudoEntity(CoupleInt pos, CoupleInt size, CoupleInt speed) : base(pos, size, speed)
+        public EnemyFarmPseudoEntity(CoupleDouble pos, CoupleDouble size, CoupleDouble speed) : base(pos, size, speed)
         {
         }
 
-        internal override void ChengeState()
+        internal override void ChengeState(CoupleDouble maxPos)
         {
-            throw new NotImplementedException();
+
         }
 
         internal override List<AEntity> Interaction(AEntity interactionEntity)
         {
-            throw new NotImplementedException();
+            return null;
+        }
+
+        internal override EntityType GetEntityType()
+        {
+            return EntityType.Service;
         }
     }
 }

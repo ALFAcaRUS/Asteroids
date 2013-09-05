@@ -5,12 +5,12 @@ namespace Game.Entitys
 {
     abstract internal class AEntity
     {
-        internal virtual CoupleInt Pos { get; set; }
-        internal virtual CoupleInt Size { get; set; }
-        internal virtual CoupleInt Speed { get; set; }
+        internal virtual CoupleDouble Pos { get; set; }
+        internal virtual CoupleDouble Size { get; set; }
+        internal virtual CoupleDouble Speed { get; set; } 
         internal virtual Boolean WasKilled { get; set; }
 
-        internal AEntity(CoupleInt pos, CoupleInt size, CoupleInt speed)
+        internal AEntity(CoupleDouble pos, CoupleDouble size, CoupleDouble speed)
         {
             this.Pos = pos;
             this.Size = size;
@@ -18,8 +18,10 @@ namespace Game.Entitys
             WasKilled = false;
         }
 
-        internal abstract void ChengeState();
+        internal abstract void ChengeState(CoupleDouble maxPos);
 
         internal abstract List<AEntity> Interaction(AEntity interactionEntity);
+
+        internal abstract EntityType GetEntityType();
     }
 }

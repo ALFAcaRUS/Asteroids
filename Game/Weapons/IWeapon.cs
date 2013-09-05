@@ -5,7 +5,7 @@ namespace Game.Weapons
 {
     internal interface IWeapon
     {
-        List<AEntity> Shot(CoupleInt pos);
+        List<AEntity> Shot(CoupleDouble pos, Degree direction);
 
     }
 }

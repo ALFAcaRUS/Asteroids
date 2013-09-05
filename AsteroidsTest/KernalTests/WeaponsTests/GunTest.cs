@@ -15,10 +15,10 @@ namespace AsteroidsTest.KernalTests.WeaponsTests
         {
             Gun testedGun = new Gun();
 
-            List<AEntity> shotResult = testedGun.Shot(new CoupleInt(1,1));
+            List<AEntity> shotResult = testedGun.Shot(new CoupleDouble(1,1), new Degree(0));
             List<AEntity> shotExpected = new List<AEntity>
             {
-                new GunBullet(new CoupleInt(1, 1), new CoupleInt(1, 1), new CoupleInt(-1, -1))
+                new GunBullet(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(-1, -1))
             };
 
             Assert.AreEqual(shotExpected, shotResult);

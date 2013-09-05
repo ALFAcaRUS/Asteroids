@@ -9,18 +9,26 @@ namespace Game.Entitys.Enemies
     {
         public IShip PlayerShip { get; set; }
 
-        public Ufo(CoupleInt pos, CoupleInt size, CoupleInt speed)
+        public Ufo(CoupleDouble pos, CoupleDouble size, CoupleDouble speed)
             : base(pos, size,speed)
         {
 
         }
 
-        internal override void ChengeState()
+        internal override void ChengeState(CoupleDouble maxPos)
         {
             if (null != PlayerShip)
             {
                 Pos.X = PlayerShip.Pos.X > Pos.X ? Pos.X + Speed.X : PlayerShip.Pos.X < Pos.X ? Pos.X - Speed.X : Pos.X;
-                Pos.Y = Pos.Y - Speed.Y;
+                Pos.Y = PlayerShip.Pos.Y > Pos.Y ? Pos.X + Speed.Y : PlayerShip.Pos.Y < Pos.Y ? Pos.Y - Speed.Y : Pos.Y; 
+
+                Pos = Pos + Speed;
+                Pos.X = Math.Abs(Pos.X) > maxPos.X
+                    ? Math.Sign(Pos.X) * (maxPos.X - Math.Abs(Pos.X))
+                    : Pos.X;
+                Pos.Y = Math.Abs(Pos.Y) > maxPos.Y
+                    ? Math.Sign(Pos.Y) * (maxPos.Y - Math.Abs(Pos.Y))
+                    : Pos.Y;
             }
             else
             {
@@ -35,6 +43,16 @@ namespace Game.Entitys.Enemies
                 base.WasKilled = true;
             }
             return null;
+        }
+
+        internal override EntityType GetEntityType()
+        {
+            return EntityType.Enemy;
+        }
+
+        public override string ToString()
+        {
+            return "Ufo";
         }
     }
 }

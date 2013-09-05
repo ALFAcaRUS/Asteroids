@@ -8,7 +8,9 @@ namespace AsteroidsTest.KernalTests.Moks.Ship
 {
     internal class MockShip : IShip
     {
-        public CoupleInt Pos { get; set; }
+        public CoupleDouble Pos { get; set; }
+        public CoupleDouble Size { get; set; }
+        public Degree Direction { get; set; }
         public List<IWeapon> Weapons { get; private set; }
 
         public void AddWeapon(IWeapon newWeapon)

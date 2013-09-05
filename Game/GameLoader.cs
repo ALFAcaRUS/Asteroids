@@ -13,8 +13,8 @@ namespace Game
 
         public static IGame GetGame()
         {
-            CoupleInt defaultSyze = new CoupleInt(1, 1);
-            CoupleInt defaultSpeed = new CoupleInt(1, 1);
+            CoupleDouble defaultSyze = new CoupleDouble(1, 1);
+            CoupleDouble defaultSpeed = new CoupleDouble(1, 1);
 
             Ship playerShip = new Ship();
             List<IWeapon> weapons = new List<IWeapon>
@@ -25,11 +25,11 @@ namespace Game
 
             List<AEntity> startEntitys = new List<AEntity>
             {
-                new EnemiFarm(new CoupleInt(0, 1), defaultSyze, defaultSpeed),
-                new EnemyFarmPseudoEntity(new CoupleInt(0, 1), defaultSyze, defaultSpeed)
+                new EnemiFarm(new CoupleDouble(0, 1), defaultSyze, defaultSpeed),
+                new EnemyFarmPseudoEntity(new CoupleDouble(0, 1), defaultSyze, defaultSpeed)
             };
 
-            MainClass newGame = new MainClass(startEntitys, playerShip);
+            MainClass newGame = new MainClass(startEntitys, playerShip,new CoupleDouble(100,100));
             return newGame;
         }
     }

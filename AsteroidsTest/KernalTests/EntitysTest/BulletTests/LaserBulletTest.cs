@@ -13,9 +13,9 @@ namespace AsteroidsTest.KernalTests.EntitysTest.BulletTests
         [TestMethod]
         public void StateUpdateTest()
         {
-            LaserBullet testedBullet = new LaserBullet(new CoupleInt(1, 1), new CoupleInt(1, 1), new CoupleInt(-1, -1));
+            LaserBullet testedBullet = new LaserBullet(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(-1, -1));
 
-            testedBullet.ChengeState();
+            testedBullet.ChengeState(new CoupleDouble(100, 100));
 
             Assert.IsTrue(testedBullet.WasKilled);
         }
@@ -23,11 +23,11 @@ namespace AsteroidsTest.KernalTests.EntitysTest.BulletTests
         [TestMethod]
         public void EnemyInteractionTest()
         {
-            LaserBullet firstTestedLaserBullet = new LaserBullet(new CoupleInt(1, 1), new CoupleInt(1, 1), new CoupleInt(-1, -1));
-            LaserBullet secondTestedLaserBullet = new LaserBullet(new CoupleInt(2, 2), new CoupleInt(2, 2), new CoupleInt(-1, -1));
+            LaserBullet firstTestedLaserBullet = new LaserBullet(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(-1, -1));
+            LaserBullet secondTestedLaserBullet = new LaserBullet(new CoupleDouble(2, 2), new CoupleDouble(2, 2), new CoupleDouble(-1, -1));
 
-            Ufo someUfo = new Ufo(new CoupleInt(1, 1), new CoupleInt(1, 1), new CoupleInt(-1, -1));
-            Asteroid someAsteroid = new Asteroid(new CoupleInt(2, 2), new CoupleInt(2, 2), new CoupleInt(-1, -1));
+            Ufo someUfo = new Ufo(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(-1, -1));
+            Asteroid someAsteroid = new Asteroid(new CoupleDouble(2, 2), new CoupleDouble(2, 2), new CoupleDouble(-1, -1));
 
             List<AEntity> interUfoResult = firstTestedLaserBullet.Interaction(someUfo);
             List<AEntity> interaAsterResult = secondTestedLaserBullet.Interaction(someAsteroid);
@@ -43,10 +43,10 @@ namespace AsteroidsTest.KernalTests.EntitysTest.BulletTests
         [TestMethod]
         public void BulletInteractionTest()
         {
-            LaserBullet testedBullet = new LaserBullet(new CoupleInt(1, 1), new CoupleInt(1, 1), new CoupleInt(-1, -1));
+            LaserBullet testedBullet = new LaserBullet(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(-1, -1));
 
-            GunBullet someGunBullet = new GunBullet(new CoupleInt(1, 1), new CoupleInt(1, 1), new CoupleInt(-1, -1));
-            LaserBullet someLaserBullet = new LaserBullet(new CoupleInt(1, 1), new CoupleInt(1, 1), new CoupleInt(-1, -1));
+            GunBullet someGunBullet = new GunBullet(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(-1, -1));
+            LaserBullet someLaserBullet = new LaserBullet(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(-1, -1));
 
             List<AEntity> gunBullIntRes = testedBullet.Interaction(someGunBullet);
             List<AEntity> laserBullIntRes = testedBullet.Interaction(someLaserBullet);
