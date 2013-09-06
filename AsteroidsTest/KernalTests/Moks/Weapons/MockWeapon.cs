@@ -15,5 +15,10 @@ namespace AsteroidsTest.KernalTests.Moks.Weapons
                 new MockEntity(pos, new CoupleDouble(1, 1), new CoupleDouble(0, 0))
             };
         }
+
+        public void Update()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

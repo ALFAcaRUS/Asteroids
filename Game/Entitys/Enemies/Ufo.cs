@@ -7,27 +7,26 @@ namespace Game.Entitys.Enemies
 {
     internal class Ufo:AEntity
     {
-        public IShip PlayerShip { get; set; }
+        private IShip PlayerShip;
 
-        public Ufo(CoupleDouble pos, CoupleDouble size, CoupleDouble speed)
+        public Ufo(CoupleDouble pos, CoupleDouble size, CoupleDouble speed, IShip ship)
             : base(pos, size,speed)
         {
-
+            PlayerShip = ship;
         }
 
         internal override void ChengeState(CoupleDouble maxPos)
         {
             if (null != PlayerShip)
             {
-                Pos.X = PlayerShip.Pos.X > Pos.X ? Pos.X + Speed.X : PlayerShip.Pos.X < Pos.X ? Pos.X - Speed.X : Pos.X;
-                Pos.Y = PlayerShip.Pos.Y > Pos.Y ? Pos.X + Speed.Y : PlayerShip.Pos.Y < Pos.Y ? Pos.Y - Speed.Y : Pos.Y; 
+                Pos.X = PlayerShip.Pos.X > Pos.X ? Pos.X + 0.5 : PlayerShip.Pos.X < Pos.X ? Pos.X - 0.5 : Pos.X;
+                Pos.Y = PlayerShip.Pos.Y > Pos.Y ? Pos.Y + 0.5 : PlayerShip.Pos.Y < Pos.Y ? Pos.Y - 0.5 : Pos.Y;
 
-                Pos = Pos + Speed;
                 Pos.X = Math.Abs(Pos.X) > maxPos.X
-                    ? Math.Sign(Pos.X) * (maxPos.X - Math.Abs(Pos.X))
+                    ? -Pos.X
                     : Pos.X;
                 Pos.Y = Math.Abs(Pos.Y) > maxPos.Y
-                    ? Math.Sign(Pos.Y) * (maxPos.Y - Math.Abs(Pos.Y))
+                    ? -Pos.Y
                     : Pos.Y;
             }
             else
@@ -38,7 +37,7 @@ namespace Game.Entitys.Enemies
 
         internal override List<AEntity> Interaction(AEntity interactionEntity)
         {
-            if (typeof(LaserBullet) == interactionEntity.GetType() || typeof(GunBullet) == interactionEntity.GetType())
+            if (EntityType.Bullet == interactionEntity.GetEntityType())
             {
                 base.WasKilled = true;
             }

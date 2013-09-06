@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Game.Entitys.PseudoEntitys;
+using Game.Ships;
 
 namespace Game.Entitys.Enemies
 {
@@ -10,24 +11,30 @@ namespace Game.Entitys.Enemies
         private readonly int _maxX = 100;
         private readonly int _maxY = 100;
 
+        private IShip playerShip;
+
+        private CoupleDouble position;
+
         internal override CoupleDouble Pos
         {
             get
             {
-                return base.Pos;
+                return position;
             }
             set
             {
-                base.Pos = this.Pos;
+                position = Pos;
             }
         }
 
 
 
-        public EnemiFarm(CoupleDouble pos, CoupleDouble size, CoupleDouble speed) : base(pos, size, speed)
-        {
-            this.Size = new CoupleDouble(0, 0);
-            this.Speed = new CoupleDouble(0, 0);
+        public EnemiFarm(CoupleDouble pos, CoupleDouble size, CoupleDouble speed, IShip ship) :base(pos,size,speed)
+        {       
+            Size = new CoupleDouble(0, 0);
+            Speed = new CoupleDouble(0, 0);
+            position = pos;
+            playerShip = ship;
         }
 
         public EnemiFarm(CoupleDouble pos, CoupleDouble size, CoupleDouble speed, int maxX, int maxY)
@@ -52,14 +59,20 @@ namespace Game.Entitys.Enemies
 
                 List<AEntity> output = new List<AEntity>();
 
-                if (ran.NextDouble() < 0.2)
+                CoupleDouble speed = new CoupleDouble(0.1, 0.1)*new Degree(ran.Next(360)).GetProjections();
+                int ranX = ran.Next(2 * _maxX);
+                int ranY = ran.Next(2 * _maxY);
+
+                CoupleDouble ranPos = new CoupleDouble(ranX - _maxX, ranY - _maxY);
+
+                if (ran.NextDouble() < 0.02)
                 {
-                    output.Add(new Ufo(new CoupleDouble(ran.Next(_maxX),_maxY),new CoupleDouble(1,1),new Degree(ran.Next(360)).GetProjections()));
+                    output.Add(new Ufo(ranPos, new CoupleDouble(1, 1), speed, playerShip));
                 }
 
-                if (ran.NextDouble() < 0.3)
+                if (ran.NextDouble() < 0.03)
                 {
-                    output.Add(new Asteroid(new CoupleDouble(ran.Next(_maxX), _maxY), new CoupleDouble(2, 2), new Degree(ran.Next(360)).GetProjections(), 2));
+                    output.Add(new Asteroid(ranPos, new CoupleDouble(2, 2), speed, 2));
                 }
 
                 return output;

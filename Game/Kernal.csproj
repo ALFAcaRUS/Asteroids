@@ -47,6 +47,7 @@
     <Compile Include="Entitys\Enemies\EnemiFarm.cs" />
     <Compile Include="Entitys\Enemies\Ufo.cs" />
     <Compile Include="Entitys\EntityType.cs" />
+    <Compile Include="LooseEventArgs.cs" />
     <Compile Include="Entitys\PseudoEntitys\EnemyFarmPseudoEntity.cs" />
     <Compile Include="GameLoader.cs" />
     <Compile Include="Maine\MainClass.cs" />

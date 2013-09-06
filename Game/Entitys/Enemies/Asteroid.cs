@@ -29,11 +29,12 @@ namespace Game.Entitys.Enemies
         internal override void ChengeState(CoupleDouble maxPos)
         {
             Pos = Pos + Speed;
+
             Pos.X = Math.Abs(Pos.X) > maxPos.X
-                ? Math.Sign(Pos.X)*(maxPos.X - Math.Abs(Pos.X))
+                ? -Pos.X
                 : Pos.X;
             Pos.Y = Math.Abs(Pos.Y) > maxPos.Y
-                ? Math.Sign(Pos.Y) * (maxPos.Y - Math.Abs(Pos.Y))
+                ? -Pos.Y
                 : Pos.Y;
         }
 
@@ -49,8 +50,8 @@ namespace Game.Entitys.Enemies
                     projection.SetProjections(Speed);
 
                     List<AEntity> output = new List<AEntity>();
-                    output.Add(new Asteroid(this.Pos, this.Size, (projection + 45).GetProjections(), _parts - 1));
-                    output.Add(new Asteroid(this.Pos, this.Size, (projection - 45).GetProjections(), _parts - 1));
+                    output.Add(new Asteroid(Pos, Size - CoupleDouble.ones, (projection + 45).GetProjections(), _parts - 1));
+                    output.Add(new Asteroid(Pos, Size - CoupleDouble.ones, (projection - 45).GetProjections(), _parts - 1));
 
                     return output;
                 }
@@ -65,7 +66,7 @@ namespace Game.Entitys.Enemies
 
         public override string ToString()
         {
-            return new StringBuilder("Asteroid{0}",_parts).ToString();
+            return "Asteroid " + _parts;
         }
     }
 }

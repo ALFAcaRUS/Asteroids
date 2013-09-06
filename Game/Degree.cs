@@ -4,7 +4,7 @@ namespace Game
 {
     class Degree
     {
-        private double _value;
+        private double _value = 0;
 
         public double Angle
         {

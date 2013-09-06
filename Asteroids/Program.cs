@@ -13,7 +13,18 @@ namespace Asteroids
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            string message = "Начать игру?";
+            var canResum = MessageBox.Show(message, "Start", MessageBoxButtons.YesNo);
+            if (canResum == DialogResult.Yes)
+            {
+                Form1 newForm = new Form1();
+                Application.Run(newForm);
+            }
+            else
+            {
+                Application.Exit();
+            }
         }
     }
 }

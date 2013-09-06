@@ -10,18 +10,20 @@ namespace Game.Weapons
 {
     class Laser : IWeapon
     {
-        public int Charge { get; set; }
+        public double Charge { get; set; }
         public int Distance { get; set; }
+
+        private double _maxCharge = 10;
 
         public Laser()
         {
-            Charge = 1;
-            Distance = 1;
+            Charge = 100;
+            Distance = 100;
         }
 
         public List<AEntity> Shot(CoupleDouble pos, Degree direction)
         {
-            if (Charge > 0)
+            if (Charge > 1)
             {
                 --Charge;
                 List<AEntity> output = new List<AEntity>();
@@ -29,8 +31,8 @@ namespace Game.Weapons
 
                 for (int i = 0; i < Distance; i++)
                 {
+                    positions = positions + direction.GetProjections();
                     output.Add(new LaserBullet(positions, CoupleDouble.ones, CoupleDouble.zero));
-                    positions = positions + (positions*direction.GetProjections());
                 }
 
                 return output.Count != 0 ? output : null;
@@ -38,6 +40,14 @@ namespace Game.Weapons
             else
             {
                 return null;
+            }
+        }
+
+        public void Update()
+        {
+            if (Charge < _maxCharge)
+            {
+                Charge += 0.05;
             }
         }
     }

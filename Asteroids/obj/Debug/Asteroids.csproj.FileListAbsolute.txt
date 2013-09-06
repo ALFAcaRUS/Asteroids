@@ -11,3 +11,4 @@ C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\Astero
 C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\Asteroids\bin\Debug\Ninject.xml
 C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\Asteroids\obj\Debug\Asteroids.exe
 C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\Asteroids\obj\Debug\Asteroids.pdb
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\Asteroids\obj\Debug\Asteroids.Form1.resources

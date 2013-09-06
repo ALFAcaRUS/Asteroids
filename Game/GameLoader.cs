@@ -8,7 +8,7 @@ using Game.Weapons;
 
 namespace Game
 {
-    class GameLoaderInjector
+    public class GameLoaderInjector
     {
 
         public static IGame GetGame()
@@ -17,15 +17,19 @@ namespace Game
             CoupleDouble defaultSpeed = new CoupleDouble(1, 1);
 
             Ship playerShip = new Ship();
+            playerShip.Direction.Angle = 0;
+            playerShip.Size = CoupleDouble.ones;
             List<IWeapon> weapons = new List<IWeapon>
             {
                 new Gun(),
                 new Laser()
             };
 
+            playerShip.Weapons = weapons;
+
             List<AEntity> startEntitys = new List<AEntity>
             {
-                new EnemiFarm(new CoupleDouble(0, 1), defaultSyze, defaultSpeed),
+                new EnemiFarm(new CoupleDouble(0, 1), defaultSyze, defaultSpeed, playerShip),
                 new EnemyFarmPseudoEntity(new CoupleDouble(0, 1), defaultSyze, defaultSpeed)
             };
 

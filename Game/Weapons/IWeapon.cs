@@ -7,5 +7,6 @@ namespace Game.Weapons
     {
         List<AEntity> Shot(CoupleDouble pos, Degree direction);
 
+        void Update();
     }
 }

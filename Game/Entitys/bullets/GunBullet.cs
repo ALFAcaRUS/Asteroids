@@ -12,14 +12,14 @@ namespace Game.Entitys.bullets
 
         internal override void ChengeState(CoupleDouble maxPos)
         {
-            Pos.X = Pos.X - Speed.X;
-            Pos.Y = Pos.Y - Speed.Y;
-            if ((Pos.X > maxPos.X) || (Pos.Y > maxPos.Y)) WasKilled = true;
+            Pos.X = Pos.X + Speed.X;
+            Pos.Y = Pos.Y + Speed.Y;
+            if ((Pos.X > maxPos.X) || (Pos.Y > maxPos.Y)) {WasKilled = true;}
         }
 
         internal override List<AEntity> Interaction(AEntity interactionEntity)
         {
-            if (typeof (LaserBullet) != interactionEntity.GetType() && typeof(GunBullet) != interactionEntity.GetType())
+            if (EntityType.Enemy == interactionEntity.GetEntityType())
             {
                 base.WasKilled = true;
             }

@@ -4,6 +4,8 @@
     {
         RightShift,
         LeftShift,
+        Forward,
+        Back,
         Shoot
     }
 }

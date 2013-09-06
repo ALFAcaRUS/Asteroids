@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Game.Entitys;
 using Game.Ships;
+using Game.Weapons;
 using Game;
 
 namespace Game.Maine
@@ -22,11 +23,12 @@ namespace Game.Maine
             MapSize = mapSize;
         }
 
-
+        public event EventHandler<LooseEventArgs> PlayerLoose;
 
         public List<ViewObject> Tick(List<UserAction> actions)
         {
             Entitys.AddRange(Interactions());
+            Entitys.AddRange(ShipState(actions));
             List<ViewObject> output = new List<ViewObject>();
             foreach (AEntity entity in Entitys)
             {
@@ -51,10 +53,12 @@ namespace Game.Maine
                 output.Add(new ViewObject("ShipRot",
                     playerShip.Pos + playerShip.Size*playerShip.Direction.GetProjections()));
                 output.Add(new ViewObject("Score", new CoupleDouble(Score, 0)));
+                foreach(IWeapon weapon in playerShip.Weapons) weapon.Update();
+
             }
             else
             {
-                output.Add(new ViewObject("Loose", new CoupleDouble(Score, 0)));
+                PlayerLoose(this, new LooseEventArgs(Score));
             }
 
             return output;
@@ -65,16 +69,16 @@ namespace Game.Maine
             List<AEntity> outPut = new List<AEntity>();
 
             // for each entity in Entitys try interaction whith every entity in same position 
-            foreach (AEntity entyty in Entitys)
+            foreach (AEntity entity in Entitys)
             {
 
-                    foreach (AEntity intEntity in Entitys.FindAll(x => PositionsToIntersect(x, entyty)))
+                    foreach (AEntity intEntity in Entitys.FindAll(x => PositionsToIntersect(x, entity)))
                     {
-                        List<AEntity> intResult = entyty.Interaction(intEntity);
+                        List<AEntity> intResult = entity.Interaction(intEntity);
 
                         if (null != intResult) outPut.AddRange(intResult);
                     }
-                    entyty.ChengeState(MapSize);
+                    entity.ChengeState(MapSize);
             }
 
             return outPut;
@@ -95,14 +99,50 @@ namespace Game.Maine
         {
             CoupleDouble distance = first.Pos - second.Pos;
             CoupleDouble totalSize = first.Size + second.Size;
-            return (distance.X < totalSize.X) || (distance.Y < totalSize.Y);
+            return (Math.Abs(distance.X) < totalSize.X) && (Math.Abs(distance.Y) < totalSize.Y);
         }
 
         private bool PositionsToIntersect(IShip first, AEntity second)
         {
             CoupleDouble distance = first.Pos - second.Pos;
             CoupleDouble totalSize = first.Size + second.Size;
-            return (distance.X < totalSize.X) || (distance.Y < totalSize.Y);
+            return (Math.Abs(distance.X) < totalSize.X) && (Math.Abs(distance.Y) < totalSize.Y);
+        }
+
+        private List<AEntity> ShipState(List<UserAction> actions)
+        {
+            List<AEntity> output = new List<AEntity>();
+
+            if (null != actions)
+            {
+
+                foreach (UserAction action in actions)
+                {
+                    if (UserActionType.RightShift == action.ActionType) playerShip.Direction += 10;
+                    if (UserActionType.LeftShift  == action.ActionType) playerShip.Direction -= 10;
+                    if (UserActionType.Forward == action.ActionType)
+                    {
+                        playerShip.Pos += playerShip.Direction.GetProjections();
+
+                        playerShip.Pos.X = Math.Abs(playerShip.Pos.X)> MapSize.X ? -playerShip.Pos.X : playerShip.Pos.X;
+                        playerShip.Pos.Y = Math.Abs(playerShip.Pos.Y) > MapSize.Y ? -playerShip.Pos.Y : playerShip.Pos.Y;
+                    }
+                    if (UserActionType.Back == action.ActionType)
+                    {
+                        playerShip.Pos -= playerShip.Direction.GetProjections();
+
+                        playerShip.Pos.X = Math.Abs(playerShip.Pos.X) > MapSize.X ? -playerShip.Pos.X : playerShip.Pos.X;
+                        playerShip.Pos.Y = Math.Abs(playerShip.Pos.Y) > MapSize.Y ? -playerShip.Pos.Y : playerShip.Pos.Y;
+                    }
+                    if (UserActionType.Shoot == action.ActionType)
+                    {
+                        List<AEntity> shot = playerShip.Weapons[action.Count].Shot(playerShip.Pos, playerShip.Direction);
+                        if (null != shot) output.AddRange(shot);
+                    }
+                }
+            }
+
+            return output;
         }
     }
 }
