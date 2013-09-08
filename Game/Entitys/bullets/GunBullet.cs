@@ -10,6 +10,12 @@ namespace Game.Entitys.bullets
 
         }
 
+        public GunBullet(CoupleDouble pos, CoupleDouble size, CoupleDouble speed, Degree angle)
+            : base(pos, size, speed, angle)
+        {
+
+        }
+
         internal override void ChengeState(CoupleDouble maxPos)
         {
             Pos.X = Pos.X + Speed.X;

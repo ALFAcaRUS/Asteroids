@@ -1,9 +1,14 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics;
+using System.Drawing.Drawing2D;
+using System.IO;
 using System.Windows.Forms;
 using System.Drawing;
 using System;
+using Asteroids.Shapes;
 using Game;
 using Game.Maine;
+using Game.Ships;
 
 namespace Asteroids
 {
@@ -15,6 +20,8 @@ namespace Asteroids
         private bool left = false;
         private bool[] weaponShut = new bool[2];
         private IGame Game;
+        private GraphicConstructor grapConst = new GraphicConstructor();
+
 
         public Form1()
         {
@@ -53,104 +60,24 @@ namespace Asteroids
 
         public void Drawing(List<ViewObject> objects)
         {
-            Graphics grap = Wall.CreateGraphics();
 
-            CoupleDouble scale = new CoupleDouble(Width/200.0, Height/200.0);
-            CoupleDouble offset = scale * new CoupleDouble(100, 100);
+            Image buf = new Bitmap(Wall.Width, Wall.Height);
+            Graphics grap = Graphics.FromImage(buf);
+
 
             grap.FillRectangle(Brushes.Black, 0, 0, Width, Height);
 
+            grapConst.Init(Width, Height);
+
             foreach (var obj in objects)
             {
-                switch(obj.Name)
-                {
-                    case "Asteroid 1":
-                    {
-                        CoupleDouble point = obj.Pos*scale + offset;
-                        CoupleDouble objSize = new CoupleDouble(3, 3);
-
-                        Point location = new Point((int) Math.Round(point.X), (int) Math.Round(point.Y));
-                        Size scaledSize = new Size((int) Math.Round(objSize.X), (int) Math.Round(objSize.Y));
-
-                        Rectangle rec = new Rectangle(location, scaledSize);
-                        grap.FillEllipse(Brushes.Gray, rec);
-                    }
-                    break;
-                    case "Asteroid 2":
-                    {
-                        CoupleDouble point = obj.Pos * scale + offset;
-                        CoupleDouble objSize = new CoupleDouble(5, 5);
-
-                        Point location = new Point((int)Math.Round(point.X), (int)Math.Round(point.Y));
-                        Size scaledSize = new Size((int)Math.Round(objSize.X), (int)Math.Round(objSize.Y));
-
-                        Rectangle rec = new Rectangle(location, scaledSize);
-                        grap.FillEllipse(Brushes.White, rec);
-                    }
-                    break;
-                    case "Ufo":
-                    {
-                        CoupleDouble point = obj.Pos * scale + offset;
-                        CoupleDouble objSize = new CoupleDouble(5, 5);
-
-                        Point location = new Point((int)Math.Round(point.X), (int)Math.Round(point.Y));
-                        Size scaledSize = new Size((int)Math.Round(objSize.X), (int)Math.Round(objSize.Y));
-
-                        Rectangle rec = new Rectangle(location, scaledSize);
-                        grap.FillEllipse(Brushes.Blue, rec);
-                    }
-                    break;
-                    case "ShipPos":
-                    {
-                        CoupleDouble point = obj.Pos * scale + offset;
-                        CoupleDouble objSize = new CoupleDouble(5, 5);
-
-                        Point location = new Point((int)Math.Round(point.X), (int)Math.Round(point.Y));
-                        Size scaledSize = new Size((int)Math.Round(objSize.X), (int)Math.Round(objSize.Y));
-
-                        Rectangle rec = new Rectangle(location, scaledSize);
-                        grap.FillEllipse(Brushes.Green, rec);
-                    }
-                    break;
-                    case "ShipRot":
-                    {
-                        CoupleDouble point = obj.Pos * scale + offset;
-                        CoupleDouble objSize = new CoupleDouble(5, 5);
-
-                        Point location = new Point((int)Math.Round(point.X), (int)Math.Round(point.Y));
-                        Size scaledSize = new Size((int)Math.Round(objSize.X), (int)Math.Round(objSize.Y));
-
-                        Rectangle rec = new Rectangle(location, scaledSize);
-                        grap.FillEllipse(Brushes.Violet, rec);
-                    }
-                    break;
-                    case "GunBullet":
-                    {
-                        CoupleDouble point = obj.Pos * scale + offset;
-                        CoupleDouble objSize = new CoupleDouble(2, 2);
-
-                        Point location = new Point((int)Math.Round(point.X), (int)Math.Round(point.Y));
-                        Size scaledSize = new Size((int)Math.Round(objSize.X), (int)Math.Round(objSize.Y));
-
-                        Rectangle rec = new Rectangle(location, scaledSize);
-                        grap.FillEllipse(Brushes.Gray, rec);
-                    }
-                    break;
-                    case "LaserBulet":
-                    {
-                        CoupleDouble point = obj.Pos * scale + offset;
-                        CoupleDouble objSize = new CoupleDouble(5, 5);
-
-                        Point location = new Point((int)Math.Round(point.X), (int)Math.Round(point.Y));
-                        Size scaledSize = new Size((int)Math.Round(objSize.X), (int)Math.Round(objSize.Y));
-
-                        Rectangle rec = new Rectangle(location, scaledSize);
-                        grap.FillEllipse(Brushes.Red, rec);
-                    }
-                    break;
-
-                }
+                grapConst.GetImage(obj,grap);
             }
+
+            Graphics wallGraphics = Wall.CreateGraphics();
+            wallGraphics.DrawImage(buf, 0,0);
+
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -272,3 +199,24 @@ namespace Asteroids
 
     }
 }
+
+            /*Bitmap ship2 = new Bitmap(32, 32);
+            Graphics shipGraphics2 = Graphics.FromImage(ship2);
+
+            Rectangle shipRectangle2 = new Rectangle(0, 0, 32, 32);
+            Brush shipBrush2 = new TextureBrush(shipImage);
+            
+
+            float angle = (float) rectangle.Angle.Angle;
+
+            //shipGraphics2.TranslateTransform(50, 50);
+
+            //shipGraphics2.RotateTransform(angle);
+
+            shipGraphics2.FillRectangle(shipBrush2, shipRectangle2);
+
+            //shipGraphics2.FillPolygon(shipBrush2, rectangle.GetPoints());
+
+           // shipGraphics2.ResetTransform();
+
+            grap.DrawImage(ship2, rectangle.GetPoints());*/

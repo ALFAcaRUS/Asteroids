@@ -1,0 +1,23 @@
+﻿<Window x:Class="GUIAsteroids.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Asteroids" Height="353.947" Width="547.368" Background="#00000000" WindowStyle="None" ResizeMode="NoResize" WindowState="Maximized" KeyDown="Window_KeyDown">
+    
+<Grid Name="Hello">
+        <Label Name="ScoreLable" Margin="33,31,452,295" Foreground="#FFAE1616">Score:</Label>
+        
+            
+        <Grid Name="MyGrid" Width="40" Height="30" Margin="163,257,344,67" Background="#FFD82D2D" >
+            <Grid.RenderTransform>
+                <RotateTransform Angle="30">
+
+                </RotateTransform>
+            </Grid.RenderTransform>
+        </Grid>
+        <Image HorizontalAlignment="Left" Height="15" Margin="136,44,0,0" VerticalAlignment="Top" Width="19" Source="Sprit_Asteroid.png" >
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="Sprit_Asteroid.png" Stretch="UniformToFill"/>
+            </Image.OpacityMask>
+        </Image>
+    </Grid>
+</Window>

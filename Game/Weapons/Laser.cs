@@ -32,7 +32,7 @@ namespace Game.Weapons
                 for (int i = 0; i < Distance; i++)
                 {
                     positions = positions + direction.GetProjections();
-                    output.Add(new LaserBullet(positions, CoupleDouble.ones, CoupleDouble.zero));
+                    output.Add(new LaserBullet(positions, new CoupleDouble(2,2), CoupleDouble.zero, direction));
                 }
 
                 return output.Count != 0 ? output : null;

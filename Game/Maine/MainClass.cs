@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Linq;
 using Game.Entitys;
 using Game.Ships;
@@ -36,24 +37,23 @@ namespace Game.Maine
                 {
                     if (entity.GetEntityType() == EntityType.Enemy)
                     {
-                        output.Add(new ViewObject("Explosion", entity.Pos));
+                        ViewObject explosion = entity.GetViewObject();
+                        explosion.Name = "Exsplosion";
+                        output.Add(explosion);
                         Score++;
                     }
                 }
                 else
                 {
-                    output.Add(new ViewObject(entity.ToString(), entity.Pos));
+                    output.Add(entity.GetViewObject());
                 }
             }
             Entitys.RemoveAll(x => x.WasKilled);
 
             if (!Loose())
             {
-                output.Add(new ViewObject("ShipPos", playerShip.Pos));
-                output.Add(new ViewObject("ShipRot",
-                    playerShip.Pos + playerShip.Size*playerShip.Direction.GetProjections()));
-                output.Add(new ViewObject("Score", new CoupleDouble(Score, 0)));
-                foreach(IWeapon weapon in playerShip.Weapons) weapon.Update();
+                output.Add(new ViewObject("Ship", playerShip.Pos, playerShip.Size, playerShip.Direction));
+                foreach (IWeapon weapon in playerShip.Weapons) weapon.Update();
 
             }
             else

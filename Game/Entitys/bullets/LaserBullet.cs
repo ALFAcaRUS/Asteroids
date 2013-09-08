@@ -8,6 +8,13 @@ namespace Game.Entitys.bullets
         public LaserBullet(CoupleDouble pos, CoupleDouble size, CoupleDouble speed)
             : base(pos, size, speed)
         {
+
+        }
+
+        public LaserBullet(CoupleDouble pos, CoupleDouble size, CoupleDouble speed, Degree angle)
+            : base(pos, size, speed,angle)
+        {
+
         }
 
         internal override void ChengeState(CoupleDouble maxPos)

@@ -50,8 +50,8 @@ namespace Game.Entitys.Enemies
                     projection.SetProjections(Speed);
 
                     List<AEntity> output = new List<AEntity>();
-                    output.Add(new Asteroid(Pos, Size - CoupleDouble.ones, (projection + 45).GetProjections(), _parts - 1));
-                    output.Add(new Asteroid(Pos, Size - CoupleDouble.ones, (projection - 45).GetProjections(), _parts - 1));
+                    output.Add(new Asteroid(Pos, Size/2, (projection + 45).GetProjections(), _parts - 1));
+                    output.Add(new Asteroid(Pos, Size/2, (projection - 45).GetProjections(), _parts - 1));
 
                     return output;
                 }
@@ -66,7 +66,7 @@ namespace Game.Entitys.Enemies
 
         public override string ToString()
         {
-            return "Asteroid " + _parts;
+            return "Asteroid";
         }
     }
 }

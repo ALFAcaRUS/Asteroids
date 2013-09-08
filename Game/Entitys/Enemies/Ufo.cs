@@ -31,7 +31,7 @@ namespace Game.Entitys.Enemies
             }
             else
             {
-                throw new NullReferenceException("Not ship");
+                throw new NullReferenceException("No ship");
             }
         }
 

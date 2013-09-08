@@ -18,7 +18,7 @@ namespace Game
 
             Ship playerShip = new Ship();
             playerShip.Direction.Angle = 0;
-            playerShip.Size = CoupleDouble.ones;
+            playerShip.Size = new CoupleDouble(5,5);
             List<IWeapon> weapons = new List<IWeapon>
             {
                 new Gun(),

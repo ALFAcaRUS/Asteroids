@@ -67,12 +67,12 @@ namespace Game.Entitys.Enemies
 
                 if (ran.NextDouble() < 0.02)
                 {
-                    output.Add(new Ufo(ranPos, new CoupleDouble(1, 1), speed, playerShip));
+                    output.Add(new Ufo(ranPos, new CoupleDouble(5, 5), speed, playerShip));
                 }
 
-                if (ran.NextDouble() < 0.03)
+                if (ran.NextDouble() < 0.06)
                 {
-                    output.Add(new Asteroid(ranPos, new CoupleDouble(2, 2), speed, 2));
+                    output.Add(new Asteroid(ranPos, new CoupleDouble(6, 6), speed, 2));
                 }
 
                 return output;

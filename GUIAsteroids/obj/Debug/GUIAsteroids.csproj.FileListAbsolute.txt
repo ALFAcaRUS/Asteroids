@@ -1,0 +1,15 @@
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\GUIAsteroids\bin\Debug\GUIAsteroids.exe.config
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\GUIAsteroids\bin\Debug\GUIAsteroids.exe
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\GUIAsteroids\bin\Debug\GUIAsteroids.pdb
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\GUIAsteroids\obj\Debug\GUIAsteroids.csprojResolveAssemblyReference.cache
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\GUIAsteroids\obj\Debug\MainWindow.baml
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\GUIAsteroids\obj\Debug\MainWindow.g.cs
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\GUIAsteroids\obj\Debug\App.g.cs
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\GUIAsteroids\obj\Debug\GUIAsteroids_MarkupCompile.cache
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\GUIAsteroids\obj\Debug\GUIAsteroids.g.resources
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\GUIAsteroids\obj\Debug\GUIAsteroids.Properties.Resources.resources
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\GUIAsteroids\obj\Debug\GUIAsteroids.csproj.GenerateResource.Cache
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\GUIAsteroids\obj\Debug\GUIAsteroids.exe
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\GUIAsteroids\obj\Debug\GUIAsteroids.pdb
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\GUIAsteroids\bin\Debug\Game.dll
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\GUIAsteroids\bin\Debug\Game.pdb

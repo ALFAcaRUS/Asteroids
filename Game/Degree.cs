@@ -2,7 +2,7 @@
 
 namespace Game
 {
-    class Degree
+    public class Degree
     {
         private double _value = 0;
 
@@ -55,7 +55,7 @@ namespace Game
 
         public void SetProjections(CoupleDouble value)
         {
-            SetWhithRadian(Math.Atan(value.Y/value.X));
+            SetWhithRadian(value.Y / value.X > 0 ? Math.Atan(value.Y / value.X) : Math.PI - Math.Atan(value.Y / value.X));
         }
 
         public static Degree operator +(Degree first, Degree second)
