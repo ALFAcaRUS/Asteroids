@@ -2,13 +2,10 @@ C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\Astero
 C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\Asteroids\bin\Release\Asteroids.exe
 C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\Asteroids\bin\Release\Asteroids.pdb
 C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\Asteroids\bin\Release\Game.dll
-C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\Asteroids\bin\Release\Ninject.dll
 C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\Asteroids\bin\Release\Game.pdb
-C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\Asteroids\bin\Release\Ninject.pdb
-C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\Asteroids\bin\Release\Ninject.xml
 C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\Asteroids\obj\Release\Asteroids.csprojResolveAssemblyReference.cache
-C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\Asteroids\obj\Release\Asteroids.Form1.resources
 C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\Asteroids\obj\Release\Asteroids.Properties.Resources.resources
 C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\Asteroids\obj\Release\Asteroids.csproj.GenerateResource.Cache
 C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\Asteroids\obj\Release\Asteroids.exe
 C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\Asteroids\obj\Release\Asteroids.pdb
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\Asteroids\obj\Release\Asteroids.Asteroids.resources

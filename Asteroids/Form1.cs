@@ -1,18 +1,14 @@
 ﻿using System.Collections.Generic;
-using System.Diagnostics;
-using System.Drawing.Drawing2D;
-using System.IO;
 using System.Windows.Forms;
 using System.Drawing;
 using System;
-using Asteroids.Shapes;
+using Asteroids.GraphicConstructors;
 using Game;
 using Game.Maine;
-using Game.Ships;
 
 namespace Asteroids
 {
-    public sealed partial class Form1 : Form
+    public sealed partial class Asteroids : Form
     {
         private bool forward = false;
         private bool back = false;
@@ -20,12 +16,15 @@ namespace Asteroids
         private bool left = false;
         private bool[] weaponShut = new bool[2];
         private IGame Game;
-        private GraphicConstructor grapConst = new GraphicConstructor();
+        AGraphicConstructor grCons;
+        private SpritGraphicConstructor spriteConst = new SpritGraphicConstructor();
+        private PoligonGraphicConstructor polGrap = new PoligonGraphicConstructor();
+        private Image backGround = Image.FromFile(@"Source/Sprits/BackGround.jpg");
 
-
-        public Form1()
+        public Asteroids()
         {
             InitializeComponent();
+            grCons = polGrap;
             NewGame();
         }
 
@@ -52,6 +51,8 @@ namespace Asteroids
             back = false;
             right = false;
             left = false;
+            weaponShut[0] = false;
+            weaponShut[1] = false;
             Game = GameLoaderInjector.GetGame();
             Game.PlayerLoose += new EventHandler<LooseEventArgs>(OnPlayerLoose);
             timer1.Enabled = true;
@@ -63,16 +64,24 @@ namespace Asteroids
 
             Image buf = new Bitmap(Wall.Width, Wall.Height);
             Graphics grap = Graphics.FromImage(buf);
+            Brush backGroundBrush = new TextureBrush(backGround);
+            //Brush backGroundBrush = Brushes.Black;
+
+            grap.FillRectangle(backGroundBrush, 0, 0, Width, Height);
+
+            backGroundBrush.Dispose();
 
 
-            grap.FillRectangle(Brushes.Black, 0, 0, Width, Height);
-
-            grapConst.Init(Width, Height);
+            grCons.Init(Width, Height);
 
             foreach (var obj in objects)
             {
-                grapConst.GetImage(obj,grap);
+                grCons.GetImage(obj, grap);
             }
+
+            //Font scoreFont = new Font("");
+
+            polGrap.Init(Wall.Width, Wall.Height);
 
             Graphics wallGraphics = Wall.CreateGraphics();
             wallGraphics.DrawImage(buf, 0,0);
@@ -192,6 +201,21 @@ namespace Asteroids
                     break;
             }
 
+        }
+
+        private void Asteroids_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 'g')
+            {
+                if (grCons.GetType() == spriteConst.GetType())
+                {
+                    grCons = polGrap;
+                }
+                else
+                {
+                    grCons = spriteConst;
+                }
+            }
         }
 
 

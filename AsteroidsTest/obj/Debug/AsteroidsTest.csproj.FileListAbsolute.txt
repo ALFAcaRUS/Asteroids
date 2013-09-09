@@ -1,8 +1,5 @@
 C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\AsteroidsTest\bin\Debug\AsteroidsTest.dll
 C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\AsteroidsTest\bin\Debug\AsteroidsTest.pdb
-C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\AsteroidsTest\bin\Debug\Ninject.dll
-C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\AsteroidsTest\bin\Debug\Ninject.pdb
-C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\AsteroidsTest\bin\Debug\Ninject.xml
 C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\AsteroidsTest\obj\Debug\AsteroidsTest.csprojResolveAssemblyReference.cache
 C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\AsteroidsTest\obj\Debug\AsteroidsTest.dll
 C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\AsteroidsTest\obj\Debug\AsteroidsTest.pdb

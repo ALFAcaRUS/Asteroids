@@ -9,6 +9,13 @@ namespace Game.Entitys.Enemies
     {
         private IShip PlayerShip;
 
+        public Ufo(CoupleDouble pos, CoupleDouble size, CoupleDouble speed)
+            : base(pos, size, speed)
+        {
+
+        }
+
+
         public Ufo(CoupleDouble pos, CoupleDouble size, CoupleDouble speed, IShip ship)
             : base(pos, size,speed)
         {

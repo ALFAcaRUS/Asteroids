@@ -18,7 +18,7 @@ namespace Asteroids
             var canResum = MessageBox.Show(message, "Start", MessageBoxButtons.YesNo);
             if (canResum == DialogResult.Yes)
             {
-                Form1 newForm = new Form1();
+                Asteroids newForm = new Asteroids();
                 Application.Run(newForm);
             }
             else

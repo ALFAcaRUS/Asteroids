@@ -62,9 +62,19 @@ namespace Game
             return new CoupleDouble(first.X + second.X, first.Y + second.Y);
         }
 
+        public static CoupleDouble operator +(CoupleDouble first, double second)
+        {
+            return new CoupleDouble(first.X + second, first.Y + second);
+        }
+
         public static CoupleDouble operator -(CoupleDouble first, CoupleDouble second)
         {
             return new CoupleDouble(first.X - second.X, first.Y - second.Y);
+        }
+
+        public static CoupleDouble operator -(CoupleDouble first, double second)
+        {
+            return new CoupleDouble(first.X - second, first.Y - second);
         }
 
         public static CoupleDouble operator *(CoupleDouble first, CoupleDouble second)

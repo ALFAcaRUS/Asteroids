@@ -9,9 +9,9 @@ using Game;
 
 namespace Game.Maine
 {
-    internal class MainClass : IGame
+    internal class MainClass : IGame,IDisposable
     {
-        private UInt64 Score;
+        public UInt64 Score {get; private set; }
         private List<AEntity> Entitys;
         private IShip playerShip;
         private CoupleDouble MapSize;
@@ -97,16 +97,16 @@ namespace Game.Maine
 
         private bool PositionsToIntersect(AEntity first, AEntity second)
         {
-            CoupleDouble distance = first.Pos - second.Pos;
+            double distance = first.Pos.GetDistance(second.Pos);
             CoupleDouble totalSize = first.Size + second.Size;
-            return (Math.Abs(distance.X) < totalSize.X) && (Math.Abs(distance.Y) < totalSize.Y);
+            return (Math.Abs(distance) < totalSize.X) && (Math.Abs(distance) < totalSize.Y);
         }
 
         private bool PositionsToIntersect(IShip first, AEntity second)
         {
-            CoupleDouble distance = first.Pos - second.Pos;
+            double distance = second.Pos.GetDistance(first.Pos);
             CoupleDouble totalSize = first.Size + second.Size;
-            return (Math.Abs(distance.X) < totalSize.X) && (Math.Abs(distance.Y) < totalSize.Y);
+            return (Math.Abs(distance) < totalSize.X) && (Math.Abs(distance) < totalSize.Y);
         }
 
         private List<AEntity> ShipState(List<UserAction> actions)
@@ -143,6 +143,11 @@ namespace Game.Maine
             }
 
             return output;
+        }
+
+        public void Dispose()
+        {
+            Entitys.RemoveAll(x => x != null);
         }
     }
 }

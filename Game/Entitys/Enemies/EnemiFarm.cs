@@ -60,22 +60,28 @@ namespace Game.Entitys.Enemies
                 List<AEntity> output = new List<AEntity>();
 
                 CoupleDouble speed = new CoupleDouble(0.1, 0.1)*new Degree(ran.Next(360)).GetProjections();
+
                 int ranX = ran.Next(2 * _maxX);
                 int ranY = ran.Next(2 * _maxY);
 
-                CoupleDouble ranPos = new CoupleDouble(ranX - _maxX, ranY - _maxY);
-
-                if (ran.NextDouble() < 0.02)
+                if ((Math.Abs(ranX - _maxX - playerShip.Pos.X) > 50) && ((Math.Abs(ranY - _maxY - playerShip.Pos.Y) > 50)))
                 {
-                    output.Add(new Ufo(ranPos, new CoupleDouble(5, 5), speed, playerShip));
-                }
 
-                if (ran.NextDouble() < 0.06)
-                {
-                    output.Add(new Asteroid(ranPos, new CoupleDouble(6, 6), speed, 2));
-                }
 
-                return output;
+                    CoupleDouble ranPos = new CoupleDouble(ranX - _maxX, ranY - _maxY);
+
+                    if (ran.NextDouble() < 0.02)
+                    {
+                        output.Add(new Ufo(ranPos, new CoupleDouble(5, 5), speed, playerShip));
+                    }
+
+                    if (ran.NextDouble() < 0.06)
+                    {
+                        output.Add(new Asteroid(ranPos, new CoupleDouble(6, 6), speed, 2));
+                    }
+
+                    return output;
+                }
             }
 
             return null;

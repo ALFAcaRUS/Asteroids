@@ -17,9 +17,20 @@ namespace Asteroids.Shapes
             Point[] output = new Point[3];
 
             output[0] = (centr + size*(angle - 45).GetProjections()).GetPoint();
-            output[2] = (centr + size*(angle + 45).GetProjections()).GetPoint();
-            //output[2] = (Centr + Size * (Angle + 135).GetProjections()).GetPoint();
             output[1] = (centr + size*(angle - 135).GetProjections()).GetPoint();
+            output[2] = (centr + size*(angle + 45).GetProjections()).GetPoint();
+
+            return output;
+        }
+
+        public static Point[] GetPoligon(CoupleDouble centr, CoupleDouble size, Degree angle)
+        {
+            Point[] output = new Point[4];
+
+            output[0] = (centr + size * (angle - 45).GetProjections()).GetPoint();
+            output[1] = (centr + size * (angle - 135).GetProjections()).GetPoint();
+            output[2] = (centr + size * (angle + 135).GetProjections()).GetPoint();
+            output[3] = (centr + size * (angle + 45).GetProjections()).GetPoint();
 
             return output;
         }
