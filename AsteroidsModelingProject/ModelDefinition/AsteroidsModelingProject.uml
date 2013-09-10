@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
   dslVersion="1.0.0.0"
   Id="2c499a19-ff1d-4f73-a2ca-de1c3ad56e73"
   name="AsteroidsModelingProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -15,6 +15,12 @@
       <profileInstance
         Id="532ea607-fb19-44b8-8502-3351b05452be"
         name="StandardProfileL3" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="ea7a6918-7962-4f66-b262-ea76219addd6">
+      <profileInstance
+        Id="9567ff60-71dd-4d40-b321-9c17007c0dbc"
+        name="CSharpProfile" />
     </packageHasProfileInstances>
   </profileInstances>
   <packagedElements>
@@ -147,6 +153,14 @@
               Id="8421d759-b886-46b6-9663-e09c591e539c"
               LastKnownName="AEntity"
               LastKnownLocation="AsteroidsModelingProject.uml" />
+          </generalization>
+          <generalization
+            Id="d6486594-4612-49f9-aafe-862db9f1c256"
+            isSubstitutable="false">
+            <classMoniker
+              Id="aabd4201-fbfa-4595-b3ee-f6437521c2fb"
+              LastKnownName="AEntity"
+              LastKnownLocation="Package_1707.uml" />
           </generalization>
         </generalsInternal>
         <ownedAttributesInternal>
@@ -505,30 +519,6 @@
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
-        <ownedAttributes>
-          <property
-            Id="e5f99e3d-af59-4f12-8bd4-7dcf7c9c0551"
-            name="Pos"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="63c9f3ff-dfa3-4778-91c1-8ac63f9f6dc4"
-            name="List&lt;Weapons&gt;"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-        </ownedAttributes>
         <ownedOperations>
           <operation
             Id="b63ad8c3-d8fe-4dc7-b845-42433fae2ddf"
@@ -1020,7 +1010,7 @@
         isActiveClass="false">
         <targetEnds>
           <association
-            Id="8f3e5486-f23f-468f-aa8f-3ecbd1ecf1b3"
+            Id="df7a628a-98ba-41fe-8451-c0cc26abecbc"
             isDerived="false"
             sourceEndRoleName="ViewObject"
             targetEndRoleName="Game"
@@ -1033,20 +1023,20 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="38eb663a-e5c1-47da-a003-d9f4b36913fe"
+                  Id="b5e762bf-1721-4882-bf89-f23aec3379af"
                   name="ViewObject"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
-                  aggregation="None"
+                  aggregation="Composite"
                   isComposite="false"
                   isNavigableOwned="false" />
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="e4276538-682a-4d95-96d3-ade9fbf6ba7c"
+                  Id="68f9ada2-d6ba-4b80-b3c4-2ea83aa7ec27"
                   name="Game"
                   isLeaf="false"
                   isStatic="false"
@@ -1054,7 +1044,7 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false" />
+                  isComposite="true" />
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -1191,7 +1181,7 @@
         </appliedStereotypesInternal>
         <targetEnds>
           <association
-            Id="f1f15ebc-8482-427c-ab3a-2aea927906e4"
+            Id="809b60fc-fa4e-44d1-833f-16fdbcaf1f09"
             isDerived="false"
             sourceEndRoleName="AEntity"
             targetEndRoleName="Game"
@@ -1204,20 +1194,20 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="3a686b47-f1eb-4478-a933-fc4449cf9a14"
+                  Id="95346cc9-83a1-4e40-bbb4-e7fa37ca1a67"
                   name="AEntity"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
-                  aggregation="None"
+                  aggregation="Composite"
                   isComposite="false"
                   isNavigableOwned="false" />
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="f488a06f-8e23-45eb-b6de-276431dfda27"
+                  Id="53aff148-3501-48f2-b64e-3195846239d3"
                   name="Game"
                   isLeaf="false"
                   isStatic="false"
@@ -1225,85 +1215,11 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false" />
+                  isComposite="true" />
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
-        <ownedAttributesInternal>
-          <property
-            Id="9d1805dc-64d9-4bcc-b809-4e93e2eb9caa"
-            name="SyzeX"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="edb72d1d-1a1c-4d85-932b-150cf4cf3bbe"
-                LastKnownName="int"
-                LastKnownLocation="AsteroidsModelingProject.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="ddda3af8-01d9-495c-b956-e34d4f931eeb"
-            name="SyzeY"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="edb72d1d-1a1c-4d85-932b-150cf4cf3bbe"
-                LastKnownName="int"
-                LastKnownLocation="AsteroidsModelingProject.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="07c6d964-66a5-4635-8328-fce429eb303b"
-            name="Pos"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <classMoniker
-                Id="835fc51c-dad9-44bb-abe9-d33af1a0f5ab"
-                LastKnownName="Point"
-                LastKnownLocation="AsteroidsModelingProject.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="b450f76d-1620-4859-a6eb-bd312dd7b55c"
-            name="Speed"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="5c890f50-844d-451e-bcbf-4e41a6c3f08d"
-                LastKnownName="integer"
-                LastKnownLocation="AsteroidsModelingProject.uml" />
-            </type_NamedElement>
-          </property>
-        </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
             Id="ed851eab-ef24-458d-8dad-7c0cb098a493"
@@ -1358,6 +1274,1740 @@
       <undefinedType
         Id="2ba2a899-3fd6-46c3-894f-eb6cb9fd654a"
         name="List&lt;AEnemy&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="aa8ba725-4464-4de6-97c6-846d7ebe1b86"
+        name="EnemyFarmPseudoEntity"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3e08357a-7f5a-42bf-8730-f79a58b0e1ed"
+        name="CoupleDouble"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="d5acdbe3-69ad-4837-9c13-f9fc4a04aa01"
+            name="X"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="6d377a72-e413-4f8a-9e0e-dcc95de9cd1e"
+                LastKnownName="Double"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="aec226c1-c9ee-4e52-8514-79da74578b39"
+            name="Y"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="6d377a72-e413-4f8a-9e0e-dcc95de9cd1e"
+                LastKnownName="Double"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="fb10c255-a254-48ce-8f26-aa78001ca02a"
+            name="GetPoint : Point"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="65888bd6-1969-418b-8269-47f842ac342e"
+            name="GetDistance"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="104bf702-c296-4f53-870d-94483609fa0a"
+                  direction="Return">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="6d377a72-e413-4f8a-9e0e-dcc95de9cd1e"
+                      LastKnownName="Double"
+                      LastKnownLocation="AsteroidsModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="6d377a72-e413-4f8a-9e0e-dcc95de9cd1e"
+        name="Double" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="edc3c5e6-0327-4878-9eb9-38bdb9461789"
+        LastKnownName="Game"
+        LastKnownLocation="Package_1705.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="0edad59c-f4eb-43f4-9967-e1840fac9744"
+        LastKnownName="System"
+        LastKnownLocation="Package1_1705.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="6b9e8b93-9bd4-4655-a0fb-72cc551789e1"
+        LastKnownName="Asteroids"
+        LastKnownLocation="Package_1723.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d6b23466-74d5-485d-b18b-439ece7fb7a5"
+        name="Class1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="153dc8b5-2aaa-4bb6-8083-21ce818f4b2e"
+        name="AsteroidsSequenceDiagram"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="211450cc-5f96-48e5-af7c-74b1ff2ff6ef"
+            name="BehaviorExecutionSpecification5">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="978c8334-b8e8-4cbb-8cb3-f501c574442b"
+                LastKnownName="GameLoaderInjector"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="131a2f6f-451f-48c7-a51f-04f6c4b4eb08"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="8fdf746d-9cc9-4722-a924-8ea3c2a38a55"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="1f497d59-2067-43ba-b2d8-1144cfd64af5"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="bbf71935-e0e5-4078-a7f7-10bc38d2fd27"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="8fdf746d-9cc9-4722-a924-8ea3c2a38a55"
+            name="ExecutionOccurrenceSpecification9">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="a774814d-2a79-4b36-a26f-fbf1ac3c3992"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="AsteroidsModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="978c8334-b8e8-4cbb-8cb3-f501c574442b"
+                LastKnownName="GameLoaderInjector"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="0e9dd817-9ac1-4b53-b4d2-6c068c525e37"
+            name="MessageOccurrenceSpecification17">
+            <covered>
+              <lifelineMoniker
+                Id="381a6167-9d0a-4ee5-978d-791f6e2a753b"
+                LastKnownName="Asteroids"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1f497d59-2067-43ba-b2d8-1144cfd64af5"
+            name="MessageOccurrenceSpecification18">
+            <covered>
+              <lifelineMoniker
+                Id="978c8334-b8e8-4cbb-8cb3-f501c574442b"
+                LastKnownName="GameLoaderInjector"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="bbf71935-e0e5-4078-a7f7-10bc38d2fd27"
+            name="MessageOccurrenceSpecification19">
+            <covered>
+              <lifelineMoniker
+                Id="978c8334-b8e8-4cbb-8cb3-f501c574442b"
+                LastKnownName="GameLoaderInjector"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="29e231ea-214e-4133-adea-e96ed24bb300"
+            name="MessageOccurrenceSpecification20">
+            <covered>
+              <lifelineMoniker
+                Id="381a6167-9d0a-4ee5-978d-791f6e2a753b"
+                LastKnownName="Asteroids"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="131a2f6f-451f-48c7-a51f-04f6c4b4eb08"
+            name="ExecutionOccurrenceSpecification10">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="57d51f73-044f-4f5c-9a0b-30242221d0ef"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="AsteroidsModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="978c8334-b8e8-4cbb-8cb3-f501c574442b"
+                LastKnownName="GameLoaderInjector"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="a11c22bc-60d8-4e66-897b-ebdf6766a4e7"
+            name="BehaviorExecutionSpecification6">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="222f58e8-225d-43e1-81f7-88ed3687fb11"
+                LastKnownName="MainClass"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="9fdd32ce-a9c2-4c7c-9077-57fcf2bbf286"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="dc2b3a77-fb24-4b02-a24b-61eddb01ae44"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="d0adf69a-42be-4dd9-863c-2ad208b81102"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="956de072-fea8-4147-bbbe-7522045ca307"
+                LastKnownName="MessageOccurrenceSpecification25"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="98046984-6359-425c-a7bb-42d7fdffe187"
+                LastKnownName="MessageOccurrenceSpecification28"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="506384f2-f285-4b3a-a162-e71774f673b6"
+                LastKnownName="MessageOccurrenceSpecification33"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="9b07c3b2-575f-479a-9dc6-28607aa96ed8"
+                LastKnownName="MessageOccurrenceSpecification36"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="f0d4458f-a0b1-48a0-8a32-38ef26d0994d"
+                LastKnownName="MessageOccurrenceSpecification41"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="5e151076-5d75-49f7-9e66-8887ef949fc1"
+                LastKnownName="MessageOccurrenceSpecification29"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="92867f14-8f1d-4a02-b365-e27d730547f1"
+                LastKnownName="MessageOccurrenceSpecification32"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="c6077870-9b9e-4416-a47a-355539db7313"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="dc2b3a77-fb24-4b02-a24b-61eddb01ae44"
+            name="ExecutionOccurrenceSpecification11">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="74d301ba-bc7a-4d2d-9a9f-5d5ca81ab25f"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="AsteroidsModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="222f58e8-225d-43e1-81f7-88ed3687fb11"
+                LastKnownName="MainClass"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="df9070ad-aad7-4c4c-b2c5-462c362b2cbe"
+            name="MessageOccurrenceSpecification21">
+            <covered>
+              <lifelineMoniker
+                Id="381a6167-9d0a-4ee5-978d-791f6e2a753b"
+                LastKnownName="Asteroids"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d0adf69a-42be-4dd9-863c-2ad208b81102"
+            name="MessageOccurrenceSpecification22">
+            <covered>
+              <lifelineMoniker
+                Id="222f58e8-225d-43e1-81f7-88ed3687fb11"
+                LastKnownName="MainClass"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="0e74a284-33e9-41bd-908d-66581963325e"
+            name="BehaviorExecutionSpecification7">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="1cc3c211-b299-40a1-8d4c-65a35d2fa222"
+                LastKnownName="EntityFarm"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="654e6702-49f7-43dd-88ce-f4183def52e1"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="70a1b0e6-4955-4331-ae31-4d4e6d3421f1"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="fc4cf836-e214-463f-84e6-9c01394ef0e4"
+                LastKnownName="MessageOccurrenceSpecification26"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="5b574068-3992-41db-8c5a-e37675b5ba9a"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="70a1b0e6-4955-4331-ae31-4d4e6d3421f1"
+            name="ExecutionOccurrenceSpecification13">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="641007e9-63d9-42da-84f2-c77e986bcf02"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="AsteroidsModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="1cc3c211-b299-40a1-8d4c-65a35d2fa222"
+                LastKnownName="EntityFarm"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="956de072-fea8-4147-bbbe-7522045ca307"
+            name="MessageOccurrenceSpecification25">
+            <covered>
+              <lifelineMoniker
+                Id="222f58e8-225d-43e1-81f7-88ed3687fb11"
+                LastKnownName="MainClass"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="fc4cf836-e214-463f-84e6-9c01394ef0e4"
+            name="MessageOccurrenceSpecification26">
+            <covered>
+              <lifelineMoniker
+                Id="1cc3c211-b299-40a1-8d4c-65a35d2fa222"
+                LastKnownName="EntityFarm"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="5b574068-3992-41db-8c5a-e37675b5ba9a"
+            name="MessageOccurrenceSpecification27">
+            <covered>
+              <lifelineMoniker
+                Id="1cc3c211-b299-40a1-8d4c-65a35d2fa222"
+                LastKnownName="EntityFarm"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="98046984-6359-425c-a7bb-42d7fdffe187"
+            name="MessageOccurrenceSpecification28">
+            <covered>
+              <lifelineMoniker
+                Id="222f58e8-225d-43e1-81f7-88ed3687fb11"
+                LastKnownName="MainClass"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="654e6702-49f7-43dd-88ce-f4183def52e1"
+            name="ExecutionOccurrenceSpecification14">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="d25fb199-127a-49c1-a3fb-ec7e657e8576"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="AsteroidsModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="1cc3c211-b299-40a1-8d4c-65a35d2fa222"
+                LastKnownName="EntityFarm"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="891ded60-7659-44f2-81af-91fa51db05e8"
+            name="BehaviorExecutionSpecification9">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="5c6bf4bb-6df2-4873-90ce-abcc146e25db"
+                LastKnownName="Entitys"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="b54c3694-62f5-4a09-ac82-2b045ec6cefe"
+                LastKnownName="ExecutionOccurrenceSpecification18"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="3fefeb62-aca2-4261-87fe-993b951dfb0d"
+                LastKnownName="ExecutionOccurrenceSpecification17"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="de897f6c-4840-4387-b61a-2bc81f8ae1cb"
+                LastKnownName="MessageOccurrenceSpecification34"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="b08a8e72-1713-4c4c-bb0f-e41227319229"
+                LastKnownName="MessageOccurrenceSpecification35"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="3fefeb62-aca2-4261-87fe-993b951dfb0d"
+            name="ExecutionOccurrenceSpecification17">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="b55317c2-cf23-436b-857f-013fc7cabe40"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="AsteroidsModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5c6bf4bb-6df2-4873-90ce-abcc146e25db"
+                LastKnownName="Entitys"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="506384f2-f285-4b3a-a162-e71774f673b6"
+            name="MessageOccurrenceSpecification33">
+            <covered>
+              <lifelineMoniker
+                Id="222f58e8-225d-43e1-81f7-88ed3687fb11"
+                LastKnownName="MainClass"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="de897f6c-4840-4387-b61a-2bc81f8ae1cb"
+            name="MessageOccurrenceSpecification34">
+            <covered>
+              <lifelineMoniker
+                Id="5c6bf4bb-6df2-4873-90ce-abcc146e25db"
+                LastKnownName="Entitys"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="b08a8e72-1713-4c4c-bb0f-e41227319229"
+            name="MessageOccurrenceSpecification35">
+            <covered>
+              <lifelineMoniker
+                Id="5c6bf4bb-6df2-4873-90ce-abcc146e25db"
+                LastKnownName="Entitys"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9b07c3b2-575f-479a-9dc6-28607aa96ed8"
+            name="MessageOccurrenceSpecification36">
+            <covered>
+              <lifelineMoniker
+                Id="222f58e8-225d-43e1-81f7-88ed3687fb11"
+                LastKnownName="MainClass"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="b54c3694-62f5-4a09-ac82-2b045ec6cefe"
+            name="ExecutionOccurrenceSpecification18">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="c3e1d3ee-cdb6-481a-a3d9-9fc847836067"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="AsteroidsModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5c6bf4bb-6df2-4873-90ce-abcc146e25db"
+                LastKnownName="Entitys"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="9458d6b6-fa8c-47b6-81ff-878cf5b7d85f"
+            name="BehaviorExecutionSpecification11">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="5c6bf4bb-6df2-4873-90ce-abcc146e25db"
+                LastKnownName="Entitys"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="a466b0b6-a73c-41a9-9688-a584f0a40b7f"
+                LastKnownName="ExecutionOccurrenceSpecification22"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="1421d216-88d9-4d35-8f8f-a4d431a21eca"
+                LastKnownName="ExecutionOccurrenceSpecification21"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="3626944e-b6fa-4022-a3d9-847aadeac665"
+                LastKnownName="MessageOccurrenceSpecification42"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="1421d216-88d9-4d35-8f8f-a4d431a21eca"
+            name="ExecutionOccurrenceSpecification21">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="8cc22e24-f1a6-4d22-b3e8-65b144bf6680"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="AsteroidsModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5c6bf4bb-6df2-4873-90ce-abcc146e25db"
+                LastKnownName="Entitys"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="3626944e-b6fa-4022-a3d9-847aadeac665"
+            name="MessageOccurrenceSpecification42">
+            <covered>
+              <lifelineMoniker
+                Id="5c6bf4bb-6df2-4873-90ce-abcc146e25db"
+                LastKnownName="Entitys"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f0d4458f-a0b1-48a0-8a32-38ef26d0994d"
+            name="MessageOccurrenceSpecification41">
+            <covered>
+              <lifelineMoniker
+                Id="222f58e8-225d-43e1-81f7-88ed3687fb11"
+                LastKnownName="MainClass"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="a466b0b6-a73c-41a9-9688-a584f0a40b7f"
+            name="ExecutionOccurrenceSpecification22">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="72bd374b-c778-4079-8498-ed4031a62e1b"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="AsteroidsModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5c6bf4bb-6df2-4873-90ce-abcc146e25db"
+                LastKnownName="Entitys"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="dbb4f88d-3d90-43aa-bb8e-8986fdcbde3c"
+            name="BehaviorExecutionSpecification8">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="7930f732-0410-4a7b-96bc-142c65e01ddf"
+                LastKnownName="Ship"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="bbf1950d-ff0b-45b6-be17-ccabff1b372e"
+                LastKnownName="ExecutionOccurrenceSpecification16"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="befc180b-b80a-4e29-ad8b-9e5dcaa67fd6"
+                LastKnownName="ExecutionOccurrenceSpecification15"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="41a70188-862c-4cff-86cb-fd41c8450fab"
+                LastKnownName="MessageOccurrenceSpecification30"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="2927079b-5ce9-4176-859f-653c0a639187"
+                LastKnownName="MessageOccurrenceSpecification31"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="befc180b-b80a-4e29-ad8b-9e5dcaa67fd6"
+            name="ExecutionOccurrenceSpecification15">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="a2d9fac9-5c90-4571-a2cb-3bd56e477355"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="AsteroidsModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="7930f732-0410-4a7b-96bc-142c65e01ddf"
+                LastKnownName="Ship"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="41a70188-862c-4cff-86cb-fd41c8450fab"
+            name="MessageOccurrenceSpecification30">
+            <covered>
+              <lifelineMoniker
+                Id="7930f732-0410-4a7b-96bc-142c65e01ddf"
+                LastKnownName="Ship"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="5e151076-5d75-49f7-9e66-8887ef949fc1"
+            name="MessageOccurrenceSpecification29">
+            <covered>
+              <lifelineMoniker
+                Id="222f58e8-225d-43e1-81f7-88ed3687fb11"
+                LastKnownName="MainClass"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="92867f14-8f1d-4a02-b365-e27d730547f1"
+            name="MessageOccurrenceSpecification32">
+            <covered>
+              <lifelineMoniker
+                Id="222f58e8-225d-43e1-81f7-88ed3687fb11"
+                LastKnownName="MainClass"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="2927079b-5ce9-4176-859f-653c0a639187"
+            name="MessageOccurrenceSpecification31">
+            <covered>
+              <lifelineMoniker
+                Id="7930f732-0410-4a7b-96bc-142c65e01ddf"
+                LastKnownName="Ship"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="bbf1950d-ff0b-45b6-be17-ccabff1b372e"
+            name="ExecutionOccurrenceSpecification16">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="a3676db8-d2ac-486c-a3d3-a3c9eecaf7c9"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="AsteroidsModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="7930f732-0410-4a7b-96bc-142c65e01ddf"
+                LastKnownName="Ship"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c6077870-9b9e-4416-a47a-355539db7313"
+            name="MessageOccurrenceSpecification23">
+            <covered>
+              <lifelineMoniker
+                Id="222f58e8-225d-43e1-81f7-88ed3687fb11"
+                LastKnownName="MainClass"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="abfa3c77-2fc6-428c-b1ac-45f1b1ff6f7d"
+            name="MessageOccurrenceSpecification24">
+            <covered>
+              <lifelineMoniker
+                Id="381a6167-9d0a-4ee5-978d-791f6e2a753b"
+                LastKnownName="Asteroids"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="9fdd32ce-a9c2-4c7c-9077-57fcf2bbf286"
+            name="ExecutionOccurrenceSpecification12">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="aceab3c6-26b1-46b1-ba26-471b23c8e794"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="AsteroidsModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="222f58e8-225d-43e1-81f7-88ed3687fb11"
+                LastKnownName="MainClass"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="91900d4d-133d-40c9-8cda-8bd05ddb5d7a"
+            name="BehaviorExecutionSpecification12">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="94f6005d-732d-462b-973e-40e922065302"
+                LastKnownName="GraphicConstructor"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="a20584ed-3a51-48da-8e68-b5b7c2275a64"
+                LastKnownName="ExecutionOccurrenceSpecification24"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="a5a79d62-67ee-40e4-8a95-3e6caabaa18e"
+                LastKnownName="ExecutionOccurrenceSpecification23"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="02aa42c0-9c88-4d82-82c3-4472a0589c11"
+                LastKnownName="MessageOccurrenceSpecification44"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="9baf3263-d266-4c7f-99b5-7ab36684a6d4"
+                LastKnownName="MessageOccurrenceSpecification47"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="a8f14115-9e88-45ae-a8ae-a35931b3d557"
+                LastKnownName="MessageOccurrenceSpecification50"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="b8dbc054-2105-4941-b889-a9f4337724fb"
+                LastKnownName="MessageOccurrenceSpecification51"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="705a0b97-20cf-44cd-b730-05bdfc383e1e"
+                LastKnownName="MessageOccurrenceSpecification54"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="caa331b1-e389-4102-aa54-e538aa5f18ee"
+                LastKnownName="MessageOccurrenceSpecification45"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="a5a79d62-67ee-40e4-8a95-3e6caabaa18e"
+            name="ExecutionOccurrenceSpecification23">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="b6ed1e3b-a8fe-41df-9f0d-e50cee981139"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="AsteroidsModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="94f6005d-732d-462b-973e-40e922065302"
+                LastKnownName="GraphicConstructor"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="7df5be60-fc32-47b7-9928-522763715911"
+            name="MessageOccurrenceSpecification43">
+            <covered>
+              <lifelineMoniker
+                Id="381a6167-9d0a-4ee5-978d-791f6e2a753b"
+                LastKnownName="Asteroids"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="02aa42c0-9c88-4d82-82c3-4472a0589c11"
+            name="MessageOccurrenceSpecification44">
+            <covered>
+              <lifelineMoniker
+                Id="94f6005d-732d-462b-973e-40e922065302"
+                LastKnownName="GraphicConstructor"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="f1d42b8f-75db-4a87-86a6-a3e80bb1a151"
+            name="BehaviorExecutionSpecification13">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="db3a0520-ee3e-4509-b525-ee457addf6ca"
+                LastKnownName="SourceList"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="73c7a6de-c665-4c72-8e25-d301c0c39617"
+                LastKnownName="ExecutionOccurrenceSpecification26"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="2f942400-5bd2-4d97-8b74-acb526a51e81"
+                LastKnownName="ExecutionOccurrenceSpecification25"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="429bff2d-87b3-4454-8559-3e14b2fffbdc"
+                LastKnownName="MessageOccurrenceSpecification48"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="a02f10c8-9021-4d21-9377-1952f3ca92b2"
+                LastKnownName="MessageOccurrenceSpecification49"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="2f942400-5bd2-4d97-8b74-acb526a51e81"
+            name="ExecutionOccurrenceSpecification25">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="60a07f00-abb1-4260-a6c5-2cfedf86d684"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="AsteroidsModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="db3a0520-ee3e-4509-b525-ee457addf6ca"
+                LastKnownName="SourceList"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9baf3263-d266-4c7f-99b5-7ab36684a6d4"
+            name="MessageOccurrenceSpecification47">
+            <covered>
+              <lifelineMoniker
+                Id="94f6005d-732d-462b-973e-40e922065302"
+                LastKnownName="GraphicConstructor"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="429bff2d-87b3-4454-8559-3e14b2fffbdc"
+            name="MessageOccurrenceSpecification48">
+            <covered>
+              <lifelineMoniker
+                Id="db3a0520-ee3e-4509-b525-ee457addf6ca"
+                LastKnownName="SourceList"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a02f10c8-9021-4d21-9377-1952f3ca92b2"
+            name="MessageOccurrenceSpecification49">
+            <covered>
+              <lifelineMoniker
+                Id="db3a0520-ee3e-4509-b525-ee457addf6ca"
+                LastKnownName="SourceList"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a8f14115-9e88-45ae-a8ae-a35931b3d557"
+            name="MessageOccurrenceSpecification50">
+            <covered>
+              <lifelineMoniker
+                Id="94f6005d-732d-462b-973e-40e922065302"
+                LastKnownName="GraphicConstructor"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="73c7a6de-c665-4c72-8e25-d301c0c39617"
+            name="ExecutionOccurrenceSpecification26">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="4dac44a9-5044-4a66-b70a-5ac4bb9c5612"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="AsteroidsModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="db3a0520-ee3e-4509-b525-ee457addf6ca"
+                LastKnownName="SourceList"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="bad223ee-c3a5-480a-9cb2-6cb2c8db264d"
+            name="BehaviorExecutionSpecification14">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="f2b33772-0402-4e46-8c61-850b2181aa3b"
+                LastKnownName="RotatingRectangle"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="71a03553-357a-436f-af02-ab23d80afe60"
+                LastKnownName="ExecutionOccurrenceSpecification28"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="e25bbfc7-c8ac-40da-9e4b-12c33f6ca70c"
+                LastKnownName="ExecutionOccurrenceSpecification27"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="1f0745ef-862c-47bb-9c65-8be33ddb6b51"
+                LastKnownName="MessageOccurrenceSpecification52"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="cc5817d6-c525-4d08-9161-08ed9aa13d48"
+                LastKnownName="MessageOccurrenceSpecification53"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="e25bbfc7-c8ac-40da-9e4b-12c33f6ca70c"
+            name="ExecutionOccurrenceSpecification27">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="69146a3e-c4d0-41b0-8ea9-c6a70d0a445c"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="AsteroidsModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="f2b33772-0402-4e46-8c61-850b2181aa3b"
+                LastKnownName="RotatingRectangle"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="b8dbc054-2105-4941-b889-a9f4337724fb"
+            name="MessageOccurrenceSpecification51">
+            <covered>
+              <lifelineMoniker
+                Id="94f6005d-732d-462b-973e-40e922065302"
+                LastKnownName="GraphicConstructor"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1f0745ef-862c-47bb-9c65-8be33ddb6b51"
+            name="MessageOccurrenceSpecification52">
+            <covered>
+              <lifelineMoniker
+                Id="f2b33772-0402-4e46-8c61-850b2181aa3b"
+                LastKnownName="RotatingRectangle"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="cc5817d6-c525-4d08-9161-08ed9aa13d48"
+            name="MessageOccurrenceSpecification53">
+            <covered>
+              <lifelineMoniker
+                Id="f2b33772-0402-4e46-8c61-850b2181aa3b"
+                LastKnownName="RotatingRectangle"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="705a0b97-20cf-44cd-b730-05bdfc383e1e"
+            name="MessageOccurrenceSpecification54">
+            <covered>
+              <lifelineMoniker
+                Id="94f6005d-732d-462b-973e-40e922065302"
+                LastKnownName="GraphicConstructor"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="71a03553-357a-436f-af02-ab23d80afe60"
+            name="ExecutionOccurrenceSpecification28">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="909ca046-6000-44de-8f56-f9f9e77e901e"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="AsteroidsModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="f2b33772-0402-4e46-8c61-850b2181aa3b"
+                LastKnownName="RotatingRectangle"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="caa331b1-e389-4102-aa54-e538aa5f18ee"
+            name="MessageOccurrenceSpecification45">
+            <covered>
+              <lifelineMoniker
+                Id="94f6005d-732d-462b-973e-40e922065302"
+                LastKnownName="GraphicConstructor"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="42748227-2e73-40b0-83e6-8e8e121674f0"
+            name="MessageOccurrenceSpecification46">
+            <covered>
+              <lifelineMoniker
+                Id="381a6167-9d0a-4ee5-978d-791f6e2a753b"
+                LastKnownName="Asteroids"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="a20584ed-3a51-48da-8e68-b5b7c2275a64"
+            name="ExecutionOccurrenceSpecification24">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="8dc44b45-8d70-4903-99a8-69a45b25cdab"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="AsteroidsModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="94f6005d-732d-462b-973e-40e922065302"
+                LastKnownName="GraphicConstructor"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="f2b33772-0402-4e46-8c61-850b2181aa3b"
+            name="RotatingRectangle"
+            isActor="false"
+            lifelineDisplayName="RotatingRectangle">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="e25bbfc7-c8ac-40da-9e4b-12c33f6ca70c"
+                LastKnownName="ExecutionOccurrenceSpecification27"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="71a03553-357a-436f-af02-ab23d80afe60"
+                LastKnownName="ExecutionOccurrenceSpecification28"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="db3a0520-ee3e-4509-b525-ee457addf6ca"
+            name="SourceList"
+            isActor="false"
+            lifelineDisplayName="SourceList">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="2f942400-5bd2-4d97-8b74-acb526a51e81"
+                LastKnownName="ExecutionOccurrenceSpecification25"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="73c7a6de-c665-4c72-8e25-d301c0c39617"
+                LastKnownName="ExecutionOccurrenceSpecification26"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="94f6005d-732d-462b-973e-40e922065302"
+            name="GraphicConstructor"
+            isActor="false"
+            lifelineDisplayName="GraphicConstructor">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="a5a79d62-67ee-40e4-8a95-3e6caabaa18e"
+                LastKnownName="ExecutionOccurrenceSpecification23"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="a20584ed-3a51-48da-8e68-b5b7c2275a64"
+                LastKnownName="ExecutionOccurrenceSpecification24"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="381a6167-9d0a-4ee5-978d-791f6e2a753b"
+            name="Asteroids"
+            isActor="false"
+            lifelineDisplayName="Asteroids">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="0e9dd817-9ac1-4b53-b4d2-6c068c525e37"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="29e231ea-214e-4133-adea-e96ed24bb300"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="df9070ad-aad7-4c4c-b2c5-462c362b2cbe"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="abfa3c77-2fc6-428c-b1ac-45f1b1ff6f7d"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="7df5be60-fc32-47b7-9928-522763715911"
+                LastKnownName="MessageOccurrenceSpecification43"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="42748227-2e73-40b0-83e6-8e8e121674f0"
+                LastKnownName="MessageOccurrenceSpecification46"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="978c8334-b8e8-4cbb-8cb3-f501c574442b"
+            name="GameLoaderInjector"
+            isActor="false"
+            lifelineDisplayName="GameLoaderInjector">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="8fdf746d-9cc9-4722-a924-8ea3c2a38a55"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="131a2f6f-451f-48c7-a51f-04f6c4b4eb08"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="222f58e8-225d-43e1-81f7-88ed3687fb11"
+            name="MainClass"
+            isActor="false"
+            lifelineDisplayName="MainClass">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="dc2b3a77-fb24-4b02-a24b-61eddb01ae44"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="9fdd32ce-a9c2-4c7c-9077-57fcf2bbf286"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="1cc3c211-b299-40a1-8d4c-65a35d2fa222"
+            name="EntityFarm"
+            isActor="false"
+            lifelineDisplayName="EntityFarm">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="70a1b0e6-4955-4331-ae31-4d4e6d3421f1"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="654e6702-49f7-43dd-88ce-f4183def52e1"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="7930f732-0410-4a7b-96bc-142c65e01ddf"
+            name="Ship"
+            isActor="false"
+            lifelineDisplayName="Ship">
+            <represents>
+              <propertyMoniker
+                Id="f8a24700-2d95-4312-876f-5f45cd920fe6"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="befc180b-b80a-4e29-ad8b-9e5dcaa67fd6"
+                LastKnownName="ExecutionOccurrenceSpecification15"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="bbf1950d-ff0b-45b6-be17-ccabff1b372e"
+                LastKnownName="ExecutionOccurrenceSpecification16"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="5c6bf4bb-6df2-4873-90ce-abcc146e25db"
+            name="Entitys"
+            isActor="false"
+            lifelineDisplayName="Entitys">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="3fefeb62-aca2-4261-87fe-993b951dfb0d"
+                LastKnownName="ExecutionOccurrenceSpecification17"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="b54c3694-62f5-4a09-ac82-2b045ec6cefe"
+                LastKnownName="ExecutionOccurrenceSpecification18"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="1421d216-88d9-4d35-8f8f-a4d431a21eca"
+                LastKnownName="ExecutionOccurrenceSpecification21"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="a466b0b6-a73c-41a9-9688-a584f0a40b7f"
+                LastKnownName="ExecutionOccurrenceSpecification22"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="c13902bf-248c-462b-8683-5bf998c07d23"
+            name="GetGame"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="0e9dd817-9ac1-4b53-b4d2-6c068c525e37"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="1f497d59-2067-43ba-b2d8-1144cfd64af5"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="2b3c3a24-f434-4fe6-af0f-996876012ff9"
+            name="IGame"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="bbf71935-e0e5-4078-a7f7-10bc38d2fd27"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="29e231ea-214e-4133-adea-e96ed24bb300"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="48709dbf-ef44-405f-9caf-ed244ba2bb09"
+            name="Tick"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="df9070ad-aad7-4c4c-b2c5-462c362b2cbe"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="d0adf69a-42be-4dd9-863c-2ad208b81102"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="e01e7248-f70d-4828-9d8b-e8633625c6a0"
+            name="Interaction"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="956de072-fea8-4147-bbbe-7522045ca307"
+                LastKnownName="MessageOccurrenceSpecification25"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="fc4cf836-e214-463f-84e6-9c01394ef0e4"
+                LastKnownName="MessageOccurrenceSpecification26"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="3f7ec91a-a492-4c0d-9ab4-3ded5be2741e"
+            name="NewEntitys"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="5b574068-3992-41db-8c5a-e37675b5ba9a"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="98046984-6359-425c-a7bb-42d7fdffe187"
+                LastKnownName="MessageOccurrenceSpecification28"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="f73609e6-0c5e-47da-ab45-458dd1b9e793"
+            name="Interactions"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="506384f2-f285-4b3a-a162-e71774f673b6"
+                LastKnownName="MessageOccurrenceSpecification33"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="de897f6c-4840-4387-b61a-2bc81f8ae1cb"
+                LastKnownName="MessageOccurrenceSpecification34"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="f2a7a885-0ca4-4a32-8f6e-e7c2379607ad"
+            name="New entitys and killed entitys"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="b08a8e72-1713-4c4c-bb0f-e41227319229"
+                LastKnownName="MessageOccurrenceSpecification35"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="9b07c3b2-575f-479a-9dc6-28607aa96ed8"
+                LastKnownName="MessageOccurrenceSpecification36"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="61fd93b4-6406-42bc-b9f8-f3d515a26bab"
+            name="Remove killed entitys"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f0d4458f-a0b1-48a0-8a32-38ef26d0994d"
+                LastKnownName="MessageOccurrenceSpecification41"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="3626944e-b6fa-4022-a3d9-847aadeac665"
+                LastKnownName="MessageOccurrenceSpecification42"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="a9ec9078-aa22-41a1-81e4-b0ad98a9918e"
+            name="Interaction"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="5e151076-5d75-49f7-9e66-8887ef949fc1"
+                LastKnownName="MessageOccurrenceSpecification29"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="41a70188-862c-4cff-86cb-fd41c8450fab"
+                LastKnownName="MessageOccurrenceSpecification30"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="95b4ef7a-a3a7-457a-b70a-c23417a082b1"
+            name="Player loose or not"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="2927079b-5ce9-4176-859f-653c0a639187"
+                LastKnownName="MessageOccurrenceSpecification31"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="92867f14-8f1d-4a02-b365-e27d730547f1"
+                LastKnownName="MessageOccurrenceSpecification32"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="3457f565-3435-42b1-bf00-30b48b103a57"
+            name="List&lt;ViewObjects&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="c6077870-9b9e-4416-a47a-355539db7313"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="abfa3c77-2fc6-428c-b1ac-45f1b1ff6f7d"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="29ab237e-642f-40fa-902f-d014d169921a"
+            name="ViewObjects"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="7df5be60-fc32-47b7-9928-522763715911"
+                LastKnownName="MessageOccurrenceSpecification43"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="02aa42c0-9c88-4d82-82c3-4472a0589c11"
+                LastKnownName="MessageOccurrenceSpecification44"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="2d2bd6da-66cd-41fb-823e-fd5da80b877c"
+            name="GetSprites"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="9baf3263-d266-4c7f-99b5-7ab36684a6d4"
+                LastKnownName="MessageOccurrenceSpecification47"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="429bff2d-87b3-4454-8559-3e14b2fffbdc"
+                LastKnownName="MessageOccurrenceSpecification48"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="c218e79b-e37c-4596-98f8-b1b5ad5bee62"
+            name="Sprites"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a02f10c8-9021-4d21-9377-1952f3ca92b2"
+                LastKnownName="MessageOccurrenceSpecification49"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a8f14115-9e88-45ae-a8ae-a35931b3d557"
+                LastKnownName="MessageOccurrenceSpecification50"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="4abd3e3b-483b-49c1-8b71-14118aab8881"
+            name="GetPoints"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="b8dbc054-2105-4941-b889-a9f4337724fb"
+                LastKnownName="MessageOccurrenceSpecification51"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="1f0745ef-862c-47bb-9c65-8be33ddb6b51"
+                LastKnownName="MessageOccurrenceSpecification52"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="5ff5f6ea-d13c-499f-af2f-7fb7f18c87c4"
+            name="points"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="cc5817d6-c525-4d08-9161-08ed9aa13d48"
+                LastKnownName="MessageOccurrenceSpecification53"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="705a0b97-20cf-44cd-b730-05bdfc383e1e"
+                LastKnownName="MessageOccurrenceSpecification54"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="ebf2fce7-e274-4851-8349-981d2df06449"
+            name="imeges"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="caa331b1-e389-4102-aa54-e538aa5f18ee"
+                LastKnownName="MessageOccurrenceSpecification45"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="42748227-2e73-40b0-83e6-8e8e121674f0"
+                LastKnownName="MessageOccurrenceSpecification46"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="f8a24700-2d95-4312-876f-5f45cd920fe6"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="5cbb96da-0fb5-43c4-b357-c853055a290f"
+                LastKnownName="Ship"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="a774814d-2a79-4b36-a26f-fbf1ac3c3992"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="57d51f73-044f-4f5c-9a0b-30242221d0ef"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="74d301ba-bc7a-4d2d-9a9f-5d5ca81ab25f"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="aceab3c6-26b1-46b1-ba26-471b23c8e794"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="641007e9-63d9-42da-84f2-c77e986bcf02"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="d25fb199-127a-49c1-a3fb-ec7e657e8576"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="a2d9fac9-5c90-4571-a2cb-3bd56e477355"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="a3676db8-d2ac-486c-a3d3-a3c9eecaf7c9"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b55317c2-cf23-436b-857f-013fc7cabe40"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="c3e1d3ee-cdb6-481a-a3d9-9fc847836067"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="8cc22e24-f1a6-4d22-b3e8-65b144bf6680"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="72bd374b-c778-4079-8498-ed4031a62e1b"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b6ed1e3b-a8fe-41df-9f0d-e50cee981139"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="8dc44b45-8d70-4903-99a8-69a45b25cdab"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="60a07f00-abb1-4260-a6c5-2cfedf86d684"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="4dac44a9-5044-4a66-b70a-5ac4bb9c5612"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="69146a3e-c4d0-41b0-8ea9-c6a70d0a445c"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="909ca046-6000-44de-8f56-f9f9e77e901e"
+        name="ExecutionEvent" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
