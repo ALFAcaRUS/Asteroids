@@ -13,7 +13,7 @@ namespace AsteroidsTest.KernalTests.EntitysTest.BulletTests
         [TestMethod]
         public void StateUpdateTest()
         {
-            LaserBullet testedBullet = new LaserBullet(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(-1, -1));
+            AEntity testedBullet = new LaserBullet(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(-1, -1));
 
             testedBullet.ChengeState(new CoupleDouble(100, 100));
 
@@ -23,8 +23,8 @@ namespace AsteroidsTest.KernalTests.EntitysTest.BulletTests
         [TestMethod]
         public void EnemyInteractionTest()
         {
-            LaserBullet firstTestedLaserBullet = new LaserBullet(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(-1, -1));
-            LaserBullet secondTestedLaserBullet = new LaserBullet(new CoupleDouble(2, 2), new CoupleDouble(2, 2), new CoupleDouble(-1, -1));
+            AEntity firstTestedLaserBullet = new LaserBullet(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(-1, -1));
+            AEntity secondTestedLaserBullet = new LaserBullet(new CoupleDouble(2, 2), new CoupleDouble(2, 2), new CoupleDouble(-1, -1));
 
             Ufo someUfo = new Ufo(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(-1, -1));
             Asteroid someAsteroid = new Asteroid(new CoupleDouble(2, 2), new CoupleDouble(2, 2), new CoupleDouble(-1, -1));
@@ -43,10 +43,10 @@ namespace AsteroidsTest.KernalTests.EntitysTest.BulletTests
         [TestMethod]
         public void BulletInteractionTest()
         {
-            LaserBullet testedBullet = new LaserBullet(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(-1, -1));
+            AEntity testedBullet = new LaserBullet(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(-1, -1));
 
             GunBullet someGunBullet = new GunBullet(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(-1, -1));
-            LaserBullet someLaserBullet = new LaserBullet(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(-1, -1));
+            AEntity someLaserBullet = new LaserBullet(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(-1, -1));
 
             List<AEntity> gunBullIntRes = testedBullet.Interaction(someGunBullet);
             List<AEntity> laserBullIntRes = testedBullet.Interaction(someLaserBullet);

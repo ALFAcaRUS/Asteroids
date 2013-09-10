@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="85417e1c-3faa-43e7-a32a-5f72fe2b3934"
+  name="PseudoEntitys"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="f54c5840-16be-44f8-8fb4-426ddd5ced20"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DGame.Entitys.PseudoEntitys"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="6b6ea151-82e3-4ec4-977a-5ce755dcf7d1"
+        name="EnemyFarmPseudoEntity"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="c5a8973a-aa9b-4914-903e-14edf1068b92"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame.Entitys.PseudoEntitys Type%3DEnemyFarmPseudoEntity"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="b12946d3-24b2-464f-a1c7-c4116524974a"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a7cacd08-b2fa-4ff9-886e-0e3e815c4388">
+                <propertyInstance
+                  Id="432c9dbe-8e4c-40a0-bc98-a1c419088fb9"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b1f9672d-a49b-4960-969f-9c4e4fed82e0">
+                <propertyInstance
+                  Id="174bbcb0-5370-4efb-b50e-0f703a569b40"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4c9bb796-81f8-425d-9222-46fe46062d61">
+                <propertyInstance
+                  Id="2422d8e3-7fce-4e69-94fc-672efb18c3f9"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a2b011d5-672c-4428-9251-e8d8412b1ec0">
+                <propertyInstance
+                  Id="bdb904a6-bb28-4189-bfc1-8357160388ba"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="26f3bfca-f360-4a15-9126-bf69a10c4e37">
+                <propertyInstance
+                  Id="285471cf-9b60-41a5-a9c5-db50c444b0b4"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="b1870077-4731-4c6f-bf65-1cd6f43e7dc9"
+            isSubstitutable="false">
+            <classMoniker
+              Id="aabd4201-fbfa-4595-b3ee-f6437521c2fb"
+              LastKnownName="AEntity"
+              LastKnownLocation="Package_1707.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="fbe9d058-ebbf-4e11-b23c-8ad3e9b46b04"
+            name="EnemyFarmPseudoEntity"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="86591a37-9f3a-47d3-b366-3cee29ce9d59"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame.Entitys.PseudoEntitys Type%3DEnemyFarmPseudoEntity Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="685b0b0e-5c04-497a-9d12-6d2fa2e9aea4"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="83f5ac25-8854-48fa-806f-6ff955d2874c">
+                    <propertyInstance
+                      Id="170c5447-c3de-4a03-b245-f324edec1396"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="07b8b64c-28d6-4234-a7f0-8f1a37c746f2">
+                    <propertyInstance
+                      Id="2f546de8-8b0c-49a5-97d5-5a7d33e51a2d"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d6502a85-084a-4d2e-a4fa-6394ce4f0796">
+                    <propertyInstance
+                      Id="485f5499-f2cd-42ea-bff3-d74755e3ea23"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b07fd143-7e54-4b1f-bdd7-7248c648a7a9">
+                    <propertyInstance
+                      Id="645dba87-6db3-44e9-9c58-b37c73fd4159"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f5649c72-7518-4bc7-892b-bf3da079449e">
+                    <propertyInstance
+                      Id="b2a61c8b-8e36-4dad-8287-d359d1dbee72"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9708a6a0-1093-45bf-be36-c00dd60b2f8f">
+                    <propertyInstance
+                      Id="bd954789-a600-4846-a2e1-0db839277185"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c9f7cab2-77a9-49f7-8f4f-5c3621ab1edf"
+                  name="pos"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="8cfadfe1-ff60-450c-bbeb-7adf16324592"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame.Entitys.PseudoEntitys Type%3DEnemyFarmPseudoEntity Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)]) ParameterIdentifier%3Dpos"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fa1d2164-ee31-48a6-b9f4-456ee438ea5e"
+                      LastKnownName="CoupleDouble"
+                      LastKnownLocation="Package_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3885f87c-0260-4793-8ef1-61d1f8273f27"
+                  name="size"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3f385913-8317-4313-8818-1df3d7b659aa"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame.Entitys.PseudoEntitys Type%3DEnemyFarmPseudoEntity Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)]) ParameterIdentifier%3Dsize"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fa1d2164-ee31-48a6-b9f4-456ee438ea5e"
+                      LastKnownName="CoupleDouble"
+                      LastKnownLocation="Package_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f61a73b5-f4e3-4ba6-9a87-54f58553e78f"
+                  name="speed"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="20c55110-7ee3-451a-94bc-4241b4829358"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame.Entitys.PseudoEntitys Type%3DEnemyFarmPseudoEntity Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)]) ParameterIdentifier%3Dspeed"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fa1d2164-ee31-48a6-b9f4-456ee438ea5e"
+                      LastKnownName="CoupleDouble"
+                      LastKnownLocation="Package_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d22d363c-84fb-44c6-b419-aeb8741c0deb"
+            name="ChengeState"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a4ec4ce2-8116-4ca1-940b-b34437c7bece"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame.Entitys.PseudoEntitys Type%3DEnemyFarmPseudoEntity Member%3D(Name%3DChengeState OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="dbbef45b-ed26-4441-ae55-af25c99f9791"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6859e574-c5ec-4a75-9b5f-a111279313bb">
+                    <propertyInstance
+                      Id="ba296c24-30ac-44ce-a18c-4682a5a6d8f1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="578db5db-af24-4a4c-8aa3-c024ce8264bd">
+                    <propertyInstance
+                      Id="c0f70aa3-fb7e-48c2-b444-772c5213cdb2"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c990d899-d0de-497e-9ece-0bad5355fb76">
+                    <propertyInstance
+                      Id="ad71f384-8943-4057-9734-5bcda28d4038"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7dddfed9-76e4-4b9b-8309-a399805f0a10">
+                    <propertyInstance
+                      Id="95bbb630-250a-4642-8cda-e7d1b3e41f99"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="884e3510-4186-4b2b-ae94-7cf3ce8c519e">
+                    <propertyInstance
+                      Id="4230b243-f18b-433b-8df5-b654c850b154"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c67c6ef4-6f9d-42bc-9cb0-e7a9567ab9b1">
+                    <propertyInstance
+                      Id="18228242-df81-4898-8ef8-30123d9f99ad"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="82af10f0-116f-4cd5-83bf-38e5c82fc383"
+                  name="maxPos"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="37b888f5-fd35-4059-bc72-60aab5f4a504"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame.Entitys.PseudoEntitys Type%3DEnemyFarmPseudoEntity Member%3D(Name%3DChengeState OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)]) ParameterIdentifier%3DmaxPos"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fa1d2164-ee31-48a6-b9f4-456ee438ea5e"
+                      LastKnownName="CoupleDouble"
+                      LastKnownLocation="Package_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="095dc01e-0d07-4afc-8586-4d9e1295569a"
+            name="Interaction"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="69c6e3ae-cbb8-4436-bd55-c15cb5d0476f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame.Entitys.PseudoEntitys Type%3DEnemyFarmPseudoEntity Member%3D(Name%3DInteraction OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame.Entitys Type%3DAEntity)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b0ec7bd5-87da-4369-b940-6e4998c90e69"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="883a90ae-3966-49a3-9da1-7f49a0590907">
+                    <propertyInstance
+                      Id="1f1dc1f5-5ccb-48e2-bc88-103c08b95031"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d98c24d7-f800-4121-8f23-c7080f71e4db">
+                    <propertyInstance
+                      Id="3e8fc9fc-bff0-4377-af70-1975d29c119e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="91c9adbe-cf7c-4d93-83dd-e29b01c4ddb5">
+                    <propertyInstance
+                      Id="d0be551b-043b-48df-92ad-15d899da57e4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ee85ecf-4789-4aaf-831e-81a86ba6c8c7">
+                    <propertyInstance
+                      Id="f1c247e9-da8f-4c94-90f5-78dcacf93e05"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4c4e32c1-020d-4bf9-bb31-16f7b2466bc1">
+                    <propertyInstance
+                      Id="86379f6b-a2b0-4935-91a0-33aacf741b7f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3d3c9f4a-14c2-4f64-a8af-2dd82bf2060f">
+                    <propertyInstance
+                      Id="205c841b-9abc-4936-9250-7b067208067a"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0d63beee-fb31-431b-855b-742bbfed4732"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4d7ee4ec-de26-4230-91f9-70070c25ce45"
+                      LastKnownName="List&lt;AEntity‎&gt;"
+                      LastKnownLocation="Package2_1707.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1b808a7f-e2dd-46e9-bc96-08c6b6645298"
+                  name="interactionEntity"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="fc0751bf-1cae-439c-928f-e1837b771d5c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame.Entitys.PseudoEntitys Type%3DEnemyFarmPseudoEntity Member%3D(Name%3DInteraction OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame.Entitys Type%3DAEntity)]) ParameterIdentifier%3DinteractionEntity"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="aabd4201-fbfa-4595-b3ee-f6437521c2fb"
+                      LastKnownName="AEntity"
+                      LastKnownLocation="Package_1707.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b880bd23-3106-4741-a303-34ed24bbee29"
+            name="GetEntityType"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="85693ab9-5474-4290-bf4c-bed84b244671"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame.Entitys.PseudoEntitys Type%3DEnemyFarmPseudoEntity Member%3DGetEntityType"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8d8ca251-ab6a-4b9d-b752-7f38a56b7d81"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cb1764d0-a7ce-44af-8ea4-389d9b72e3eb">
+                    <propertyInstance
+                      Id="4bfc2b68-d354-4656-9885-635ebe892fde"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="83f2b154-e328-4290-9110-5a78a179ae02">
+                    <propertyInstance
+                      Id="dc293f8a-ad6f-43dd-9493-37b33411b690"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6d96562e-dd6e-49b7-bf05-7f0bb2af74ab">
+                    <propertyInstance
+                      Id="557ac5e7-3dea-47b6-85e5-4fc3458177ea"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d40da8b-2ede-4301-bdf6-4e3b4b941996">
+                    <propertyInstance
+                      Id="58fe420b-ac75-4c6c-9974-4fb0651df6c2"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="00a0a330-611c-4621-a9da-f962c5bf8f5e">
+                    <propertyInstance
+                      Id="dd9f4b2a-6a3c-4db5-a2df-104f9360d983"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a1abb3c-2ddb-4e42-ad52-9cb680ef67f6">
+                    <propertyInstance
+                      Id="d1003ef2-f18d-455c-8c45-a56b9baa5ca1"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2129e926-f29f-45a3-881c-c166ee2843a0"
+                  direction="Return">
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="775bba92-b4c1-4002-b5c6-389bb5235eee"
+                      LastKnownName="EntityType"
+                      LastKnownLocation="Package_1707.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

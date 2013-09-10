@@ -51,7 +51,7 @@ namespace AsteroidsTest.KernalTests.EntitysTest.BulletTests
             GunBullet testedBullet = new GunBullet(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(-1, -1));
 
             GunBullet someGunBullet = new GunBullet(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(-1, -1));
-            LaserBullet someLaserBullet = new LaserBullet(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(-1, -1));
+            AEntity someLaserBullet = new LaserBullet(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(-1, -1));
 
             List<AEntity> gunBullIntRes = testedBullet.Interaction(someGunBullet);
             List<AEntity> laserBullIntRes = testedBullet.Interaction(someLaserBullet);

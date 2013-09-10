@@ -1,0 +1,9 @@
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\AsteroidsTest\bin\Release\AsteroidsTest.dll
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\AsteroidsTest\bin\Release\AsteroidsTest.pdb
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\AsteroidsTest\bin\Release\Asteroids.exe
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\AsteroidsTest\bin\Release\Game.dll
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\AsteroidsTest\bin\Release\Asteroids.pdb
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\AsteroidsTest\bin\Release\Game.pdb
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\AsteroidsTest\obj\Release\AsteroidsTest.csprojResolveAssemblyReference.cache
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\AsteroidsTest\obj\Release\AsteroidsTest.dll
+C:\Users\alfac_000\Documents\Visual Studio 2012\Projects\C#\WFA\Asteroids\AsteroidsTest\obj\Release\AsteroidsTest.pdb

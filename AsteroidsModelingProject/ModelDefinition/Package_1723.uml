@@ -1,0 +1,1929 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="6b9e8b93-9bd4-4655-a0fb-72cc551789e1"
+  name="Asteroids"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="780fb36b-537c-488a-be94-016840cf7e70"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DAsteroids"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="bf85bc67-1810-4412-9573-a969f46e11ec"
+        name="Asteroids"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="804a7372-0d38-457e-88c7-9edb364270b4"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="984efce0-9d7e-4ec1-b33f-fe545ce839a4"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b6151e87-8e03-41c9-ae1b-780a860eae12">
+                <propertyInstance
+                  Id="cbd2d358-79ba-4de6-aa05-81b7e8b881e4"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5f05a676-e3eb-4dcd-9621-a15b5a946f3f">
+                <propertyInstance
+                  Id="5b55b5d6-ddcd-4fae-8897-3d3258a338d3"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f73a57ae-3342-4ce2-a21f-045b8970a215">
+                <propertyInstance
+                  Id="6e65f314-9fcc-4fec-8956-7e8c0cc71af4"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7ac99699-ebfc-444e-af26-a0299ae9dec0">
+                <propertyInstance
+                  Id="bf4253f2-1693-40f3-957f-8dfb2aa00b38"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4e118017-e7d5-4fb7-aa9c-6c55ec67f9d6">
+                <propertyInstance
+                  Id="b392fc06-1d64-4861-bbca-e72b04e10e06"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="f7de2983-8c10-4fa3-928f-e09f430e9f0a"
+            isSubstitutable="false">
+            <classMoniker
+              Id="4bf7261d-9648-4ac9-875e-1bbf8ff2e7a6"
+              LastKnownName="Form"
+              LastKnownLocation="Package2_1723.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="4b9f2d2f-b2f3-49d1-b75c-d00c1a581130"
+            isDerived="false"
+            sourceEndRoleName="Asteroids"
+            targetEndRoleName="IGame"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="5ac2a2a3-146c-47ca-a72c-2038d8bc85fe"
+              LastKnownName="IGame"
+              LastKnownLocation="Package_1706.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="20af2e08-6816-41ed-8f17-aad6d25e959e"
+                  name="Asteroids"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f5678528-ac4d-465c-a7cb-348b30264057"
+                  name="IGame"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="6b9892f3-cb10-46b1-a60f-75e4d5d109a9"
+            name="Game"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="16348639-49d6-4b28-a4b8-edecf82d3b39"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids Member%3DGame"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ec2bef64-e907-46a1-9992-06834b468a1e"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a40c9a8-c3ce-4115-afc9-14e19f9b9b63">
+                    <propertyInstance
+                      Id="8b3a21c6-f75a-4617-942c-30284457c885"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="749d29e1-b847-4273-9b65-1802a41b02c0">
+                    <propertyInstance
+                      Id="38bc0d55-1d56-4097-9717-7e4cd9ba4792"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="49c10ff6-b3de-4e84-8566-7ecb6bba9bd6">
+                    <propertyInstance
+                      Id="248127aa-ac59-4185-95b3-1809c65a8e7d"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a1caa9dd-a262-4bd7-bb49-85635704d100">
+                    <propertyInstance
+                      Id="12bf69d5-3971-40e3-93e5-463effcdd386"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0cabc9a6-e89e-44aa-9fef-88e584631643">
+                    <propertyInstance
+                      Id="9cf3a3a2-069a-4367-abc6-c5f2ebb36bbf"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="5ac2a2a3-146c-47ca-a72c-2038d8bc85fe"
+                LastKnownName="IGame"
+                LastKnownLocation="Package_1706.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="907c43fb-bbc5-4dae-ae8d-f64336b3b423"
+            name="Wall"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="4c59665f-c9ae-4428-82c0-0da6d72e3ccd"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids Member%3DWall"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="539f0092-f32a-425c-aa52-3ba83dd66f41"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6b8348d8-05f9-45f5-a4aa-ec9f3bb320c1">
+                    <propertyInstance
+                      Id="207f28db-9f0b-4dc0-aa07-0df174e35d88"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="12766621-342d-4153-ad76-5152ec9465a8">
+                    <propertyInstance
+                      Id="f9d54531-48bf-4f4a-8e0c-8c0d6a380082"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e71c3dd6-a14d-4a1d-a893-ea82ad165cd6">
+                    <propertyInstance
+                      Id="1065d28d-8f64-41f7-998a-6c6190250259"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5955c8a9-450c-4efd-8c79-76e7625e8cb1">
+                    <propertyInstance
+                      Id="5193460d-d67a-411e-befd-4f32242fa9d1"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="17c8644f-2ec9-4f2d-a4ce-b526c4659c72">
+                    <propertyInstance
+                      Id="a2faf72b-9fba-4b1c-b1c3-f698546c728d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="f3638279-42bb-4a87-ac69-a5b88ec0caca"
+                LastKnownName="Panel"
+                LastKnownLocation="Package2_1723.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="cc34c598-8c06-44dd-8653-b26e4370d614"
+            name="back"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="dfb00c1e-95a0-4914-82c3-b47e42f02bf1"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids Member%3Dback"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e9998d20-5591-4f37-b0dd-a83b1901065d"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d3d5ef9d-505e-43de-8295-e9570d8ea487">
+                    <propertyInstance
+                      Id="73b4977b-e998-450d-a1a1-e24ed5ee79b7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0ee7bd7a-bed1-49d1-a995-82653200eeaf">
+                    <propertyInstance
+                      Id="de924742-48b3-4cfb-becc-6e859c17608f"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9435338a-687d-477f-8d9e-f291d7edcfc4">
+                    <propertyInstance
+                      Id="4fe73fb5-b08a-44ef-8285-e84cf458fae4"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6a8e710f-ec63-4258-8990-40bbd808e7cb">
+                    <propertyInstance
+                      Id="54df42ef-3008-40b2-a8b6-47010d8647d3"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b06a28a8-a676-4809-913f-57e02d958bca">
+                    <propertyInstance
+                      Id="66d321ef-0c4b-42e0-9455-fae0b507b99d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8d0d0552-568b-4fa2-b746-9a9c290d4e51"
+            name="backGround"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="fd8c419a-9ada-47b6-9c5c-36c1c41f6886"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids Member%3DbackGround"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a6b2d466-1773-40ce-bd1e-84c9dbc6df1f"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="472366e5-4ef0-478d-9754-415ca5c282b4">
+                    <propertyInstance
+                      Id="395f419f-1a32-4e14-8613-5e5aa882342b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="94d933ef-d5be-4a51-a591-93ae497153c5">
+                    <propertyInstance
+                      Id="ad01cbaf-656e-4f77-ae04-e23a94c6f56c"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ffe8e9e9-c2d8-4709-a0da-db228e22a87a">
+                    <propertyInstance
+                      Id="7c3af357-0170-4cfe-ab69-bf46b9e241c0"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f474e21c-d0ae-4169-9022-af297cfcb609">
+                    <propertyInstance
+                      Id="afc8cd5d-5818-4614-9b71-261a08d08d03"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b6a02d6a-eb72-4db2-8362-0e30b20623c3">
+                    <propertyInstance
+                      Id="59eb95e2-2adf-46b4-ad33-404effdfb343"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="93a55da2-e1d9-4763-820e-69f13e3dc3b1"
+                LastKnownName="Image"
+                LastKnownLocation="Package2_1705.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="363c3923-b99a-4b25-a4d8-3b2e21fabc06"
+            name="components"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="7e80c3ac-7c13-429d-b8f4-4522a707a91e"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids Member%3Dcomponents"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="dfaed83c-01d1-40a5-8305-82dab57c5f77"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="42552e58-b349-4c44-876d-98cef0af0d74">
+                    <propertyInstance
+                      Id="28111694-7580-4f9d-9b71-a4bbed1099a6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a134830d-619e-43fd-b779-45aba935d479">
+                    <propertyInstance
+                      Id="2027decb-8b7c-45dd-8307-df124ffc78e1"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="764bc44e-8573-4646-a6f2-9cadc589adbe">
+                    <propertyInstance
+                      Id="65718883-6e4b-4a5d-92b4-e5ba2694a00e"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8b82432c-2479-4ba0-8b5e-66953b9a88d3">
+                    <propertyInstance
+                      Id="53cd4b33-5818-46fc-afdb-bb0b6d28abaf"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="55303844-e077-4b6b-b4cc-f2703ac22884">
+                    <propertyInstance
+                      Id="21168119-074b-48e4-8ec1-b7b285b3a9f8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="d8705a36-6286-414b-95b5-6d58b8e3b1ce"
+                LastKnownName="IContainer"
+                LastKnownLocation="Package3_1723.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="89c438bd-b1da-4b27-a430-b47179655ee4"
+            name="forward"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="35d66598-6899-4860-b60b-0fcc9e2cf76f"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids Member%3Dforward"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="efa223e0-4f3c-42a1-8399-166e87a7150c"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d96c7194-811c-43f3-97ce-7fea6bbb5dcc">
+                    <propertyInstance
+                      Id="5b91545a-f7c9-4473-9728-76ef55d19b29"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3e9d8beb-4a1f-4126-b6d6-61cef433b923">
+                    <propertyInstance
+                      Id="64d46e31-5064-4ae5-8f13-83201b366dbf"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5bf70e47-a289-4313-a618-93ba3f070d6f">
+                    <propertyInstance
+                      Id="6a256816-9b0a-42c8-8359-93f638a35b5e"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bfbfcb32-f952-4d6c-a9e1-21c8ac60c348">
+                    <propertyInstance
+                      Id="e7340372-39fe-4e01-9337-75cab0432a60"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ef96a1b8-de1c-404d-b81b-3c5e0d31e90a">
+                    <propertyInstance
+                      Id="c8da1955-3227-4f85-8355-3c7a6d619753"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="50ca146c-0e5d-4872-8ef3-5648717445b8"
+            name="grCons"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="a18af8e8-839e-410b-9ba4-a4ac0a1daf2c"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids Member%3DgrCons"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="19866f41-3f1f-45af-bfa4-def5aca8a090"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d036f8bb-2762-496e-9878-b2de40613c76">
+                    <propertyInstance
+                      Id="c139751a-6214-4c52-8d27-f82a4bd64bf6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="08e7682d-44e8-4e82-a15b-4a0c1455a061">
+                    <propertyInstance
+                      Id="487ab2fb-df87-4271-995a-6ac1878e7bab"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="88c22644-cda7-459a-8f77-5e395541efb6">
+                    <propertyInstance
+                      Id="9e8fcf55-6afd-40ca-ab83-5be0f8ee63f2"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b5ddae94-bf83-446a-85c7-19bbd703bfdf">
+                    <propertyInstance
+                      Id="747ac699-9bbc-4cb7-b2dc-b7b1e4d5849a"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7ed1f5ba-678d-44de-bd04-ddaa6906a91d">
+                    <propertyInstance
+                      Id="ae694abb-d0d8-4690-a740-08636129c9c0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="3ff367fc-190d-4078-a43a-50d51b8d2a0c"
+                LastKnownName="AGraphicConstructor"
+                LastKnownLocation="Package4_1723.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="029872e0-d3c9-4bbe-be44-21ad191d984f"
+            name="left"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="cab53b6b-56fc-402e-b2f1-5ce19a24450e"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids Member%3Dleft"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8988fe5d-03c9-4bf5-ab01-937e03f0083e"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f44c69ef-6743-4519-9570-aa7214f28f05">
+                    <propertyInstance
+                      Id="f3a7b279-d111-4707-8734-babda0637f4a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f5011af4-d988-484d-870c-74cd0dbbf59d">
+                    <propertyInstance
+                      Id="57d96ca5-1bef-47aa-8b4e-75b24b5346dd"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="643ed699-fd1e-467c-9606-19d31bb02796">
+                    <propertyInstance
+                      Id="eb08a841-a6a7-4fff-9f18-021e041b1d79"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="61344542-96c5-46ea-8933-e75792d986e9">
+                    <propertyInstance
+                      Id="d6ccdf24-3cca-47c1-9ad5-77e5e269768a"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="36c2fd12-da33-4102-9a26-e1f4863acf2b">
+                    <propertyInstance
+                      Id="490dcd4d-3094-4104-ae7a-06f42dcff2b7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e786cb01-60e7-4b6d-915c-0931b514387c"
+            name="polGrap"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="99d123f5-d623-497e-afbd-b3a6599cb329"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids Member%3DpolGrap"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="94f59d3d-53d2-4db7-8401-b1d5cefc3bce"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a44bf5c7-5fd0-4fd1-8da8-426a55d8a873">
+                    <propertyInstance
+                      Id="38ffad9b-3f2f-4545-b843-a8f04f8e0227"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e7340700-989f-4a38-88d1-49a9fdac5354">
+                    <propertyInstance
+                      Id="4eef8598-24d7-439b-9d53-c8030b8e23b1"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="76b73a2f-4dd0-4cb9-8fcf-9153eb47c8fa">
+                    <propertyInstance
+                      Id="695d5238-b482-426b-8796-497b31a007f9"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0f83578c-3b6a-43df-83b1-864ccb3f3b55">
+                    <propertyInstance
+                      Id="a02b6206-7124-4ce0-8b8f-7431a5b0dbae"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a545fe6-f728-49a4-86b7-0157152f0276">
+                    <propertyInstance
+                      Id="7f354070-264f-4fab-9ee8-451f951f8fe9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="ce32d458-f858-4238-8373-1508c921f021"
+                LastKnownName="PoligonGraphicConstructor"
+                LastKnownLocation="Package4_1723.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f55dbc56-123e-4f33-bdbd-ecfc633f1cff"
+            name="right"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="2155b4c0-fa40-448f-aed5-8bf482ee0dab"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids Member%3Dright"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="44edbc40-2ed8-43a2-9ac5-514091a873d7"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="542cf708-ecb2-4091-bba0-8d9a5ebe65a8">
+                    <propertyInstance
+                      Id="63c3142b-2c61-40ac-a0be-75a8d05118a1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d342f1a-0ac2-4633-b4a7-0b44826c3c16">
+                    <propertyInstance
+                      Id="3453e4c8-5cbd-44ec-ae5f-1707496eda4a"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7669c772-316e-485b-abc3-8e77a823525f">
+                    <propertyInstance
+                      Id="cf0e3f56-73a2-4f19-aab2-e316d05413b8"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="773215f4-6241-4960-9b8e-eb4a1fd09e80">
+                    <propertyInstance
+                      Id="6c2108e8-5130-4514-addc-3ec0e66b8c1e"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d83f3001-7c8c-42e4-a047-488028481e44">
+                    <propertyInstance
+                      Id="c4b50456-1b3b-440f-9bce-1bd170766e5d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b80177ff-0469-442e-ad3d-3cd4a0296f5d"
+            name="spriteConst"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="667bd0c2-bead-4c08-9932-7faa87d0a7a9"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids Member%3DspriteConst"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fba77d17-67da-4db9-b9c0-f64da5e925c6"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="44f226e2-f94e-4891-b149-05a02802e44e">
+                    <propertyInstance
+                      Id="8c786cd2-5421-46ea-8223-3f2883ce203b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e767fa69-37d4-4f9c-bda7-aa1a19c24105">
+                    <propertyInstance
+                      Id="9eb79444-d2ed-49b7-a2db-af7ea4c1f0fe"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0fef2d57-9afa-49f8-b47c-4c2e960545fd">
+                    <propertyInstance
+                      Id="df75661b-5c43-4fbb-8d0d-c4b67665e99c"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4cc5a938-e2d4-4037-9897-8762d8ae42a3">
+                    <propertyInstance
+                      Id="51b0f4dd-cd28-48fd-9a02-d2e6085937f6"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c34ccf5a-b420-44ac-9c65-6cebc2b35a3a">
+                    <propertyInstance
+                      Id="d8a83126-911b-49fe-bf4e-5f5aa4477969"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="9ff5596b-69f9-4053-9937-c067525c4183"
+                LastKnownName="SpritGraphicConstructor"
+                LastKnownLocation="Package4_1723.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="848cbe72-f836-4a2b-9ff4-d04b420cc38f"
+            name="timer1"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="24452b54-cd3b-4e00-b782-09ca8c729d86"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids Member%3Dtimer1"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="726e9384-1892-48fa-b832-b98216dc531d"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4c341c7f-ae8e-450e-a9cb-a64077ae0315">
+                    <propertyInstance
+                      Id="a2c813d4-cc82-4f4a-93d9-16ea4aea175f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="81f78b4b-5bc9-4637-b75f-d1a4f67242a5">
+                    <propertyInstance
+                      Id="f8cdde30-ba8b-4816-85ec-0374c2b3d4d9"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f8a3bd67-3955-425c-99cf-d28b36b8b838">
+                    <propertyInstance
+                      Id="2d98232d-2020-4b19-89dd-d8be6346bf41"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ea6470f2-4877-4ef8-a6f6-474a4bc6e49c">
+                    <propertyInstance
+                      Id="77db0b87-bdd6-492c-b87a-9c2910a92001"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="71a89ed7-9adc-44f1-b670-bf43315f9ca4">
+                    <propertyInstance
+                      Id="a40e43d6-45de-448e-94f2-b83c5a2c9a74"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="8945ad3c-3955-4c7a-a4be-b7ae0a59927f"
+                LastKnownName="Timer"
+                LastKnownLocation="Package2_1723.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="cdf780c6-8009-44f5-b9e6-774a77865922"
+            name="weaponShut"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isOrdered="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="72866f2f-5192-4e42-bb71-924cdaeaa216"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids Member%3DweaponShut"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="659e4007-e658-4388-8047-9f1bf9eb0b20"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f419ebc6-5ec0-4356-ba0d-370be670ef7d">
+                    <propertyInstance
+                      Id="2fab9ad2-7641-417e-b6be-c611d4080a38"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="01c52a21-efe7-4c61-94f3-fe5624a7e439">
+                    <propertyInstance
+                      Id="2e9c8833-e07f-4bfc-b97b-3f713b831c01"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bca8d355-3b24-4f78-8d17-f1ab02ee4ca7">
+                    <propertyInstance
+                      Id="60e95d98-5d0b-4efb-a0f5-560abcee9345"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="80396733-bcd8-4024-a8f3-c588532a04af">
+                    <propertyInstance
+                      Id="1c9c717f-c73a-470f-8a93-c5c0960dd285"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="719d0de6-fd82-463b-ae82-d64264151af3">
+                    <propertyInstance
+                      Id="6825777e-8c21-4f64-8bd2-1e9cc7592e53"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <lowerValueInternal>
+              <literalString
+                Id="6f0c30eb-88e7-4fbf-b0d6-3d9407f8d125"
+                name="Lower"
+                value="*" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="7dabfa94-fbb6-4271-899d-e3da0bf5f6b7"
+                name="Upper"
+                value="*" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="AsteroidsModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="bbb7f38e-d334-4a07-a464-eb7ad5af3bf5"
+            name="Asteroids_KeyPress"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b945c83a-a2b0-4c2f-9d4d-470667f870ad"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids Member%3D(Name%3DAsteroids_KeyPress OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Windows.Forms.dll&quot; Namespace%3DSystem.Windows.Forms Type%3DKeyPressEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="01d12ddc-f657-4a7f-aa98-ca02ebe16055"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="13949db7-57bb-4150-ad4a-06453d6b9a67">
+                    <propertyInstance
+                      Id="a7956493-3bf2-4673-9692-37ea5fdbff1e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="836c3505-4d3c-43de-8b02-559c151795ef">
+                    <propertyInstance
+                      Id="2aa8dfdd-070e-4954-940b-16052d17e6d8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b9fa2e4a-eff9-4cc8-aa2c-d69461484298">
+                    <propertyInstance
+                      Id="de95a487-adcc-481a-bc97-0ce692fd71c5"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="40654135-6f25-40c7-bddb-f8b3f79bfd09">
+                    <propertyInstance
+                      Id="60bdc1b0-6860-429d-82af-8e4b0eb9a36f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7e82df5f-7f8c-4bb9-b341-f1e4f1a55066">
+                    <propertyInstance
+                      Id="8374cc69-cff3-467c-bda7-b7ff58d510ae"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f3e455f8-6ea7-41fe-af27-0febc0e54923">
+                    <propertyInstance
+                      Id="24458234-5212-4c22-8396-58df2814fbe4"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b664e72c-e8e1-4561-a170-9b8d0a197327"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e17f1da0-7499-4110-bb76-e8a8b6f720ab"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids Member%3D(Name%3DAsteroids_KeyPress OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Windows.Forms.dll&quot; Namespace%3DSystem.Windows.Forms Type%3DKeyPressEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fa640c36-312d-4c39-a66b-e1f6a1175726"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="591dfba1-c265-424f-990e-4a7aeff94f27"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="76af8059-5b8f-4308-b2c8-cc7f1fd304ec"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids Member%3D(Name%3DAsteroids_KeyPress OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Windows.Forms.dll&quot; Namespace%3DSystem.Windows.Forms Type%3DKeyPressEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4efb828f-4b35-4aa6-bdcc-8c83ffb8d77d"
+                      LastKnownName="KeyPressEventArgs"
+                      LastKnownLocation="Package2_1723.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f2959c5e-7bca-4e6d-bd86-2b42c110485a"
+            name="Dispose"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9c67f2fb-332e-48d3-8890-b3710537007c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids Member%3D(Name%3DDispose OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="94337e51-8cc6-49a2-9287-23e764f1a753"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="60a94db5-9369-4960-b8e1-f197bb06d88c">
+                    <propertyInstance
+                      Id="86307bb5-c889-478e-bf1d-9162d69967bb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6bc5119f-cffe-4384-a601-d78e16fea76a">
+                    <propertyInstance
+                      Id="14f6256a-9494-445a-87e9-56c926042c40"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d5be0f51-9bf2-4309-89f8-04f56a9e76d1">
+                    <propertyInstance
+                      Id="3bbc3c0a-130d-4fa7-a7fa-0f8532281ec3"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fb75a854-6f7b-4886-a317-e9eba7919f36">
+                    <propertyInstance
+                      Id="2bd17baa-6348-45ee-8e3a-48080f3814ff"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="32c91180-4ce8-4e0f-9398-9f3d94253cc9">
+                    <propertyInstance
+                      Id="11ff57b4-2d1e-4efe-bb2e-9ee42e87e92c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="865b9b97-b1cf-45cb-bf83-2ae82758e9e7">
+                    <propertyInstance
+                      Id="97d73139-38e1-4c8c-853d-28d0b88f94a0"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="36e602f3-f529-46ab-aabe-a890ddae772a"
+                  name="disposing"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="87a9a459-6e1a-4951-9867-6a5c4361d2b2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids Member%3D(Name%3DDispose OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]) ParameterIdentifier%3Ddisposing"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="AsteroidsModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4daaaf62-db26-4f56-883b-8a3d1968a7c5"
+            name="Drawing"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="dd6c318e-ba26-42db-b427-6a8df9878f6e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids Member%3D(Name%3DDrawing OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DViewObject)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d50806da-af33-49fe-a7be-a4f310418e86"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="459de511-ed40-4149-ac42-3cb65bd49405">
+                    <propertyInstance
+                      Id="676df8da-03fc-4c61-9764-cc16b954079a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9e9d38f6-2aa1-4970-8ec8-a98a449de7ab">
+                    <propertyInstance
+                      Id="b6404afd-2ebd-499d-959f-6b39e8ae2dff"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6540dae0-dae2-4c94-8952-8cc896cab708">
+                    <propertyInstance
+                      Id="d84eaa3b-a5ee-47c7-af98-cdfc34e2475c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="928af0e1-131f-482c-97d9-532c5faac412">
+                    <propertyInstance
+                      Id="3f64f5f6-6463-48fc-ae85-41b3964d5f53"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="22e63a59-4d89-4654-8904-3e7ed7c6123d">
+                    <propertyInstance
+                      Id="c53a181c-389a-4814-aefc-9cd32b536e0a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a0f2746-97af-4e21-9593-b8cfd623f22d">
+                    <propertyInstance
+                      Id="0ffe5c2f-5d57-498d-a477-3dea13891cbb"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4b7bb415-8af6-43ab-9f6e-29b0f713dbb8"
+                  name="objects"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="bbd0c4c5-8818-4605-9c97-705e222a9900"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids Member%3D(Name%3DDrawing OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DViewObject)]))]) ParameterIdentifier%3Dobjects"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="0045b7f6-2ade-4eca-b2fd-e55e693f9e4f"
+                      LastKnownName="List&lt;ViewObject‎&gt;"
+                      LastKnownLocation="Package2_1707.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5f1b0ff1-033d-4f94-9037-2b60f7a5d624"
+            name="Form1_KeyDown"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="425dd2c8-120e-4463-b47b-d29e897069aa"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids Member%3D(Name%3DForm1_KeyDown OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Windows.Forms.dll&quot; Namespace%3DSystem.Windows.Forms Type%3DKeyEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="896be9c4-3921-4038-8762-e020cb6d3e46"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="43e71f54-949d-4d84-ac69-05a0f6379ac4">
+                    <propertyInstance
+                      Id="b5f29f01-b190-4807-956e-c6bd03dd7374"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d5b8e686-a23c-4fac-bea9-da1dfcccf706">
+                    <propertyInstance
+                      Id="cf06c3c5-52d5-4317-9cf3-7fa59a302dd9"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3d5cbafe-219d-48c6-9da4-4a0aeff2cc61">
+                    <propertyInstance
+                      Id="086ffeb1-3ad3-4e2c-b1cf-04f8dc3d695a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="490fc626-f124-4a3e-bb33-0c34305a3c8c">
+                    <propertyInstance
+                      Id="1c64f154-bb96-4d79-8c8f-b20ca7113987"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9c899702-6072-404b-a70e-8c0713848329">
+                    <propertyInstance
+                      Id="b05f7c91-9b34-414d-a3fc-dbe0cb9c9beb"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bebfdd3c-d2ae-4e5d-a787-92fb108c79dd">
+                    <propertyInstance
+                      Id="53dafc1a-497a-4847-b3ae-f416af34f0c2"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3778afa5-4a12-433d-be46-2830294eedb6"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="2ea5bfb6-45cb-40fc-a82b-ffced5ddea0a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids Member%3D(Name%3DForm1_KeyDown OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Windows.Forms.dll&quot; Namespace%3DSystem.Windows.Forms Type%3DKeyEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fa640c36-312d-4c39-a66b-e1f6a1175726"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b1383816-4ee1-488b-9ce3-2f344dd69092"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="83653601-9c10-4c69-8bec-e50cbeb13041"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids Member%3D(Name%3DForm1_KeyDown OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Windows.Forms.dll&quot; Namespace%3DSystem.Windows.Forms Type%3DKeyEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="a77c5983-fb40-4550-86d6-8d4713bbc64b"
+                      LastKnownName="KeyEventArgs"
+                      LastKnownLocation="Package2_1723.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e93b661e-f0bc-4b2a-a72f-f457974725b0"
+            name="Form1_KeyUp"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f6b65a90-6037-41b9-9e32-f111658e1b67"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids Member%3D(Name%3DForm1_KeyUp OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Windows.Forms.dll&quot; Namespace%3DSystem.Windows.Forms Type%3DKeyEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="bc18281c-c3de-4716-b8ea-45bd697c4eec"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="068ddf5c-2a63-41eb-9ac8-83be9b82fa82">
+                    <propertyInstance
+                      Id="55230588-6ece-4c78-8e25-464f04d86be1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9f7594bb-0dfd-421a-94e8-16c73039c0a0">
+                    <propertyInstance
+                      Id="18902a40-2049-4165-9d3c-0ee2c987d9fe"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="758c2054-af3d-4627-b069-aae8f6ef5dca">
+                    <propertyInstance
+                      Id="e904db75-3722-47c1-956f-636d845a8ccc"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6d05f9bd-c0d1-4026-b5a5-38b4ea575b0c">
+                    <propertyInstance
+                      Id="20ab2b2d-565f-433c-b551-8e9b98927506"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="88a054d9-0656-4cc7-a765-4c252f8413ee">
+                    <propertyInstance
+                      Id="b953fb30-228a-47f5-b6d1-124e298b302a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="49da3ef9-d714-4871-bc36-8300f078627e">
+                    <propertyInstance
+                      Id="0ecb76b4-837f-4a71-b8c7-47e98e61c5c0"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4117496c-9f40-44ed-96fc-18909a12f57b"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="46f82817-f7b4-4bc5-b567-c13ba34cd12f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids Member%3D(Name%3DForm1_KeyUp OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Windows.Forms.dll&quot; Namespace%3DSystem.Windows.Forms Type%3DKeyEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fa640c36-312d-4c39-a66b-e1f6a1175726"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a76a4f18-10d7-498a-a606-458bb51fc632"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="fb3152d0-07c2-4e9a-b55f-5bf5e68a55c3"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids Member%3D(Name%3DForm1_KeyUp OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Windows.Forms.dll&quot; Namespace%3DSystem.Windows.Forms Type%3DKeyEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="a77c5983-fb40-4550-86d6-8d4713bbc64b"
+                      LastKnownName="KeyEventArgs"
+                      LastKnownLocation="Package2_1723.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6c58d368-4194-465a-a5fd-15a52cc109b0"
+            name="OnPlayerLoose"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5f608031-ce01-41ef-b0d2-aa79446630ad"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids Member%3D(Name%3DOnPlayerLoose OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame.Maine Type%3DLooseEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f32a0121-289f-4a29-8d5e-c7d74460446a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="70626817-75ce-4d18-8cc6-5da1c687a3c3">
+                    <propertyInstance
+                      Id="477e2c19-ea9e-4f1f-a3bf-884b55cd3877"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6ab9d915-cd26-425c-9eaf-e4d01377bb15">
+                    <propertyInstance
+                      Id="75d343fa-f97a-4478-bf19-4b54c7867a44"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0639b73c-1062-450d-95b2-a9cffa1155d0">
+                    <propertyInstance
+                      Id="c477189d-6cf9-4f3a-ab01-9f77d12c8f34"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="99b65f94-95f5-4955-837e-a96f3a1f5c78">
+                    <propertyInstance
+                      Id="44343475-0b2a-4d42-9faa-cbad4e394c47"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="719064d9-62bf-477a-a439-a65dc0869eb2">
+                    <propertyInstance
+                      Id="1294123e-8c57-435d-99dc-17f6ece0b16a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="265cdc99-8982-4fb0-914c-d8579a97deba">
+                    <propertyInstance
+                      Id="aeff390e-9362-4201-9c3f-736ebd39c91d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e7175793-6f43-43d9-9c61-1bc8b9d03338"
+                  name="obj"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="6011deda-458b-471e-8b17-f85ff30640cd"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids Member%3D(Name%3DOnPlayerLoose OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame.Maine Type%3DLooseEventArgs)]) ParameterIdentifier%3Dobj"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fa640c36-312d-4c39-a66b-e1f6a1175726"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="523cf602-dcc0-4319-bbfe-cc14c069b259"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="061014c6-bb3e-4df1-a5ba-61eeed70ff53"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids Member%3D(Name%3DOnPlayerLoose OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame.Maine Type%3DLooseEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="976fb66b-b76d-4f5c-ba03-fa01140b4aa4"
+                      LastKnownName="LooseEventArgs"
+                      LastKnownLocation="Package_1706.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ff29fc4f-4202-4d43-ad1c-ebbb1075559f"
+            name="timer1_Tick"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c9921aa2-c365-48cb-9cc0-353eba800818"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids Member%3D(Name%3Dtimer1_Tick OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0e289c59-d635-407e-b8aa-d8ba29d0ad3f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0c32c8bf-1daf-48e9-902d-1d6b44f43170">
+                    <propertyInstance
+                      Id="a49a2e86-4e13-48a1-ba5b-da381fcb6aa5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="43f281f5-aa2d-42ee-9116-32ca98128c9b">
+                    <propertyInstance
+                      Id="7191168c-0d99-4bfb-b539-bf17baa5285a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="80ce3083-e890-488e-8425-93f7799895b3">
+                    <propertyInstance
+                      Id="91fba929-843c-4cff-b1e0-d8a538d0da10"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b6f1e717-9445-44ff-b22c-4d282305ed1c">
+                    <propertyInstance
+                      Id="a7fb3f19-c14b-4978-84f8-757863a82bcb"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="52b784e1-a4e8-4c65-af2d-0a3d0abc7df6">
+                    <propertyInstance
+                      Id="15baa677-e6ef-4d9d-a0a8-c69ddbf10408"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4e6832ba-6e57-406b-8e58-d23668ab5c86">
+                    <propertyInstance
+                      Id="bd0f914a-6e61-4f73-b77f-928bf2b615fa"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="76a3f353-4d25-4286-9a11-bc4f2974a9a6"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="8449ab6f-ccf8-4bba-9c61-7a6af71069dc"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids Member%3D(Name%3Dtimer1_Tick OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fa640c36-312d-4c39-a66b-e1f6a1175726"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7ee1b8c8-201c-4f06-9f78-0a600b939a05"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1f2e42e6-c0af-47b8-8f9d-eb80aa1ec6a9"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids Member%3D(Name%3Dtimer1_Tick OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="1175c99f-d39c-438a-8c82-78dc0e6e66fb"
+                      LastKnownName="EventArgs"
+                      LastKnownLocation="Package1_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3518fb13-324d-448c-9a57-6a5681671ec9"
+            name="Asteroids"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c68caa66-3bad-45ea-bdbe-8bee480e8c49"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="bbba58a8-bcba-4ee1-8e09-f4de5d455627"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="64399012-75cf-440c-915d-54ad1463f027">
+                    <propertyInstance
+                      Id="d8926e5c-9e90-49f9-88b1-b95db0fa174e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c93ce1b1-7a91-4ede-ae2e-94f58657cb29">
+                    <propertyInstance
+                      Id="9a234b11-eb07-40ae-b0e8-7073ff4b532c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7256a5f8-cad1-44e1-ad1e-bcd2e828ef3e">
+                    <propertyInstance
+                      Id="107a7053-26c6-4d4a-8d6f-ce0b1bf5376f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="27773baa-7a76-4513-a58f-debe65073fe1">
+                    <propertyInstance
+                      Id="d45b03cb-f2b1-4331-86b9-62f6ac6401fa"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d57691d-eb30-4dd6-9afe-ce1803146ca6">
+                    <propertyInstance
+                      Id="d1e58a6f-e4bf-4804-849a-d64bcc0260e3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="96b01bad-6515-4e38-b89d-b71f430244d2">
+                    <propertyInstance
+                      Id="3709728e-5e56-43fd-90a1-f2648422dfdb"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="7bbaa3fb-9902-4810-ad2e-f1af09cf3a61"
+            name="InitializeComponent"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="19519281-7971-4ff2-a461-99202c9b058a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids Member%3DInitializeComponent"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="09e8adc9-673a-4c13-8e53-bf252c55edb3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="20911f32-15db-4a57-97a9-4311c4c2fee3">
+                    <propertyInstance
+                      Id="fea6381a-4614-4a94-a79a-9b62549464c4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8fc1deb9-9219-41c3-96a1-847380b95e07">
+                    <propertyInstance
+                      Id="bbc84d92-5125-4603-9895-8b549a12571a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="82ff02ff-2def-4389-bf28-0c872d6fa0a0">
+                    <propertyInstance
+                      Id="de47b3b2-659e-4508-87ac-6e0e93c3a738"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="74bf15e3-56a0-4bc2-b27d-765df2d2537e">
+                    <propertyInstance
+                      Id="55896b32-7fa1-4e04-96a7-29ce86bfa30e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="797a7466-ae6c-49a2-88ca-deb90032284e">
+                    <propertyInstance
+                      Id="b0fe34d5-07e1-4410-ac2e-3b1ce7020e86"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aa3ff3f6-8c87-48cf-b83e-a5117ac50e13">
+                    <propertyInstance
+                      Id="36af618b-d88d-41f4-ae46-384495c2bafa"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="6471bc1c-188c-4fa5-ae38-341264cba670"
+            name="NewGame"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d4832cae-894e-4241-8652-aa63e7d0eea7"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids Type%3DAsteroids Member%3DNewGame"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="43900307-4475-4590-b82f-d33016884d1a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0f6c7a35-dc34-4229-8e59-0f8313e1015a">
+                    <propertyInstance
+                      Id="7bfcb9fa-f56c-4a9b-a467-aaa70710e3bb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ce7a78a4-4854-4935-9d13-743ea73c9eea">
+                    <propertyInstance
+                      Id="c7481580-647d-4a9d-a24b-6e357e7cb234"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2de0c8e3-9035-4042-905d-d816f28a1f45">
+                    <propertyInstance
+                      Id="98a85a4b-6c96-4835-86be-339182383cf7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba9c79e9-22ce-41d6-9a36-48ffe49bec63">
+                    <propertyInstance
+                      Id="91c228d2-ccdf-434f-a8c0-b1e678519a10"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b02cb819-0f37-4c61-a685-41b1b007d66f">
+                    <propertyInstance
+                      Id="3f3d1ea2-ac23-4bfe-a00e-07c7dd6ea9aa"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d0a570c7-2857-4837-87ed-768ab8985de7">
+                    <propertyInstance
+                      Id="df6698c2-b110-4182-9d7a-6b99958ef618"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="2937e509-6d02-4efb-b330-2c6736997866"
+        LastKnownName="GraphicConstructors"
+        LastKnownLocation="Package4_1723.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="8d0e13ba-5046-4692-ba6c-02b0ec2871c5"
+        LastKnownName="Source"
+        LastKnownLocation="Package_1730.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="ea511168-d140-4f03-9f78-cf9a5cd69874"
+        LastKnownName="Shapes"
+        LastKnownLocation="Package_1732.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

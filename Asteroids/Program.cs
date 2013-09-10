@@ -18,7 +18,13 @@ namespace Asteroids
             var canResum = MessageBox.Show(message, "Start", MessageBoxButtons.YesNo);
             if (canResum == DialogResult.Yes)
             {
-                Form1 newForm = new Form1();
+
+                string supportMessage =
+                    "Управление: движение - стрелки, стрелять - пробел, лазер - ц, смена представления - п.";
+                MessageBox.Show(supportMessage, "Control");
+
+                Asteroids newForm = new Asteroids();
+
                 Application.Run(newForm);
             }
             else

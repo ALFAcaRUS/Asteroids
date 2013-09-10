@@ -13,12 +13,9 @@ namespace Game
 
         public static IGame GetGame()
         {
-            CoupleDouble defaultSyze = new CoupleDouble(1, 1);
-            CoupleDouble defaultSpeed = new CoupleDouble(1, 1);
-
             Ship playerShip = new Ship();
             playerShip.Direction.Angle = 0;
-            playerShip.Size = CoupleDouble.ones;
+            playerShip.Size = new CoupleDouble(5,5);
             List<IWeapon> weapons = new List<IWeapon>
             {
                 new Gun(),
@@ -29,8 +26,8 @@ namespace Game
 
             List<AEntity> startEntitys = new List<AEntity>
             {
-                new EnemiFarm(new CoupleDouble(0, 1), defaultSyze, defaultSpeed, playerShip),
-                new EnemyFarmPseudoEntity(new CoupleDouble(0, 1), defaultSyze, defaultSpeed)
+                new EnemiFarm(new CoupleDouble(0, 1), new CoupleDouble(0.1,0.1), CoupleDouble.zero, playerShip),
+                new EnemyFarmPseudoEntity(new CoupleDouble(0, 1), new CoupleDouble(0.1,0.1), CoupleDouble.zero)
             };
 
             MainClass newGame = new MainClass(startEntitys, playerShip,new CoupleDouble(100,100));

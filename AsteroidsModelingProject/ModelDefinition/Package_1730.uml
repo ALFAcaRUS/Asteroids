@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="8d0e13ba-5046-4692-ba6c-02b0ec2871c5"
+  name="Source"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="78befb9b-2fba-40aa-baf6-fe911731e35e"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DAsteroids.Source"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="a7b24336-7d7a-4994-bd5b-70bcf3aa83ab"
+        name="SourcesList"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="cdeb8647-da09-488b-ba3a-d95c61222f2d"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.Source Type%3DSourcesList"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2d869eba-c86c-456b-a7c7-f617989147a3"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="43d0b48f-d280-4def-b369-e14a149c1cab">
+                <propertyInstance
+                  Id="0b7eaed1-135c-40c4-9ae7-f655d8e76bce"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b6ba7c09-66be-4d58-a618-55f51aae9d10">
+                <propertyInstance
+                  Id="936e5eaa-c738-44bc-a1f1-3a5d288d9b54"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="56437da2-535c-474a-a57e-1e657af3f90d">
+                <propertyInstance
+                  Id="5608fb1a-9e2b-40e6-804b-a52d074bb826"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a05dd0d6-7417-480e-a90a-719b323fc174">
+                <propertyInstance
+                  Id="5980b895-f941-4699-83ba-14d7b743a795"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a2d778af-40cd-42ed-84a6-14606e9ebf8e">
+                <propertyInstance
+                  Id="027a5227-947b-481f-afc8-d0984b9c31c9"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="ebe49031-5ba2-4c86-a503-e412f6bc0ef1"
+            isDerived="false"
+            sourceEndRoleName="SourcesList"
+            targetEndRoleName="PoligonGraphicConstructor"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="ce32d458-f858-4238-8373-1508c921f021"
+              LastKnownName="PoligonGraphicConstructor"
+              LastKnownLocation="Package4_1723.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3c749dcb-bfd5-4436-b0fb-c52e02caddd6"
+                  name="SourcesList"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e986a5d6-70b0-4eed-aab8-e7d91a3d1793"
+                  name="PoligonGraphicConstructor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="77c24846-e43d-4619-a678-11aca798d437"
+            name="Images"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="1adfa55c-2187-4445-8b49-a2ef90ef6cfd"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.Source Type%3DSourcesList Member%3DImages"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f2d8a90d-434c-45a8-801e-71a49560b81a"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e9d9f7f3-d918-4bd5-b04d-a4298e6a0511">
+                    <propertyInstance
+                      Id="d42eed1a-0f05-45ce-b86b-f5a78c2281c6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3615b577-f558-4461-b699-91eba9a93634">
+                    <propertyInstance
+                      Id="56bd80f0-2087-4e92-8fbe-ece4471103a8"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eeb2bffa-6b8d-4dda-9fc7-d0981ddfd95c">
+                    <propertyInstance
+                      Id="d3476375-9254-4fd0-ae34-693c78edf10c"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f724a056-3755-4657-9698-08ca71e32a7f">
+                    <propertyInstance
+                      Id="c6026623-31a9-4956-98c6-8a3ea8f80524"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c1e3ace3-4839-4782-8c73-5e4ffb1af07e">
+                    <propertyInstance
+                      Id="e6ca3c93-882a-4274-9aae-de3f76add19a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="166c0085-281c-470d-841e-eacc3a9d33ed"
+                LastKnownName="IDictionary&lt;String‎, Image‎&gt;"
+                LastKnownLocation="Package2_1707.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="ea29a298-7f0f-4c80-99b7-1c4e397e744b"
+            name="SourcesList"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="dcd923ba-bc59-4fa0-b100-0b6e7be5524c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.Source Type%3DSourcesList Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a1ea043d-253a-4b22-8d25-f2fdb970bed9"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e32aef01-33af-4dd1-9290-d2d2c73bb0bf">
+                    <propertyInstance
+                      Id="c5864195-d952-47c4-a11e-410c83b6c3ed"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cf1f3543-96d3-496e-acfa-fbf39a5ce996">
+                    <propertyInstance
+                      Id="c4148af4-cd59-4565-96cb-14e67d4e1ce8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0d684003-7e0f-4b87-af83-2f6385ab397a">
+                    <propertyInstance
+                      Id="c41ad84e-fce2-4d89-a1b8-06b380cb1179"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="af65b8e6-9d1d-4413-a3be-6153675c6c79">
+                    <propertyInstance
+                      Id="7130299c-d3b2-4f75-83af-ee7785e4935a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b56d609a-a089-4bcd-bb98-70db69906e80">
+                    <propertyInstance
+                      Id="1c12b874-fd71-4343-8018-9ec0eae2adce"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bd1e40e1-8800-438a-a571-b70836f9c0ca">
+                    <propertyInstance
+                      Id="f2e58fb0-0393-4e5b-b2bb-c5de808daf2f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

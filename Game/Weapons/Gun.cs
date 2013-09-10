@@ -10,7 +10,7 @@ namespace Game.Weapons
         {
             List<AEntity> output = new List<AEntity>
             {
-                new GunBullet(pos + direction.GetProjections(), new CoupleDouble(0.1, 0.1),direction.GetProjections())
+                new GunBullet(pos + direction.GetProjections(), new CoupleDouble(1, 1),direction.GetProjections() * 3,direction)
             };
 
             return output;

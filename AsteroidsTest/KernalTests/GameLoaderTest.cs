@@ -29,7 +29,7 @@ namespace AsteroidsTest.KernalTests
 
             List<AEntity> startEntitys = new List<AEntity>
             {
-                new EnemiFarm(new CoupleDouble(0, 1), defaultSyze, defaultSpeed),
+                new EnemiFarm(new CoupleDouble(0, 1), defaultSyze, defaultSpeed,playerShip),
                 new EnemyFarmPseudoEntity(new CoupleDouble(0, 1), defaultSyze, defaultSpeed)
             };
 

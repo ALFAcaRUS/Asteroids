@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Linq;
 using Game.Entitys;
 using Game.Ships;
@@ -8,9 +9,9 @@ using Game;
 
 namespace Game.Maine
 {
-    internal class MainClass : IGame
+    internal class MainClass : IGame,IDisposable
     {
-        private UInt64 Score;
+        public UInt64 Score {get; private set; }
         private List<AEntity> Entitys;
         private IShip playerShip;
         private CoupleDouble MapSize;
@@ -36,24 +37,23 @@ namespace Game.Maine
                 {
                     if (entity.GetEntityType() == EntityType.Enemy)
                     {
-                        output.Add(new ViewObject("Explosion", entity.Pos));
+                        ViewObject explosion = entity.GetViewObject();
+                        explosion.Name = "Exsplosion";
+                        output.Add(explosion);
                         Score++;
                     }
                 }
                 else
                 {
-                    output.Add(new ViewObject(entity.ToString(), entity.Pos));
+                    output.Add(entity.GetViewObject());
                 }
             }
             Entitys.RemoveAll(x => x.WasKilled);
 
             if (!Loose())
             {
-                output.Add(new ViewObject("ShipPos", playerShip.Pos));
-                output.Add(new ViewObject("ShipRot",
-                    playerShip.Pos + playerShip.Size*playerShip.Direction.GetProjections()));
-                output.Add(new ViewObject("Score", new CoupleDouble(Score, 0)));
-                foreach(IWeapon weapon in playerShip.Weapons) weapon.Update();
+                output.Add(new ViewObject("Ship", playerShip.Pos, playerShip.Size, playerShip.Direction));
+                foreach (IWeapon weapon in playerShip.Weapons) weapon.Update();
 
             }
             else
@@ -97,16 +97,16 @@ namespace Game.Maine
 
         private bool PositionsToIntersect(AEntity first, AEntity second)
         {
-            CoupleDouble distance = first.Pos - second.Pos;
+            double distance = first.Pos.GetDistance(second.Pos);
             CoupleDouble totalSize = first.Size + second.Size;
-            return (Math.Abs(distance.X) < totalSize.X) && (Math.Abs(distance.Y) < totalSize.Y);
+            return (Math.Abs(distance) < totalSize.X) && (Math.Abs(distance) < totalSize.Y);
         }
 
         private bool PositionsToIntersect(IShip first, AEntity second)
         {
-            CoupleDouble distance = first.Pos - second.Pos;
+            double distance = second.Pos.GetDistance(first.Pos);
             CoupleDouble totalSize = first.Size + second.Size;
-            return (Math.Abs(distance.X) < totalSize.X) && (Math.Abs(distance.Y) < totalSize.Y);
+            return (Math.Abs(distance) < totalSize.X) && (Math.Abs(distance) < totalSize.Y);
         }
 
         private List<AEntity> ShipState(List<UserAction> actions)
@@ -143,6 +143,11 @@ namespace Game.Maine
             }
 
             return output;
+        }
+
+        public void Dispose()
+        {
+            Entitys.RemoveAll(x => x != null);
         }
     }
 }

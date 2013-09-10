@@ -1,0 +1,1590 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="02acb129-8b9e-4ad3-834a-5bb7e5048f35"
+  name="Ships"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="fcbb5d0c-de54-41f9-980b-e0e95b13f761"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DGame.Ships"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="807c713e-ef94-4300-acb1-22eed7024fdb"
+        name="IShip"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="f50e1837-c115-474c-977d-a32f11d21a87"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame.Ships Type%3DIShip"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="3479bc8c-493a-4d4c-9212-a898773a4d83"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="43e419b9-77bc-4785-8d56-66cad5c7e20a">
+                <propertyInstance
+                  Id="60bc3199-8b98-4112-bb3a-457f8ea4ee92"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9a40ad9f-02fa-480a-a777-d66b9f44b694">
+                <propertyInstance
+                  Id="88b19b4e-8e48-446e-a042-a2a17b91f275"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="19a3449d-cd46-4f29-a43a-5900a854cf6e">
+                <propertyInstance
+                  Id="e102f7d1-8bc5-41e2-9e11-67163b250425"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="75758fca-4563-4417-b3a9-6a7601bc6591">
+                <propertyInstance
+                  Id="ac757556-9255-4d9a-96db-a49cd9d03b4e"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="46889a19-70a9-49b2-9b35-a937e31a4b3f"
+            isDerived="false"
+            sourceEndRoleName="IShip"
+            targetEndRoleName="Pos"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="fa1d2164-ee31-48a6-b9f4-456ee438ea5e"
+              LastKnownName="CoupleDouble"
+              LastKnownLocation="Package_1705.uml" />
+            <description>Свойство Pos ссылается на тип CoupleDouble.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fc2b5d01-02b7-49a5-ac8f-e50c0316d223"
+                  name="IShip"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="3fcb883c-8a80-4b77-a432-7b2e79a2bb29"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="2510246b-03a0-4594-b93f-53133bf74771"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0a97bd80-db22-4241-9f23-0c7553bc4851"
+                  name="Pos"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="5d7d3f52-f61b-42e4-a634-aac27248fe14"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ca05d588-4a72-41ad-a33e-9cce441cfa68"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5ddbc893-cb5d-40ff-a6fa-c3f924d3a0f0"
+            isDerived="false"
+            sourceEndRoleName="IShip"
+            targetEndRoleName="Size"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="fa1d2164-ee31-48a6-b9f4-456ee438ea5e"
+              LastKnownName="CoupleDouble"
+              LastKnownLocation="Package_1705.uml" />
+            <description>Свойство Size ссылается на тип CoupleDouble.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0a250362-0a4b-4452-97ea-261b900a8495"
+                  name="IShip"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="d4c507d0-8f83-406e-b84f-43c96425609b"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="922c355b-d27f-446d-9e9d-8d7ac09fe3d7"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bc0907be-6b85-4c61-8558-1b89508a9a52"
+                  name="Size"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="754187d9-60ca-4f1c-9c96-4d5111cfe9b2"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="1938e815-d97d-468f-b54a-e0ba4e80a96f"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5c753c55-8dbb-475a-b087-e8aa9db5f4ab"
+            isDerived="false"
+            sourceEndRoleName="IShip"
+            targetEndRoleName="Direction"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="8c2469c1-59e3-48b4-bac3-662e699c7e10"
+              LastKnownName="Degree"
+              LastKnownLocation="Package_1705.uml" />
+            <description>Свойство Direction ссылается на тип Degree.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6c440d37-18d7-40e9-8cd3-b386fefe2e7e"
+                  name="IShip"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="97336f37-0368-438a-b58a-0b6b53498410"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="361d08fc-976b-4967-9a11-d1054cd5511b"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cefaa131-6851-4e81-bf0b-6d594c5cd275"
+                  name="Direction"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="c7b178e9-b217-4c81-85a5-695246f26491"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f2d28764-36af-4beb-a676-6ef362ce330f"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="47da58ab-6bf6-413f-a6b5-bffd250db16d"
+            isDerived="false"
+            sourceEndRoleName="IShip"
+            targetEndRoleName="Weapons"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="a137000c-2725-4e81-a837-5bb5d527c4f8"
+              LastKnownName="List&lt;IWeapon‎&gt;"
+              LastKnownLocation="Package2_1707.uml" />
+            <description>Свойство Weapons ссылается на тип List&lt;IWeapon‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="690aedb5-a107-4568-9193-5ce45247e98b"
+                  name="IShip"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="5ab2fb0e-33e3-4400-ad26-0e026c3bc36e"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d3346d0c-df7b-49f1-a1a3-4e999848d067"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="65bab8a9-d053-4996-8273-a6f76b202ed6"
+                  name="Weapons"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="38a0c853-338f-4045-ac2a-c8eeacb819a9"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="23afe55c-c3a9-4473-8eda-7b0c7e4c5c3c"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="7d6dc741-55df-4d17-a780-370081b8cb1f"
+            isDerived="false"
+            sourceEndRoleName="IShip"
+            targetEndRoleName="MainClass"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="724b01cb-a03c-4087-84e2-af7cbd835123"
+              LastKnownName="MainClass"
+              LastKnownLocation="Package_1706.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e70940c4-93f0-4610-8c4a-bbe653c60940"
+                  name="IShip"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4c0ba0af-b03c-4948-b1b2-fa1daee4ccb3"
+                  name="MainClass"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributes>
+          <property
+            Id="56b8ef68-d776-4a57-a31c-b09954b3cad8"
+            name="Pos"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="ee367617-b303-4f75-8608-30bd7b6ec63c"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame.Ships Type%3DIShip Member%3DPos"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="09b41fa3-6f7e-4859-a8b9-00a937d7843f"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f3f240d0-0083-48ec-9ace-20d1e67fcbe4">
+                    <propertyInstance
+                      Id="2957b214-ac8d-44d8-bc74-f64dfd507f72"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="beb8a636-c9e2-4b83-93e7-8105caa30188">
+                    <propertyInstance
+                      Id="d9210216-8d3d-4601-82ae-9bc9def31070"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="860f387c-8a0c-4488-adf3-a565822cdc8f">
+                    <propertyInstance
+                      Id="70f4f931-6b4c-45b0-a4a5-9893516788fa"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f51dd49e-97e7-4d1e-b16b-818b0c8b0779">
+                    <propertyInstance
+                      Id="accd2dfb-0cca-4a23-834b-56b14f8814c3"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ea45e0dc-4ace-410a-b615-c8d6599797c8">
+                    <propertyInstance
+                      Id="0816685c-161d-49e1-8cb8-acb3605439bc"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1585001d-8d15-441c-8164-ece3c6c3a947">
+                    <propertyInstance
+                      Id="d9b47650-f748-4758-953b-a1cc4bb1a87b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f2f7dbd8-aa4d-47b1-922a-05ceec44daf4">
+                    <propertyInstance
+                      Id="6d335098-03c0-4443-ab92-9177cb30c7e4"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="fa1d2164-ee31-48a6-b9f4-456ee438ea5e"
+                LastKnownName="CoupleDouble"
+                LastKnownLocation="Package_1705.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="296a9d0a-e932-460c-9f7c-e71d00d2093c"
+            name="Size"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="60be211f-8878-4f41-a81d-40ef079c195e"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame.Ships Type%3DIShip Member%3DSize"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f87c2466-4421-47ad-af6b-f416a0d3ee5f"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="743cac3f-fc50-48a1-83c0-14a269ec91e2">
+                    <propertyInstance
+                      Id="146ccdca-ec4c-4e44-a4de-e2a71a031020"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7135f2f0-3e89-4ac6-ac25-84118d55fe6b">
+                    <propertyInstance
+                      Id="7108e71f-9e9d-4c01-95ab-ddba440f234f"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="434486b4-8578-4409-923a-f6810a246c6f">
+                    <propertyInstance
+                      Id="412614b7-96f8-40b4-8e9e-c0c6bf6944ea"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1cf9ad7f-d8b3-4a98-a0d8-922bbeb89754">
+                    <propertyInstance
+                      Id="af8a808d-827b-446f-a8e2-a304ae9244a0"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a7e961cd-5fa9-4cc7-919e-c77cd5d638f6">
+                    <propertyInstance
+                      Id="58ae51e7-e46e-4d82-bf25-12751b374ccf"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7840a489-4c0a-427d-bb87-b0ed26833814">
+                    <propertyInstance
+                      Id="47fd5f14-cb5f-4367-8449-ee7c332ca916"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c3ee032c-947b-43ea-b813-566f1e3ea6d9">
+                    <propertyInstance
+                      Id="f7595893-8d28-4c7a-8d2d-752aaa28bf7b"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="fa1d2164-ee31-48a6-b9f4-456ee438ea5e"
+                LastKnownName="CoupleDouble"
+                LastKnownLocation="Package_1705.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8b30357f-d4df-499e-811e-b6fff0a1f2e1"
+            name="Direction"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="88b9c405-9cb1-47ff-b4b9-9c43578a4f5d"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame.Ships Type%3DIShip Member%3DDirection"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="aec64066-7793-40ef-bd1f-d39150cf6934"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="370016ca-51da-4534-b825-caa3a4d6590f">
+                    <propertyInstance
+                      Id="9978b2e3-fd83-43c1-8f1b-ad39f78ac518"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="15dbdae6-1ce9-49ea-9d96-f6617dbc994a">
+                    <propertyInstance
+                      Id="2a611a85-1aed-417d-a7a7-61821a3bb50e"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3d586c0f-8ff0-49a4-b8d6-334eb198d9bd">
+                    <propertyInstance
+                      Id="0da4fbe1-de2e-423d-a4e9-7bcb23d77311"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ee23f24-2769-414e-9281-1af46c71d0da">
+                    <propertyInstance
+                      Id="fa699bcf-39b3-4dad-9dd1-ca272ca0157a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f313336d-c272-4796-85a7-56fe158a94d7">
+                    <propertyInstance
+                      Id="db8a3269-a291-4c1d-ba15-a13d903be319"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="339300cc-9807-4ea3-947b-70b399032fd1">
+                    <propertyInstance
+                      Id="ad51233e-c19e-46c1-93db-668e18e95b6f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8b7b88a4-9a7c-4e53-8889-3c6b2c9aadaf">
+                    <propertyInstance
+                      Id="088e0bf1-b34a-435c-b4ac-860349de947c"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="8c2469c1-59e3-48b4-bac3-662e699c7e10"
+                LastKnownName="Degree"
+                LastKnownLocation="Package_1705.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="73ec0a68-c940-4c1a-b4c2-34bb6c09e31a"
+            name="Weapons"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="e43fa200-9eb8-44bb-8b62-53f4ce308957"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame.Ships Type%3DIShip Member%3DWeapons"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9b301805-b36a-4a7c-a519-0eb3409d913b"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c692cc04-7690-43e2-83cc-60ca7333ad89">
+                    <propertyInstance
+                      Id="9069aab6-4021-49df-b239-685ff7a90194"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="67e60b49-09b5-4d1c-97b0-3f80d11aebc5">
+                    <propertyInstance
+                      Id="8f0d2fe5-a5cd-4846-b170-b2ca7b37d1f8"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1f4294fc-5aed-4dc0-9395-07dbb01dbb5d">
+                    <propertyInstance
+                      Id="9c5fbb4a-ecd3-40e7-94fa-f12d16af494d"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3388cab6-5275-417b-b242-65f320ac5bf9">
+                    <propertyInstance
+                      Id="43f2fd38-a68a-4ca7-a8b7-a97b0e97cf57"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="11717159-f36a-4c84-a799-348d4f189001">
+                    <propertyInstance
+                      Id="ae6f3935-668a-4010-a439-aa7d7cc7d388"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="633002ac-f9b9-482c-9674-1e7ce93f0f31">
+                    <propertyInstance
+                      Id="3b4d264b-2e94-48ff-a024-fda33df217ba"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3a02bcf6-a8a2-40c9-a34f-3657ce3573d1">
+                    <propertyInstance
+                      Id="294e9f8d-1472-4655-8c17-0a6f8d6d4d04"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="a137000c-2725-4e81-a837-5bb5d527c4f8"
+                LastKnownName="List&lt;IWeapon‎&gt;"
+                LastKnownLocation="Package2_1707.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+        <ownedOperations>
+          <operation
+            Id="cc903b35-da80-4583-988d-de9f4588d62e"
+            name="AddWeapon"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5445f4ea-2ea2-48f0-a4c3-251641f9cddc"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame.Ships Type%3DIShip Member%3D(Name%3DAddWeapon OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame.Weapons Type%3DIWeapon)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="486fa08a-3d97-4d5d-ac19-2e2a4d067302"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c7e7f71-3496-4c65-bba5-91136dcfea7d">
+                    <propertyInstance
+                      Id="ee7f92e4-a9ef-420b-9ec8-6f69ff9a5618"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c307e418-2761-4d23-aca0-6338c7493e36">
+                    <propertyInstance
+                      Id="1f378825-12be-4822-b178-3217d415b12a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="37231300-bacf-4b06-b005-8ee113ed94ef">
+                    <propertyInstance
+                      Id="ee649940-8e92-4fa7-aa5b-e6da9350d9de"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3d14e752-3d8e-4e7f-a868-faf9e85e8b32">
+                    <propertyInstance
+                      Id="4456dacf-02b4-4e64-9043-91f307503110"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="98ab5414-55d9-4ec9-843a-ec0414cfe5d3">
+                    <propertyInstance
+                      Id="f2b484b4-0596-48b7-a358-f820658bdb94"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b2d0fd57-f50b-493c-8c20-b15c6630e71f">
+                    <propertyInstance
+                      Id="c7dadbab-f954-45f2-993d-aeaf114a6ef4"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c1e08793-33c4-4430-bcea-91709093528b"
+                  name="newWeapon"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="83f04468-4163-48a3-8f8d-862904217f6d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame.Ships Type%3DIShip Member%3D(Name%3DAddWeapon OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame.Weapons Type%3DIWeapon)]) ParameterIdentifier%3DnewWeapon"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="e1a97da4-cda3-474f-a6a9-210b6a00a4ab"
+                      LastKnownName="IWeapon"
+                      LastKnownLocation="Package1_1712.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="05573529-1d86-47ba-a544-9097fbe3b972"
+        name="Ship"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="80dfdf09-56a3-4730-8a7f-f29cd44a8435"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame.Ships Type%3DShip"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="d783c778-249f-419c-856f-03944630c78f"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="841b6f9a-48be-4b15-8fea-437cd7143d0d">
+                <propertyInstance
+                  Id="5f96b9f9-65aa-4b6f-aaf6-7aec0be00faf"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c82aa10d-33ab-4834-b386-ec8797493a4d">
+                <propertyInstance
+                  Id="0b090c11-117e-412f-8df1-e2c033e6b74b"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8a8abfde-cb9a-4179-8330-83b358288137">
+                <propertyInstance
+                  Id="dfe8f604-5e17-4bcf-bb30-6a736fb17668"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3518465b-8098-472b-a0dc-a0a0f22865c6">
+                <propertyInstance
+                  Id="13ba1913-5582-4cc7-8c0c-449a3c2521fa"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a34e74f7-2ee6-495e-b6a3-62dda1cecbb7">
+                <propertyInstance
+                  Id="1e43a4ec-5a30-47c0-ac70-ac452c485392"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="014c444d-bff6-4835-b22f-bb969ead2a73">
+            <interfaceMoniker
+              Id="807c713e-ef94-4300-acb1-22eed7024fdb"
+              LastKnownName="IShip"
+              LastKnownLocation="Package_1708.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="cfaab3f4-c866-4943-a8b0-3ca88ad7d350"
+            isDerived="false"
+            sourceEndRoleName="Ship"
+            targetEndRoleName="Direction"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="8c2469c1-59e3-48b4-bac3-662e699c7e10"
+              LastKnownName="Degree"
+              LastKnownLocation="Package_1705.uml" />
+            <description>Свойство Direction ссылается на тип Degree.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f202e9d5-3f2e-4dc4-ace4-4e3c9baf7e55"
+                  name="Ship"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="62968594-3f1a-4f8e-a2d4-0fd32e77b7f4"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="55082af4-e6cc-4110-b0b7-fd6e2da974c2"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="72391d92-fac1-4291-8a15-d7999f93614e"
+                  name="Direction"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="02574c2e-1f53-401c-a245-53d243960906"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d58426d4-2634-4b86-a503-fd03384aa112"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="425652f4-d515-4bfe-a79d-a249c907be0f"
+            isDerived="false"
+            sourceEndRoleName="Ship"
+            targetEndRoleName="Pos"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="fa1d2164-ee31-48a6-b9f4-456ee438ea5e"
+              LastKnownName="CoupleDouble"
+              LastKnownLocation="Package_1705.uml" />
+            <description>Свойство Pos ссылается на тип CoupleDouble.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2e4d2470-dbdc-4302-8e1a-8b13dd8348e7"
+                  name="Ship"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="957398d2-4361-4b82-b56d-2d16fb5ffffc"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="2d07c72a-cca9-4249-95dc-56375d91aef0"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bee2d63b-da29-4c09-92d9-329c8a06ac67"
+                  name="Pos"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="bf1f7707-c07f-4f2f-894f-9f55c289ce15"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="17c0bf03-f519-495a-8c77-63edec33ba8e"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0496938b-04a1-464a-bc27-81b91d4e17b6"
+            isDerived="false"
+            sourceEndRoleName="Ship"
+            targetEndRoleName="Size"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="fa1d2164-ee31-48a6-b9f4-456ee438ea5e"
+              LastKnownName="CoupleDouble"
+              LastKnownLocation="Package_1705.uml" />
+            <description>Свойство Size ссылается на тип CoupleDouble.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="56ae1d97-8b3f-4db1-8ed5-cfd2f7c2e5a8"
+                  name="Ship"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="8814b808-ccee-4644-90d1-0149dc43f296"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5a84ba1d-1770-4494-b8fd-a38fce8257f8"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8ccbdb8b-b046-4558-b7a2-4f833c3e6df0"
+                  name="Size"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="826ed332-d3e4-457e-bb63-1e656c03400a"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="9962ebb9-921d-4789-a139-d7bdd48fb4ee"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="410ed405-dc84-4ce2-960b-a78d4cc74a66"
+            isDerived="false"
+            sourceEndRoleName="Ship"
+            targetEndRoleName="Weapons"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="a137000c-2725-4e81-a837-5bb5d527c4f8"
+              LastKnownName="List&lt;IWeapon‎&gt;"
+              LastKnownLocation="Package2_1707.uml" />
+            <description>Свойство Weapons ссылается на тип List&lt;IWeapon‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c278f5f8-3971-4ad3-bb27-5c2dd85ef512"
+                  name="Ship"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="b09e3637-72e7-462f-82d8-4c98165e7e06"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="bef1f7ed-5ff8-41b4-ba22-0aa8ecfebce8"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f6f52121-51fd-402f-b8cf-18b7e8ca9982"
+                  name="Weapons"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="8c6e1e47-b244-447d-91df-5bf6072d2361"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="a80b019b-1670-4df9-9f67-4567f00d8621"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="f5488945-a30d-4de7-a93a-d3e8916e09d8"
+            name="Direction"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="ba185a7c-ba01-4d2b-849e-95b2550081f7"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame.Ships Type%3DShip Member%3DDirection"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="baf85d73-0534-4b7e-8694-08e387edd663"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6cb72eb5-57d3-4c4a-b1b9-f87c0313b08a">
+                    <propertyInstance
+                      Id="374ee315-4c49-4f4c-b769-64278bb749d8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="068264b4-bf1c-40f5-b816-ccfb2f1958b7">
+                    <propertyInstance
+                      Id="c15d3c20-68b8-48ff-8d9f-2e892871d579"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba4a4ac1-90bc-4e19-a7df-4c97e7c86bf7">
+                    <propertyInstance
+                      Id="18464617-c3a5-482c-ba3f-1b9ff1ab895b"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1b872563-ef07-419d-bc76-3d5669e7b01d">
+                    <propertyInstance
+                      Id="f08074e5-feb7-4774-938a-aa309378f1b9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2e662a08-a66b-49cc-8980-e5f2b1dd09d5">
+                    <propertyInstance
+                      Id="d2b0049e-7689-4e56-a003-9ab4ad924b84"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3e79f125-c3cf-44c3-9cb1-29869c0f130c">
+                    <propertyInstance
+                      Id="483c995e-b50d-4458-b58d-e5f8c21f2fc9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d1720bef-f2e5-46f8-9ddc-dc4997f70849">
+                    <propertyInstance
+                      Id="8ee7ba47-ff3f-407a-aad0-64f7fb11a528"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="8c2469c1-59e3-48b4-bac3-662e699c7e10"
+                LastKnownName="Degree"
+                LastKnownLocation="Package_1705.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="fad65493-9b57-41a7-b771-9f2589d0e34f"
+            name="Pos"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="04a8a837-3a14-4eff-8ab1-9118e85c0232"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame.Ships Type%3DShip Member%3DPos"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e87ffd90-e435-4bbb-8609-0120efc00718"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ec09b10a-b248-4693-ba20-35fbfef46471">
+                    <propertyInstance
+                      Id="789d3889-c42c-46b2-ad70-2ae0e8b9b323"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4a0b85d0-a8af-405c-9ab6-002c207c35d2">
+                    <propertyInstance
+                      Id="9c792aa1-e7ea-44be-b8e9-a02d5a298d5d"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d1959983-c86f-4c66-9be1-2fd63dce5e42">
+                    <propertyInstance
+                      Id="db4b5d1a-b882-4e58-baff-dc0da44a5f3d"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6e0d1a1a-410e-453b-92c8-02aebab4aa92">
+                    <propertyInstance
+                      Id="164b8665-8dd9-46c4-8cca-4d593b708162"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="64e45264-4b12-4cdb-8525-4e5615a5d2ba">
+                    <propertyInstance
+                      Id="4528e206-d617-488f-a08c-f0a565a5c412"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2966f9c1-dcc3-4981-ad5c-f3462e795022">
+                    <propertyInstance
+                      Id="1b345378-5bb5-4657-aad4-0ea506ad0571"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a921ca6b-c99e-4d25-9e2c-8af2f5239599">
+                    <propertyInstance
+                      Id="e621f48d-1457-4d8f-9578-8e6e993cacb6"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="fa1d2164-ee31-48a6-b9f4-456ee438ea5e"
+                LastKnownName="CoupleDouble"
+                LastKnownLocation="Package_1705.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="349b5d4d-03ab-4ab6-b718-cd9a253334f4"
+            name="Size"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="a4aca486-3db5-4457-b010-eba2bc295baa"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame.Ships Type%3DShip Member%3DSize"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="18deb552-ed53-4b7d-b695-5bbd2e33bf2c"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a9e9dd4c-2614-4a0c-9168-134c63babc67">
+                    <propertyInstance
+                      Id="2088a504-db5a-4687-97a2-3b559518f5a9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b27d07f5-90f5-4b96-b8bd-0be61932d622">
+                    <propertyInstance
+                      Id="06d8e9c1-cdd2-4f18-b5b9-778f93c874fa"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="101ca0eb-7ad7-4dbe-8fb3-8182a0a831d8">
+                    <propertyInstance
+                      Id="7fab0e94-3ba2-49da-a367-8e7480c74fbd"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4dbf1856-f544-4119-98a3-2aeab01d2772">
+                    <propertyInstance
+                      Id="9e21b1f2-2a30-4b5f-96f7-0dc3cba30464"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8c49795e-5093-49a3-a14e-49f9bc21ec77">
+                    <propertyInstance
+                      Id="e2ee9a79-d8db-44af-bb54-6025f0f6ab01"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f33233f7-873f-4bbc-8d60-887646797ac3">
+                    <propertyInstance
+                      Id="b8416521-9be2-4c12-8829-8e339f5e2930"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6ed1e1dc-40ae-4840-96ed-52e937d72671">
+                    <propertyInstance
+                      Id="2e0aeec4-96aa-4968-b39f-1f653a8be88f"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="fa1d2164-ee31-48a6-b9f4-456ee438ea5e"
+                LastKnownName="CoupleDouble"
+                LastKnownLocation="Package_1705.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="6cc65f89-34dd-4b2f-bdb2-767b635eff2e"
+            name="Weapons"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="e13182ae-a4a4-4a6c-b35e-ca683d74626c"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame.Ships Type%3DShip Member%3DWeapons"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3fe31505-29f2-4821-b4d5-80e80a3502c7"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ab92b89d-4528-4158-bb0a-92982e4e0421">
+                    <propertyInstance
+                      Id="eb7cc9d3-f876-4fdc-bc78-da6f880d79a8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6f3a4542-58c5-4841-a11f-aa8a89a63fa9">
+                    <propertyInstance
+                      Id="1843dbc5-bd50-4623-b1ca-000d0d5e57a7"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3a26fe4a-6082-4995-b75e-96dc17e09e49">
+                    <propertyInstance
+                      Id="7671f17f-f981-496e-b42f-319b97574a23"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a80f89e-9075-4698-ae36-5ed15fcd3952">
+                    <propertyInstance
+                      Id="0d7bcd8e-b21b-44df-a331-d156846a66e2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="be6fd8ab-0a72-4d75-b8ec-1a516a85c079">
+                    <propertyInstance
+                      Id="08888169-7f91-41a0-a2e8-4b29dca048bc"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="630e6c18-dfcd-47e2-8f92-835d0c830e3d">
+                    <propertyInstance
+                      Id="efe0f3be-d036-47e9-9688-2d2e2c0c9c50"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ef16c832-37ba-4fb3-8af1-a78235ecc743">
+                    <propertyInstance
+                      Id="0fecd25d-c943-4527-9ee9-a2a0c4c38c30"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="a137000c-2725-4e81-a837-5bb5d527c4f8"
+                LastKnownName="List&lt;IWeapon‎&gt;"
+                LastKnownLocation="Package2_1707.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="31a2ac36-fed6-43f2-952a-290074fd0bb5"
+            name="AddWeapon"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9de333ed-bb73-4abf-8116-1fb0114c71f9"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame.Ships Type%3DShip Member%3D(Name%3DAddWeapon OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame.Weapons Type%3DIWeapon)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7e68fa84-1651-482c-b739-a1e1e6b1da53"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4e8197b4-138a-4830-b82b-62d5dfbf84ec">
+                    <propertyInstance
+                      Id="110731a3-39cd-46f5-850e-1c6959e61ae7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aca320a6-aba8-46f1-ab92-0b0f478f7986">
+                    <propertyInstance
+                      Id="8f5ed557-20ab-4862-9815-eac6bec28d59"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="171048a0-2a3f-4e2f-ae61-67fbe4c0733c">
+                    <propertyInstance
+                      Id="dc4fcc97-a41d-4c86-b3ad-de80229b8d39"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="90ebc763-0796-4d46-8918-366a3e589d45">
+                    <propertyInstance
+                      Id="a961c0bd-5405-4f90-b8ac-3b1cf70415a1"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e592006d-023e-4865-b655-9dac5d4b105c">
+                    <propertyInstance
+                      Id="95fbfbe8-2198-4dab-9d19-222434c78031"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c49edb43-a382-4018-905a-cfa2511fc191">
+                    <propertyInstance
+                      Id="618d3e61-3372-46f3-8fb2-422d293afd31"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6d8b9461-f822-454f-8cc3-aab192b86419"
+                  name="newWeapon"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="8dc5d00e-d077-4efd-8f8b-2fc7a8747a32"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame.Ships Type%3DShip Member%3D(Name%3DAddWeapon OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame.Weapons Type%3DIWeapon)]) ParameterIdentifier%3DnewWeapon"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="e1a97da4-cda3-474f-a6a9-210b6a00a4ab"
+                      LastKnownName="IWeapon"
+                      LastKnownLocation="Package1_1712.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="610f14ce-fa27-4563-bce7-124d800bf23c"
+            name="Ship"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="cb25faa0-52cb-469c-b001-aa91c9346a23"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame.Ships Type%3DShip Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="12f52191-350b-4919-a894-68ff8ddeca9e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8090f004-3379-4bc6-a568-a753de988a28">
+                    <propertyInstance
+                      Id="5d43a273-9736-48e4-9200-b87366375fe6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="799d7de5-cf41-4c21-a9db-c3e56c3a57cf">
+                    <propertyInstance
+                      Id="f731a865-8ece-4162-8f12-2777a2dafb46"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="84b9a969-ff97-41b2-af81-b49ecf22c497">
+                    <propertyInstance
+                      Id="606d7d60-5bd8-4606-8669-931d848499b7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e68098ef-d41c-47a0-80a1-d59e2667ffb1">
+                    <propertyInstance
+                      Id="1255def8-e634-4a89-a470-f7986e7de033"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5d2bdd19-bbeb-4c5f-ba4e-b0dddd048ee4">
+                    <propertyInstance
+                      Id="6cc196ba-c0de-46b3-b0d3-156e1edc5845"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10c98b23-bc5d-4b58-825f-36c7cb5a2363">
+                    <propertyInstance
+                      Id="c431b510-875b-429c-b4a1-5e5f4183808d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,1941 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="2937e509-6d02-4efb-b330-2c6736997866"
+  name="GraphicConstructors"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="17e65202-578b-46ba-98cc-a941777f852e"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DAsteroids.GraphicConstructors"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="3ff367fc-190d-4078-a43a-50d51b8d2a0c"
+        name="AGraphicConstructor"
+        visibility="Package"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="666238d8-f309-426e-b795-87303a85cc7e"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DAGraphicConstructor"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="dfcf70f0-062b-4c08-a707-b780a14bc355"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7054a266-370a-4fe4-ae65-afda26fd12ae">
+                <propertyInstance
+                  Id="7b02651a-95f1-4e62-ae89-07f9f733c1ee"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="31cd0720-5d2e-4c44-b79e-0d9c57db9ef4">
+                <propertyInstance
+                  Id="a5a7c22c-8475-40f2-ab28-479c4de2a77a"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d4a1332c-d2ed-44b9-a7d3-1c3fc46782c4">
+                <propertyInstance
+                  Id="8b8f4009-0d60-4cee-b85a-8b1b1ed1d669"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="91fff1ff-77c7-48d5-b22a-3698b751834c">
+                <propertyInstance
+                  Id="9eef6b63-8888-4dd9-bedf-270adf290996"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4885767b-79cc-444f-9806-ccacc4148497">
+                <propertyInstance
+                  Id="7b3d0465-6939-49eb-8acb-e47bbcff5cae"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="d8d8ef00-468c-4c5d-a7f0-92bca9794652"
+            isDerived="false"
+            sourceEndRoleName="AGraphicConstructor"
+            targetEndRoleName="Asteroids"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="bf85bc67-1810-4412-9573-a969f46e11ec"
+              LastKnownName="Asteroids"
+              LastKnownLocation="Package_1723.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="30b0c4c1-52be-42aa-826a-d08a7546ed26"
+                  name="AGraphicConstructor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4112db33-e4f2-469c-b9da-9c8d4cf3d750"
+                  name="Asteroids"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="a98dd880-42ea-4df2-aa64-a1204ce869c0"
+            name="scale"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="266adc3b-60fc-4df4-98b0-737cf14a7d8c"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DAGraphicConstructor Member%3Dscale"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5e73d4a2-740e-4560-aa1c-5efdf289fc82"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f1045a26-5d80-49fa-9236-c5e51e079767">
+                    <propertyInstance
+                      Id="403a016d-e5f7-4a0e-aeee-7e5814680c48"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d1434812-c13e-4c91-b07f-0728d82ddeb3">
+                    <propertyInstance
+                      Id="1476f2a9-2727-4f8e-ab9e-334fdd525cc8"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a80cd7a-5bf3-453d-8f63-df1b015cf61f">
+                    <propertyInstance
+                      Id="9dc3f440-ae03-43b1-aa4d-48588557e1e4"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="96f09af5-a7c8-4eae-88a9-4e0e75b75fa1">
+                    <propertyInstance
+                      Id="c02f8016-1a68-4840-9e66-d9148ecf34a9"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="43c76225-4525-4959-be00-5081475bc183">
+                    <propertyInstance
+                      Id="fdc18edf-e221-46d6-93c7-c9f4c985f72b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="fa1d2164-ee31-48a6-b9f4-456ee438ea5e"
+                LastKnownName="CoupleDouble"
+                LastKnownLocation="Package_1705.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="55950880-39a1-4fda-b8c2-d98c9df3d80b"
+            name="offset"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="e17d172e-047f-4771-86e4-8c7830351e98"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DAGraphicConstructor Member%3Doffset"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="92c62a01-c6a2-4952-a27e-579d6c99472f"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7f35001f-e093-425b-b9ac-8ae17299ae8a">
+                    <propertyInstance
+                      Id="e2ada54e-0d37-424b-8e59-4aa9aa0aa956"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6236c4ff-dbc5-4276-abaf-6254d3b06545">
+                    <propertyInstance
+                      Id="55777dbb-5b36-4869-a12e-971fcf3fe503"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c319ded4-b5a1-4b00-b834-a25634818343">
+                    <propertyInstance
+                      Id="a8fae3c8-b35e-4216-94ed-eeee3e8350da"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bc12729b-8acc-4bd6-b40f-596959fab52d">
+                    <propertyInstance
+                      Id="08a8fb5a-b0c0-45ae-ae21-fc56908e0f29"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4ed9f4c0-6b05-42d9-90c5-57aa8a31209a">
+                    <propertyInstance
+                      Id="f3143028-f31f-4b7b-be52-c7660dea3ed7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="fa1d2164-ee31-48a6-b9f4-456ee438ea5e"
+                LastKnownName="CoupleDouble"
+                LastKnownLocation="Package_1705.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="0c8d6e51-f51c-4f6f-91b9-c8ee038f41c8"
+            name="_sourcesList"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="8982d558-1ec9-42b1-99f4-da30111a46f4"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DAGraphicConstructor Member%3D_sourcesList"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d778c3a6-510e-4e05-804c-d5e2cca87a73"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="57406b14-ba6a-46e7-a0fb-29c39724b694">
+                    <propertyInstance
+                      Id="bd6239c3-f4e9-46e6-b80d-ea9ef399d4ed"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b7d12d30-4eb1-400b-b999-166e8861acb7">
+                    <propertyInstance
+                      Id="99de6530-e6c8-4e38-8430-6a6d50fbf113"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="56108a00-040c-4396-b0f6-2e6140b94abe">
+                    <propertyInstance
+                      Id="7b74656e-2d4e-4152-a9d7-e7113a70ec70"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="01961ea3-e076-462e-9d9e-3653cb29ba8a">
+                    <propertyInstance
+                      Id="d9832200-7880-4240-bfd3-5d4487cd80a7"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fd8a078c-a8c0-41d1-91c9-d51fbc5275d3">
+                    <propertyInstance
+                      Id="12d38420-fa04-488f-ab70-1a5c8d3f8130"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="a7b24336-7d7a-4994-bd5b-70bcf3aa83ab"
+                LastKnownName="SourcesList"
+                LastKnownLocation="Package_1730.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="33f75918-b76e-4be7-97d9-fbf09adfd2fd"
+            name="Init"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e9cf2a05-055d-4ffb-9ea5-b5c35e84b194"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DAGraphicConstructor Member%3D(Name%3DInit OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="894a8b6d-a747-4045-badf-da9abdcc0d9d"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e9ef6957-0929-4617-8a48-1ee22b7988f3">
+                    <propertyInstance
+                      Id="63262c7d-da89-4564-bef7-8361f50d9761"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f3eb28c4-5995-496f-9f65-22ea3a244ae2">
+                    <propertyInstance
+                      Id="3e981029-7e25-4c53-9599-54c561ebd1f4"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bc7ec35a-8fec-47cc-8c7d-9e735e405cd6">
+                    <propertyInstance
+                      Id="800d8f02-784e-42e4-91a7-3d265b792bf0"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ac636f9-a817-466e-b44d-b7ed3309a8d4">
+                    <propertyInstance
+                      Id="d63338c3-12a8-4d55-9b19-406ffc4206a6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cbf63e2b-6320-4c42-af68-dc808ab45552">
+                    <propertyInstance
+                      Id="d006e5dd-1e63-4baf-a7c5-4544879930a8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c3651c69-eacd-49a0-b319-777d4227ab28">
+                    <propertyInstance
+                      Id="a62f9e1a-46bc-432d-beab-426efbb0d446"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="df8209b1-9a15-4bb4-adac-2d45cd4f58a5"
+                  name="width"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e5c811ec-51c8-460e-ab91-b7080d84c3f9"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DAGraphicConstructor Member%3D(Name%3DInit OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dwidth"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="AsteroidsModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="21e3f8a3-fa57-44a6-a9d3-1f9fc2f74823"
+                  name="height"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f44b655f-0df1-4ddf-a39c-0867d16be45d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DAGraphicConstructor Member%3D(Name%3DInit OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dheight"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="AsteroidsModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="25a6a75a-4713-4059-a134-2439849f9439"
+            name="GetImage"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d4abd58d-fddd-4bc9-8292-a10e0e1a76fc"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DAGraphicConstructor Member%3D(Name%3DGetImage OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DViewObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5904f707-f565-4f98-865c-29f2f0212acc"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fdf59a81-98a5-4495-b67d-09b549fb7085">
+                    <propertyInstance
+                      Id="2f347f1c-02a1-4dda-86db-4f2c60bac046"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2295a9ad-fcdf-41da-85e4-17a8d7552b53">
+                    <propertyInstance
+                      Id="c41b90b0-04ba-4c40-ab3a-66b0d1035054"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a67ae3d-0b6f-4ca8-ae92-067d4586fafd">
+                    <propertyInstance
+                      Id="4395192a-d798-4098-b0f7-0235755b49d9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fd1f2d8e-ea5a-4171-9c5c-4c510f47a357">
+                    <propertyInstance
+                      Id="591dfde4-c646-4994-b87a-ce8fe3f43c66"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="33d0f07f-40e8-4030-a4a4-c7045825138d">
+                    <propertyInstance
+                      Id="5d6450d7-45b2-4586-853c-897f9d838b1c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7609eb47-696a-4216-85ac-05099470d676">
+                    <propertyInstance
+                      Id="a90dcd72-5423-4a42-8d33-2464ca1bb808"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="34c27ee7-fff4-4ba2-859e-5bcaf5348ca5"
+                  name="obj"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c923d221-5fdd-470f-9700-c798a9863758"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DAGraphicConstructor Member%3D(Name%3DGetImage OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DViewObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)]) ParameterIdentifier%3Dobj"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f36beb6e-eb43-43a9-a92f-2bc2b9d2227e"
+                      LastKnownName="ViewObject"
+                      LastKnownLocation="Package_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="98d92209-1c28-4619-b0c8-e87a63e8f260"
+                  name="grap"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="af3b9ffe-e860-4b15-9e3d-324533576136"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DAGraphicConstructor Member%3D(Name%3DGetImage OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DViewObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)]) ParameterIdentifier%3Dgrap"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="0a411f60-3608-46f3-8813-bc4e0ec0b2ca"
+                      LastKnownName="Graphics"
+                      LastKnownLocation="Package2_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="dd7fe887-4787-4df6-b844-9111d357166c"
+            name="AGraphicConstructor"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d214a6d5-27d1-4049-8c55-5735694831ed"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DAGraphicConstructor Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ade22b76-8d33-4d6c-aaa0-b1e329a358f3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f0e6499d-bb43-4b5e-b2d3-80f65d0a656d">
+                    <propertyInstance
+                      Id="7ee1b05d-9724-45af-95ee-76dfaf182850"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="87d0f918-e2c4-44fc-a619-f0409f37e5d6">
+                    <propertyInstance
+                      Id="058c0827-0fd7-4aab-bac1-2212494c9d34"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="94f8888c-8386-4438-930b-4dd815dfc0e7">
+                    <propertyInstance
+                      Id="7ddb35de-dd94-4f57-bff8-f9a3a0e5102d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eabdb8ba-5a4a-4127-b478-79f4d9fb8f3c">
+                    <propertyInstance
+                      Id="9da780e2-e69b-4b55-b908-9e134f3d5197"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f036aa23-f971-455f-ab14-ae440d991006">
+                    <propertyInstance
+                      Id="655d3ed2-dd2e-402e-92c6-be52b3245f78"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="426005c9-c13e-4c0d-9b22-67270fd01a05">
+                    <propertyInstance
+                      Id="ebc866f1-a1cb-45f4-969f-041b68628ac3"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ce32d458-f858-4238-8373-1508c921f021"
+        name="PoligonGraphicConstructor"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="399810bc-ab38-4123-a27c-f4a3eaebea8f"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DPoligonGraphicConstructor"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="d317c782-b9f4-4898-ae83-6c4572d290e3"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bd2c1079-ea1c-4f4d-9380-0b880b2463b3">
+                <propertyInstance
+                  Id="8ef3bc06-4835-4c42-971e-b10afc837847"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="63284462-3317-41ec-87b2-32000ecd28bc">
+                <propertyInstance
+                  Id="40e6191f-7ebc-46ca-abf0-6de3f89d0fc1"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2b987579-0c74-443d-9681-52b505522c35">
+                <propertyInstance
+                  Id="8b7cbd7b-64e5-4dcc-a57a-63a0d48c2c99"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9056239e-761c-4069-a6ca-84373bacc2b8">
+                <propertyInstance
+                  Id="e4d675ea-0dcb-4e22-86d4-293330e225b7"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6acde2f9-554f-4d79-813a-4e733b68171c">
+                <propertyInstance
+                  Id="9cc60d9e-1482-48a4-a28a-631b5840e860"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="208619a9-1759-469b-b560-a25681e741ec"
+            isSubstitutable="false">
+            <classMoniker
+              Id="3ff367fc-190d-4078-a43a-50d51b8d2a0c"
+              LastKnownName="AGraphicConstructor"
+              LastKnownLocation="Package4_1723.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="18a45a17-a540-4273-a9ef-108c09b3bb5a"
+            name="GetImage"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="3fea960a-30e4-44bc-801b-0e7603203444"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DPoligonGraphicConstructor Member%3D(Name%3DGetImage OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DViewObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="679ebf7a-c5ca-4c8d-9d73-a2827d18191c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0e0614be-1032-46e3-bdc9-5379a9177650">
+                    <propertyInstance
+                      Id="990cc1f0-a980-487d-a543-031c129b2717"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a1b90608-592e-412c-93ce-6a4bdd4c9ed5">
+                    <propertyInstance
+                      Id="e9237549-c4b6-4391-8a31-4c902b3b3b2e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fcb007d6-3006-4db0-9366-f068391f1009">
+                    <propertyInstance
+                      Id="e4010c95-81cb-4a3b-8221-45b67be879db"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0b99548e-12ea-4cd5-80d4-ba948b3a10ca">
+                    <propertyInstance
+                      Id="97a138fd-4dc4-4238-9925-3badd2246d36"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="450121ba-a9af-4d58-9b14-744d29177685">
+                    <propertyInstance
+                      Id="f4122697-5da8-459e-9931-2d006641ec9b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="613c16fd-7061-46ff-9cb0-74cab58277a6">
+                    <propertyInstance
+                      Id="aba6b6fe-8e06-4a66-9c43-427299447d82"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b01260a1-a788-4251-a728-764493556255"
+                  name="obj"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1986f2f7-e29f-4bd9-9efc-160e860d64ed"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DPoligonGraphicConstructor Member%3D(Name%3DGetImage OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DViewObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)]) ParameterIdentifier%3Dobj"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f36beb6e-eb43-43a9-a92f-2bc2b9d2227e"
+                      LastKnownName="ViewObject"
+                      LastKnownLocation="Package_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9020d677-ff98-4ee5-8ef2-0cbdf1a6c780"
+                  name="grap"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e759e25c-370e-466a-bf59-ffa432f74e20"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DPoligonGraphicConstructor Member%3D(Name%3DGetImage OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DViewObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)]) ParameterIdentifier%3Dgrap"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="0a411f60-3608-46f3-8813-bc4e0ec0b2ca"
+                      LastKnownName="Graphics"
+                      LastKnownLocation="Package2_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1ea8ab5e-4118-4e1d-ad18-4be9a62136ea"
+            name="DrawShip"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6748ef22-d1ce-4c0c-8ca4-495eb4aea70a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DPoligonGraphicConstructor Member%3D(Name%3DDrawShip OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DDegree)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4597703a-9e09-4d99-899c-90cfc1cfc3bf"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="72492323-4f63-44f5-ba57-63544861cbf2">
+                    <propertyInstance
+                      Id="5f5f2d9c-916b-4cf7-aebe-7b32323853e9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="81018bf3-2b76-4bf3-8124-ea862b42a4cb">
+                    <propertyInstance
+                      Id="df5e80df-4102-4a2b-876f-95cc64882559"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6e681cd3-0350-4019-bdad-6ad23c58f5ef">
+                    <propertyInstance
+                      Id="911dac58-a7a3-486a-9457-da435d6828da"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="11bb335c-df10-488f-af47-1d9a57deefc0">
+                    <propertyInstance
+                      Id="dbe96b5b-45b7-47ae-b925-f9464512c9a4"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d934e881-9044-4bf3-a7da-f09b60b26dd5">
+                    <propertyInstance
+                      Id="4ff006cf-c87f-4f95-8641-c08e1df57218"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e86e281a-6446-4f22-b913-09a147bc4184">
+                    <propertyInstance
+                      Id="8bd689af-20b0-4434-a24e-9bc40e8ba21c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8c8aecb1-fba8-4eb2-a616-f718b8a04710"
+                  name="pos"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="efdae026-07a8-42e7-ad11-65e4ce32b1ad"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DPoligonGraphicConstructor Member%3D(Name%3DDrawShip OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DDegree)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)]) ParameterIdentifier%3Dpos"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fa1d2164-ee31-48a6-b9f4-456ee438ea5e"
+                      LastKnownName="CoupleDouble"
+                      LastKnownLocation="Package_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ec05b836-454b-413e-ab9c-9b83338d9e33"
+                  name="size"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3837fd50-2258-4b99-a67e-402630f2c9d1"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DPoligonGraphicConstructor Member%3D(Name%3DDrawShip OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DDegree)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)]) ParameterIdentifier%3Dsize"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fa1d2164-ee31-48a6-b9f4-456ee438ea5e"
+                      LastKnownName="CoupleDouble"
+                      LastKnownLocation="Package_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="60af793a-2818-48ec-ac5b-b77947d95589"
+                  name="angle"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="935cb58d-6312-49a6-b0ca-eb87cef1540a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DPoligonGraphicConstructor Member%3D(Name%3DDrawShip OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DDegree)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)]) ParameterIdentifier%3Dangle"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="8c2469c1-59e3-48b4-bac3-662e699c7e10"
+                      LastKnownName="Degree"
+                      LastKnownLocation="Package_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e03ebfb8-ca44-4633-9516-fb4477f9b76b"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="76e96621-3752-4157-9e39-3bf1cbf5cd60"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DPoligonGraphicConstructor Member%3D(Name%3DDrawShip OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DDegree)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="0a411f60-3608-46f3-8813-bc4e0ec0b2ca"
+                      LastKnownName="Graphics"
+                      LastKnownLocation="Package2_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d892fae3-718a-4ae3-a7f9-acd07c09c844"
+            name="DrawUfo"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="46ea575e-3fb1-45e3-b432-69dab90a7b3f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DPoligonGraphicConstructor Member%3D(Name%3DDrawUfo OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DDegree)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c993fb30-ec50-4f58-b6b1-04a4aa644114"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8119f635-5b74-4ba2-aaf5-4defe488775a">
+                    <propertyInstance
+                      Id="50e7db63-7cf7-46eb-a272-9977ae155658"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ab109257-4a31-4765-9d45-5b5eb5404d0f">
+                    <propertyInstance
+                      Id="0d0c1995-f48c-47d4-a645-4d6d6bde2356"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2b42982c-f98c-4a92-b9d8-2f8ff9d1c667">
+                    <propertyInstance
+                      Id="d92f32f0-0a52-43ba-9501-f5e1204be572"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="46c68d9e-0ffe-4c79-a2ef-b650f75235de">
+                    <propertyInstance
+                      Id="30bcde62-3488-48ec-b1a6-010add64c36f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="90a772a5-f231-4155-8b94-f2b185c76054">
+                    <propertyInstance
+                      Id="027a7427-229b-44f3-98a1-c8f4a0d8e03c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3514aa92-1932-4ffe-bd8a-8a1a8a46f088">
+                    <propertyInstance
+                      Id="70bfea68-3476-416f-b120-c4c31c2b1e0d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f26d1057-ed89-486b-8383-66a01e4513b5"
+                  name="pos"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c83db9fc-f232-44d2-9b5b-e00819acfa54"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DPoligonGraphicConstructor Member%3D(Name%3DDrawUfo OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DDegree)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)]) ParameterIdentifier%3Dpos"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fa1d2164-ee31-48a6-b9f4-456ee438ea5e"
+                      LastKnownName="CoupleDouble"
+                      LastKnownLocation="Package_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5bc4cf3e-261f-4e7b-8fee-f6a88601d479"
+                  name="size"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d064d55d-9c44-4f79-b12e-937bf2d0bc15"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DPoligonGraphicConstructor Member%3D(Name%3DDrawUfo OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DDegree)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)]) ParameterIdentifier%3Dsize"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fa1d2164-ee31-48a6-b9f4-456ee438ea5e"
+                      LastKnownName="CoupleDouble"
+                      LastKnownLocation="Package_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="148a7641-d07c-48f9-8c23-c803d19df784"
+                  name="angle"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1129bd32-0694-4460-9fec-76e650cd5d33"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DPoligonGraphicConstructor Member%3D(Name%3DDrawUfo OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DDegree)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)]) ParameterIdentifier%3Dangle"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="8c2469c1-59e3-48b4-bac3-662e699c7e10"
+                      LastKnownName="Degree"
+                      LastKnownLocation="Package_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="92e47d4c-d513-49a2-a5ae-1a39318a247e"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7731f561-c31b-4bb2-a154-5ff2f3cd8aec"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DPoligonGraphicConstructor Member%3D(Name%3DDrawUfo OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DDegree)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="0a411f60-3608-46f3-8813-bc4e0ec0b2ca"
+                      LastKnownName="Graphics"
+                      LastKnownLocation="Package2_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1a1b6016-f8e8-484b-8ff1-efac46bbe29e"
+            name="DrawAsteroid"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="95aa793b-ea15-4925-a35f-a42f86b40f85"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DPoligonGraphicConstructor Member%3D(Name%3DDrawAsteroid OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DDegree)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f29a5d29-e7ce-46c6-a838-e54085e275fa"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4ea27247-e1de-4d0d-a742-89637e5fe0dd">
+                    <propertyInstance
+                      Id="175f57aa-b724-4fd4-867a-3866dc88d2e8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2986ff52-fdab-477a-ac9e-a55b5d476674">
+                    <propertyInstance
+                      Id="98dbface-89bd-4727-98f4-ab32f4e86dd8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e76c7983-9192-4494-9633-f5136eca2269">
+                    <propertyInstance
+                      Id="449bfec4-24fe-43f8-af8e-a190cf68e32a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="46f88fee-da76-4791-a206-c53278e6c1b1">
+                    <propertyInstance
+                      Id="4248a08b-51b1-4ceb-b4f9-65e880a2758c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bac278fa-b98e-4d46-a43c-739b52d65080">
+                    <propertyInstance
+                      Id="e29e7c86-b1c6-4634-ac99-783828c15689"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a107c535-c454-4fc5-9b4b-36560f2bf200">
+                    <propertyInstance
+                      Id="9e7a2e2b-1b30-4bf9-9407-2e051063642a"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="335f4dbf-abe4-4787-8970-3a353359d6de"
+                  name="pos"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a9e53220-d358-47d4-897d-73983cce6336"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DPoligonGraphicConstructor Member%3D(Name%3DDrawAsteroid OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DDegree)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)]) ParameterIdentifier%3Dpos"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fa1d2164-ee31-48a6-b9f4-456ee438ea5e"
+                      LastKnownName="CoupleDouble"
+                      LastKnownLocation="Package_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="616d5df1-6fe5-47d3-a676-a2abb87c5898"
+                  name="size"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3971d1c6-dff7-4d45-a764-bc6c5d55dbeb"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DPoligonGraphicConstructor Member%3D(Name%3DDrawAsteroid OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DDegree)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)]) ParameterIdentifier%3Dsize"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fa1d2164-ee31-48a6-b9f4-456ee438ea5e"
+                      LastKnownName="CoupleDouble"
+                      LastKnownLocation="Package_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fd637ff1-95d4-4d83-b747-6549551baa8a"
+                  name="angle"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="9876f459-4201-435e-839b-0f29ee4ba2e6"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DPoligonGraphicConstructor Member%3D(Name%3DDrawAsteroid OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DDegree)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)]) ParameterIdentifier%3Dangle"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="8c2469c1-59e3-48b4-bac3-662e699c7e10"
+                      LastKnownName="Degree"
+                      LastKnownLocation="Package_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="de397d96-9e1c-43c3-918b-536a2774b06e"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="bd166c1a-6469-4030-8182-71e6fef987bd"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DPoligonGraphicConstructor Member%3D(Name%3DDrawAsteroid OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DDegree)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="0a411f60-3608-46f3-8813-bc4e0ec0b2ca"
+                      LastKnownName="Graphics"
+                      LastKnownLocation="Package2_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="33ba9ee9-a8d1-4972-8eec-367034044743"
+            name="DrawGunBullet"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="fb872ed3-eddb-4951-85a2-b046b31522be"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DPoligonGraphicConstructor Member%3D(Name%3DDrawGunBullet OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DDegree)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9bbf1de2-1abf-4dd3-b8b5-1839ba53a34d"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d8232dd4-3b73-4bc8-b48e-5b958b595691">
+                    <propertyInstance
+                      Id="1784e320-5683-4b4f-b101-2af7f6ce8ccc"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6ca514a7-bb6d-44bb-b9b1-5fb149307d0e">
+                    <propertyInstance
+                      Id="b9cdc716-9c34-4f1a-af34-587bc57104d7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="168910c4-6355-4c45-bb3b-92a1fc21fa94">
+                    <propertyInstance
+                      Id="ddbfd174-c44c-45b0-9ca9-b4c508565bd8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6fefea7f-c078-4e16-9c0a-8828d1c58425">
+                    <propertyInstance
+                      Id="17e1b3ba-69b6-4506-9beb-1347d3dc29c4"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="29d52868-bc9f-4f81-92f6-58b82e84851c">
+                    <propertyInstance
+                      Id="afd022e2-328d-4187-9a78-89bf52091cbc"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a779e25f-54f9-4349-b4fd-27ded5685380">
+                    <propertyInstance
+                      Id="b000a69d-5135-4d89-b723-f7f28c11ec57"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1ff19624-9721-4810-bc87-95dba36ee07f"
+                  name="pos"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ea0f0f00-b7fe-4a78-9bc2-5e24301dadcf"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DPoligonGraphicConstructor Member%3D(Name%3DDrawGunBullet OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DDegree)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)]) ParameterIdentifier%3Dpos"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fa1d2164-ee31-48a6-b9f4-456ee438ea5e"
+                      LastKnownName="CoupleDouble"
+                      LastKnownLocation="Package_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e49f1903-d194-4f0d-8631-a31be011d50e"
+                  name="size"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1f4dcfed-8e23-493f-9fe6-2fbd086588f9"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DPoligonGraphicConstructor Member%3D(Name%3DDrawGunBullet OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DDegree)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)]) ParameterIdentifier%3Dsize"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fa1d2164-ee31-48a6-b9f4-456ee438ea5e"
+                      LastKnownName="CoupleDouble"
+                      LastKnownLocation="Package_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cd31f943-e16e-4cc5-ae62-a16f52c3d8a8"
+                  name="angle"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="376267c4-243c-4b5b-8570-71cb6a72af7a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DPoligonGraphicConstructor Member%3D(Name%3DDrawGunBullet OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DDegree)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)]) ParameterIdentifier%3Dangle"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="8c2469c1-59e3-48b4-bac3-662e699c7e10"
+                      LastKnownName="Degree"
+                      LastKnownLocation="Package_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="463ab5c6-464f-41c3-b902-501b4dfbae55"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="11bae98f-d007-4adf-a7f8-c12b7a0803f1"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DPoligonGraphicConstructor Member%3D(Name%3DDrawGunBullet OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DDegree)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="0a411f60-3608-46f3-8813-bc4e0ec0b2ca"
+                      LastKnownName="Graphics"
+                      LastKnownLocation="Package2_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f905c735-260b-4194-9c3b-8e6728fa1b16"
+            name="DrawLaserBullet"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="3a7eb73b-8cf7-4850-b205-75359923a85c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DPoligonGraphicConstructor Member%3D(Name%3DDrawLaserBullet OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DDegree)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6535baa5-8928-46cc-a346-af7c1382685a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1940f7e9-95e8-4ece-b5f6-50aa3da43cb4">
+                    <propertyInstance
+                      Id="72f85d3b-6d99-4ea0-86c4-bd19df099ba4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="50ce293b-b03f-4953-8c03-2317dd06c07c">
+                    <propertyInstance
+                      Id="09b53567-c3ca-4b1e-8fdc-f493aedf901b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="502dc0cd-5ef5-48df-a9ed-411460fe695a">
+                    <propertyInstance
+                      Id="c7818882-ced6-401a-adbb-45c3d806f552"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="98114695-f0db-4997-813c-48cc01c10c65">
+                    <propertyInstance
+                      Id="d9dc8103-871e-4b19-a610-b52d3c1a0cac"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b54b05aa-3f20-43a1-8ce1-7dc88d8325a2">
+                    <propertyInstance
+                      Id="4fdf0041-4ba1-4b6b-baba-456f77d9f761"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a3332a8f-ab4e-45fe-9486-b4faaa2c916d">
+                    <propertyInstance
+                      Id="f1f90831-4ded-4f35-a5c5-f7ddd542836f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="00d0247c-3ac9-414b-8bf5-8bfb692458e5"
+                  name="pos"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7e20455c-ec90-424c-a4f8-9151b3a3578a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DPoligonGraphicConstructor Member%3D(Name%3DDrawLaserBullet OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DDegree)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)]) ParameterIdentifier%3Dpos"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fa1d2164-ee31-48a6-b9f4-456ee438ea5e"
+                      LastKnownName="CoupleDouble"
+                      LastKnownLocation="Package_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9953664d-1ae5-4a0a-8a99-3b9cf32e9713"
+                  name="size"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="24aea650-bf68-4714-a3e6-2bb8b6df89e4"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DPoligonGraphicConstructor Member%3D(Name%3DDrawLaserBullet OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DDegree)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)]) ParameterIdentifier%3Dsize"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fa1d2164-ee31-48a6-b9f4-456ee438ea5e"
+                      LastKnownName="CoupleDouble"
+                      LastKnownLocation="Package_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="91486ecb-d0c3-4531-9151-45d391df6f57"
+                  name="angle"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="39222267-0b05-4edc-a8c3-78fdb9f2c315"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DPoligonGraphicConstructor Member%3D(Name%3DDrawLaserBullet OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DDegree)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)]) ParameterIdentifier%3Dangle"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="8c2469c1-59e3-48b4-bac3-662e699c7e10"
+                      LastKnownName="Degree"
+                      LastKnownLocation="Package_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6007783f-2253-44f1-8315-7460f40f6b41"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f4d84cd1-8edd-4f89-9ba5-c607a403ebd3"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DPoligonGraphicConstructor Member%3D(Name%3DDrawLaserBullet OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DDegree)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="0a411f60-3608-46f3-8813-bc4e0ec0b2ca"
+                      LastKnownName="Graphics"
+                      LastKnownLocation="Package2_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ec3cca48-c27e-4a6d-9925-6e10df6bf379"
+            name="DrawExplosion"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e37b73e1-1c00-4ef2-a751-bded5eb14e6b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DPoligonGraphicConstructor Member%3D(Name%3DDrawExplosion OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DDegree)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5171d592-132c-4229-a953-50c85fb3ab3d"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1f9f0518-8aa0-41bd-922f-2d0f6ffc2376">
+                    <propertyInstance
+                      Id="dc88c30f-539a-4102-93f4-934a67f9ac12"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d99ee107-a3bc-4cb5-94c4-a83538e6fced">
+                    <propertyInstance
+                      Id="86fbfdc2-035a-49eb-8b66-fac0948dd702"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9f542e72-52e4-471f-b268-3130bed6744c">
+                    <propertyInstance
+                      Id="a13d381a-53ee-4378-b17a-f050ac5356b5"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a8bcf819-c4ca-4836-97b3-4a2fa4ef36de">
+                    <propertyInstance
+                      Id="9db4af61-b00e-4a7a-b5bb-928adc45c0a9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4e726586-d67c-49a4-912a-f89ece38bcd4">
+                    <propertyInstance
+                      Id="67342d39-f203-44c4-893d-da01bcec973a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac97cd94-5bb9-4fd5-bc59-efa7c4594616">
+                    <propertyInstance
+                      Id="bb4b5295-7681-4773-99c5-1fd7feb3abc0"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="df3a3d52-6f0a-4d53-a0a5-0c7e13fa0e2f"
+                  name="pos"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="59554532-ad09-43de-ad4b-911b3c6141f2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DPoligonGraphicConstructor Member%3D(Name%3DDrawExplosion OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DDegree)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)]) ParameterIdentifier%3Dpos"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fa1d2164-ee31-48a6-b9f4-456ee438ea5e"
+                      LastKnownName="CoupleDouble"
+                      LastKnownLocation="Package_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e2bcc116-ed82-4043-b44f-354baf5deaf5"
+                  name="size"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="023f5ef2-30d0-4fc3-a411-a76cfe0569fb"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DPoligonGraphicConstructor Member%3D(Name%3DDrawExplosion OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DDegree)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)]) ParameterIdentifier%3Dsize"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fa1d2164-ee31-48a6-b9f4-456ee438ea5e"
+                      LastKnownName="CoupleDouble"
+                      LastKnownLocation="Package_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8b8a0127-8c01-4bce-8d59-78d04ab4dbaf"
+                  name="angle"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="79dfc256-3160-482c-8648-1dda358a14c7"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DPoligonGraphicConstructor Member%3D(Name%3DDrawExplosion OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DDegree)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)]) ParameterIdentifier%3Dangle"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="8c2469c1-59e3-48b4-bac3-662e699c7e10"
+                      LastKnownName="Degree"
+                      LastKnownLocation="Package_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="53932079-d3d4-4605-be9e-400a05cbe92e"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1687f7c0-937d-45fc-80e8-9496836bd891"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DPoligonGraphicConstructor Member%3D(Name%3DDrawExplosion OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DCoupleDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DDegree)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="0a411f60-3608-46f3-8813-bc4e0ec0b2ca"
+                      LastKnownName="Graphics"
+                      LastKnownLocation="Package2_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="634592f7-7450-4db2-bb8e-13766d0d05a1"
+            name="PoligonGraphicConstructor"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ad8842cd-76a4-45c2-924e-f838cb59d592"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DPoligonGraphicConstructor Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="11fa2218-cc72-4670-ae2e-fd64afb1a361"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b0c6f96a-27de-4b8a-894f-482df630967e">
+                    <propertyInstance
+                      Id="d382adbd-e9e9-445d-98c5-de97d87b5992"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="251822b5-bab7-4195-beb5-606c7a7841cb">
+                    <propertyInstance
+                      Id="2bd2101a-c3e2-429f-9b9d-366576e5eeff"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aaf50e5e-c6dc-4e69-b79a-74b2a56754da">
+                    <propertyInstance
+                      Id="4c4e1584-96d9-434a-be1b-b1c71987f3d8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1900bde2-38f4-41b4-a98a-57ec7bc98ced">
+                    <propertyInstance
+                      Id="c732a1cd-bf3a-4441-9b9d-bead4ffdb83f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a37ba27-adc4-4f31-a107-ee7bb8a92541">
+                    <propertyInstance
+                      Id="6566d683-a4c7-41bf-ae81-8c35f8a32627"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b0a7af46-2b1f-4f8a-aa05-bfe4d8631b0d">
+                    <propertyInstance
+                      Id="92e0ec69-ee3c-4e5f-85f6-bfb5b6b7c294"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9ff5596b-69f9-4053-9937-c067525c4183"
+        name="SpritGraphicConstructor"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="b30bee9c-ec6e-48de-bd8c-0f760a34a3a2"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DSpritGraphicConstructor"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2539c8e9-406d-4516-a029-3b00a433ef38"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4bbcaac2-e6dd-425c-9bcd-5130a4dc132d">
+                <propertyInstance
+                  Id="006695e4-0e97-4069-84c9-9574cf95a1cd"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="686075e3-ab9b-4008-bea9-ca792e2cb113">
+                <propertyInstance
+                  Id="fd8d66f3-53b2-4d6e-ab2d-9262f0e4e7cc"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1d18fb0b-e18b-4e6b-8e66-984860d68a05">
+                <propertyInstance
+                  Id="ddd48b31-1e8c-45cb-863f-fef6e318aa16"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6a3647ba-9942-43d2-a64f-0da4918eba88">
+                <propertyInstance
+                  Id="d7ebf830-3d98-4872-9f26-e2bbc0b49855"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d1e8cce6-b725-43f4-952c-f75b1193e31b">
+                <propertyInstance
+                  Id="d3d25f16-61aa-4405-9d78-507934273afc"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="902029e4-ab98-4112-9aae-66db29e3e88d"
+            isSubstitutable="false">
+            <classMoniker
+              Id="3ff367fc-190d-4078-a43a-50d51b8d2a0c"
+              LastKnownName="AGraphicConstructor"
+              LastKnownLocation="Package4_1723.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="35597370-5e44-4a82-96bd-2117bd5c8a4e"
+            name="GetImage"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="75cad4ea-3f67-4fad-bc03-55e74b7544d9"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DSpritGraphicConstructor Member%3D(Name%3DGetImage OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DViewObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="23f9ffc0-da41-4de1-a0c8-c3b55aa95b61"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="75475db1-e225-451a-8616-a5dea7f959cf">
+                    <propertyInstance
+                      Id="e7237fda-c3ae-46e3-a075-eca98f58c68a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6912f2ed-aed4-415d-8184-4c6e02b52f47">
+                    <propertyInstance
+                      Id="60a28204-715f-40f8-b885-493a4383facf"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8bd1d704-4870-4a32-9b12-7abfd3ead6bc">
+                    <propertyInstance
+                      Id="7a0297a7-1d43-47b1-a1ee-463fac771a93"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="082bb57d-94f0-4531-9250-8189d9c62702">
+                    <propertyInstance
+                      Id="9405aa56-d2d1-4702-a0ae-795ce82cca89"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bdc5360e-bcd2-4474-8a03-c6cee19f4df4">
+                    <propertyInstance
+                      Id="3230ff6c-e848-4269-a3d1-3e874e6f4997"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f3f987ca-722a-48d2-8305-8d7978bf2599">
+                    <propertyInstance
+                      Id="61065410-93b2-4dc8-b302-d4482aad13d4"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="62d8d8ff-d798-44ef-8bc5-5af96a2dcee2"
+                  name="obj"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="6d5256ed-5c04-4fd7-b9c6-449e3793b116"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DSpritGraphicConstructor Member%3D(Name%3DGetImage OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DViewObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)]) ParameterIdentifier%3Dobj"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f36beb6e-eb43-43a9-a92f-2bc2b9d2227e"
+                      LastKnownName="ViewObject"
+                      LastKnownLocation="Package_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="443fd158-0285-4cec-b556-731b0c634b1a"
+                  name="grap"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="fc8b64db-dbf1-4f55-aa42-7507c82fc99a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DSpritGraphicConstructor Member%3D(Name%3DGetImage OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FGame%2Fbin%2FDebug%2FGame.dll&quot; Namespace%3DGame Type%3DViewObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics)]) ParameterIdentifier%3Dgrap"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="0a411f60-3608-46f3-8813-bc4e0ec0b2ca"
+                      LastKnownName="Graphics"
+                      LastKnownLocation="Package2_1705.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="752ced3b-a07e-4e3f-8770-f053cd9a9a69"
+            name="SpritGraphicConstructor"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="fbda13c4-f6c9-4827-9bd2-7c1094aaad3e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Falfac_000%2FDocuments%2FVisual Studio 2012%2FProjects%2FC%2523%2FWFA%2FAsteroids%2FAsteroids%2Fbin%2FDebug%2FAsteroids.exe&quot; Namespace%3DAsteroids.GraphicConstructors Type%3DSpritGraphicConstructor Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="334fd8e6-4004-41be-9323-7f6940dcb6a1"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ff65d12a-76e7-460c-b86e-4cdd351c48d6">
+                    <propertyInstance
+                      Id="be925433-d3bd-4c11-8cec-b1b189296620"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ebfe582-8af5-4fc4-9302-725711ddb01d">
+                    <propertyInstance
+                      Id="72a10e76-c181-4a18-ad65-e574cae8fef7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3503045a-a9c2-4553-8410-2391e4f58b2b">
+                    <propertyInstance
+                      Id="8bba4995-ece5-4bee-bb6a-ede89dd56377"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ef5b0159-9a98-409d-bce8-ac47594b35f5">
+                    <propertyInstance
+                      Id="611921b1-42b8-446b-b4d2-6c39df816f44"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c39b0d32-b674-49a7-a837-db8c1dc4b3b5">
+                    <propertyInstance
+                      Id="990f10af-a7dc-4246-8518-a1da8a525f7d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1bfb6211-eef8-499e-9b0f-7b03d76635b4">
+                    <propertyInstance
+                      Id="86dc0d33-ce06-4969-afa8-29d537444c57"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

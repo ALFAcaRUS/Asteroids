@@ -55,7 +55,7 @@ namespace AsteroidsTest.KernalTests.EntitysTest.EnemisTests
             Asteroid secondSmalAsteroid = new Asteroid(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(1, 1), 1);
             Asteroid firstBigAsteroid = new Asteroid(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(1, 1), 2);
             Asteroid secondBigAsteroid = new Asteroid(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(1, 1), 2);
-            LaserBullet laserBullet = new LaserBullet(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(1, 1));
+            AEntity laserBullet = new LaserBullet(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(1, 1));
             GunBullet gunBullet = new GunBullet(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(1, 1));
 
             List<AEntity> bigAsteroidIntResult = new List<AEntity>();

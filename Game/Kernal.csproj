@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,7 +48,7 @@
     <Compile Include="Entitys\Enemies\EnemiFarm.cs" />
     <Compile Include="Entitys\Enemies\Ufo.cs" />
     <Compile Include="Entitys\EntityType.cs" />
-    <Compile Include="LooseEventArgs.cs" />
+    <Compile Include="Maine\LooseEventArgs.cs" />
     <Compile Include="Entitys\PseudoEntitys\EnemyFarmPseudoEntity.cs" />
     <Compile Include="GameLoader.cs" />
     <Compile Include="Maine\MainClass.cs" />
@@ -64,9 +65,6 @@
     <Compile Include="Weapons\Gun.cs" />
     <Compile Include="Weapons\IWeapon.cs" />
     <Compile Include="Weapons\Laser.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

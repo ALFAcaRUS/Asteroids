@@ -16,10 +16,7 @@ namespace AsteroidsTest.KernalTests.EntitysTest.EnemisTests
         public void MoveTest()
         {
             IShip mockSip = new MockShip();
-            Ufo testedUfo = new Ufo(new CoupleDouble(5, 5), new CoupleDouble(1, 1), new CoupleDouble(1, 1))
-            {
-                PlayerShip = mockSip
-            };
+            Ufo testedUfo = new Ufo(new CoupleDouble(5, 5), new CoupleDouble(1, 1), new CoupleDouble(1, 1), mockSip);
 
             mockSip.Pos = new CoupleDouble(0, 0);
 
@@ -75,7 +72,7 @@ namespace AsteroidsTest.KernalTests.EntitysTest.EnemisTests
             //organization
             Ufo firstUfo = new Ufo(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(1, 1));
             Ufo secondUfo = new Ufo(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(1, 1));
-            LaserBullet laserBullet = new LaserBullet(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(1, 1));
+            AEntity laserBullet = new LaserBullet(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(1, 1));
             GunBullet gunBullet = new GunBullet(new CoupleDouble(1, 1), new CoupleDouble(1, 1), new CoupleDouble(1, 1));
 
             List<AEntity> bigAsteroidIntResult = new List<AEntity>();
